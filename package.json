@@ -1,0 +1,57 @@
+{
+  "name": "odasy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Odasy monorepo — mobile, web, and shared packages",
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=24.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "dev:mobile": "turbo run dev --filter=@odasy/mobile",
+    "dev:admin": "turbo run dev --filter=@odasy/admin",
+    "lint": "turbo run lint",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.11",
+    "@types/node": "25.6.0",
+    "husky": "9.1.7",
+    "lint-staged": "16.4.0",
+    "turbo": "2.9.6",
+    "typescript": "5.9.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md}": [
+      "biome check --write --no-errors-on-unmatched"
+    ]
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "19.1.0",
+      "react-dom": "19.1.0",
+      "react-native": "0.81.5",
+      "@types/react": "19.1.17",
+      "expo-constants": "18.0.13",
+      "expo-linking": "8.0.11"
+    },
+    "onlyBuiltDependencies": [
+      "@clerk/shared",
+      "@sentry/cli",
+      "browser-tabs-lock",
+      "bufferutil",
+      "core-js",
+      "esbuild",
+      "sharp",
+      "utf-8-validate"
+    ]
+  }
+}

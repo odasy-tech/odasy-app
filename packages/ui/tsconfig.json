@@ -1,0 +1,12 @@
+{
+  "extends": "@odasy/config/tsconfig.react-native.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@odasy/ui": ["./src/index.ts"],
+      "@odasy/ui/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*", "tamagui.config.ts"],
+  "exclude": ["node_modules", "dist", ".turbo"]
+}

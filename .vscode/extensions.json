@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "expo.vscode-expo-tools",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-typescript-next",
+    "editorconfig.editorconfig",
+    "vercel.turbo-vsc"
+  ]
+}

@@ -1,0 +1,8 @@
+# Placeholder. Drop the following files here before building:
+#
+#   icon.png              1024x1024   App icon
+#   adaptive-icon.png     1024x1024   Android adaptive icon (foreground)
+#   splash.png            1284x2778   Splash screen
+#   favicon.png           48x48       Web favicon
+#
+# Referenced from apps/mobile/app.config.ts.

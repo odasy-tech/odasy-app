@@ -1,0 +1,52 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "globalDependencies": [".env", ".env.local", "tsconfig.base.json"],
+  "globalEnv": ["NODE_ENV"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", ".expo/**"],
+      "env": [
+        "DATABASE_URL",
+        "DIRECT_URL",
+        "CLERK_SECRET_KEY",
+        "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY",
+        "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY",
+        "AI_GATEWAY_API_KEY",
+        "BLOB_READ_WRITE_TOKEN",
+        "NEXT_PUBLIC_MAPBOX_TOKEN",
+        "EXPO_PUBLIC_MAPBOX_TOKEN",
+        "NEXT_PUBLIC_POSTHOG_KEY",
+        "EXPO_PUBLIC_POSTHOG_KEY",
+        "SENTRY_DSN",
+        "NEXT_PUBLIC_SENTRY_DSN",
+        "EXPO_PUBLIC_SENTRY_DSN"
+      ]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "typecheck": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"]
+    },
+    "clean": {
+      "cache": false
+    },
+    "db:generate": {
+      "cache": false
+    },
+    "db:migrate": {
+      "cache": false
+    }
+  }
+}

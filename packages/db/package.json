@@ -1,0 +1,33 @@
+{
+  "name": "@odasy/db",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema/index.ts"
+  },
+  "scripts": {
+    "lint": "biome check .",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "1.0.2",
+    "drizzle-orm": "0.45.2",
+    "drizzle-zod": "0.8.3",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@odasy/config": "workspace:*",
+    "@biomejs/biome": "2.4.11",
+    "drizzle-kit": "0.31.10",
+    "typescript": "5.9.3"
+  }
+}
