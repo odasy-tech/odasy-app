@@ -32,7 +32,7 @@ export function AppProviders({ children }: AppProvidersProps) {
       publishableKey={env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY}
       tokenCache={clerkTokenCache}
     >
-      <TamaguiProvider config={tamaguiTheme} defaultTheme="light">
+      <TamaguiProvider config={tamaguiTheme} defaultTheme="dark_odasy">
         <TrpcProvider>{children}</TrpcProvider>
       </TamaguiProvider>
     </ClerkProvider>

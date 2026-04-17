@@ -23,7 +23,9 @@
     "exactOptionalPropertyTypes": true,
 
     "skipLibCheck": true,
-    "incremental": true
+    "incremental": true,
+
+    "ignoreDeprecations": "5.0"
   },
   "exclude": ["node_modules", "dist", "build", ".turbo", ".next", ".expo"]
 }

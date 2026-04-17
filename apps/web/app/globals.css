@@ -1,0 +1,148 @@
+/*
+ * Tailwind 4 + Odasy "Nightfall & Volt" tokens.
+ * Colors mirror `packages/ui/src/theme/tokens.ts`.
+ */
+
+@import "tailwindcss";
+
+@theme {
+  /* Base */
+  --color-ink-950: #0B0F0D;
+  --color-ink-900: #131815;
+  --color-ink-800: #1D241F;
+  --color-ink-700: #2B342D;
+
+  /* Brand */
+  --color-volt: #CDFA5E;
+  --color-volt-deep: #A5D236;
+
+  /* Text */
+  --color-bone: #F5F0E6;
+  --color-bone-mute: #A39F93;
+  --color-bone-dim: #6B6B64;
+
+  /* Gamification accents */
+  --color-brass: #F2B84C;
+  --color-ember: #E5583C;
+  --color-rune: #9B6EFF;
+  --color-glacier: #7DC5FF;
+
+  /* Map */
+  --color-map-land: #2E3A2D;
+  --color-map-water: #1B3441;
+  --color-map-road: #6B6B64;
+
+  /* Stamp tiers */
+  --color-stamp-bronze: #B06A3F;
+  --color-stamp-silver: #BBC1BD;
+  --color-stamp-gold: #F2B84C;
+  --color-stamp-platinum: #D9DFDC;
+  --color-stamp-diamond: #7DC5FF;
+
+  /* Font families bound to next/font variables declared in layout.tsx */
+  --font-family-display: var(--font-display), "Fraunces", Georgia, serif;
+  --font-family-sans: var(--font-sans), "Geist", system-ui, sans-serif;
+  --font-family-mono: var(--font-mono), "JetBrains Mono", ui-monospace, monospace;
+}
+
+html, body {
+  background-color: var(--color-ink-950);
+  color: var(--color-bone);
+  font-family: var(--font-family-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+*::selection {
+  background-color: var(--color-volt);
+  color: var(--color-ink-950);
+}
+
+/* ───── Animations ───────────────────────────────────────────────── */
+
+@keyframes scan-down {
+  0%   { transform: translateY(-100vh); opacity: 0; }
+  15%  { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+@keyframes slow-rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes breathe {
+  0%, 100% { opacity: 0.18; }
+  50%      { opacity: 0.32; }
+}
+
+@keyframes draw-path {
+  from { stroke-dashoffset: var(--dash-length, 2000); }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes subtle-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+
+.animate-scan-down {
+  animation: scan-down 2.4s ease-out 0.3s forwards;
+}
+
+.animate-slow-rotate {
+  animation: slow-rotate 240s linear infinite;
+}
+
+.animate-breathe {
+  animation: breathe 7s ease-in-out infinite;
+}
+
+.animate-draw-path {
+  stroke-dasharray: var(--dash-length, 2000);
+  animation: draw-path 6s ease-out forwards;
+}
+
+.animate-subtle-float {
+  animation: subtle-float 4s ease-in-out infinite;
+}
+
+/* ───── Noise texture (warmth, analog feel) ──────────────────────── */
+
+.noise-overlay::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.96  0 0 0 0 0.94  0 0 0 0 0.90  0 0 0 0.7 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+}
+
+/* ───── Hairline utility (matches Odasy divider aesthetic) ───────── */
+
+.hairline {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-ink-700) 15%,
+    var(--color-ink-700) 85%,
+    transparent
+  );
+}
+
+/* ───── Reduce motion fallback ───────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-scan-down,
+  .animate-slow-rotate,
+  .animate-breathe,
+  .animate-draw-path,
+  .animate-subtle-float {
+    animation: none !important;
+  }
+}

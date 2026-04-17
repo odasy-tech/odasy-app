@@ -1,16 +1,10 @@
-import { ScrollView } from 'react-native';
-import { H1, Paragraph, YStack } from '@odasy/ui';
+import { H1, Paragraph, YStack } from 'tamagui';
 
 export default function HomeScreen() {
   return (
-    <ScrollView contentInsetAdjustmentBehavior="automatic">
-      <YStack padding="$4" gap="$3">
-        <H1>Welcome, explorer</H1>
-        <Paragraph>
-          Your next adventure starts here. Pick a mission, earn stamps, and build your
-          passport across the Colombian Coffee Region.
-        </Paragraph>
-      </YStack>
-    </ScrollView>
+    <YStack flex={1} background="$ink950" padding="$5" paddingTop="$8" gap="$3">
+      <H1 color="$bone">Home</H1>
+      <Paragraph color="$boneMute">Coming soon.</Paragraph>
+    </YStack>
   );
 }

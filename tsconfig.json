@@ -9,6 +9,7 @@
     { "path": "./packages/ai" },
     { "path": "./packages/ui" },
     { "path": "./packages/auth" },
-    { "path": "./apps/mobile" }
+    { "path": "./apps/mobile" },
+    { "path": "./apps/web" }
   ]
 }

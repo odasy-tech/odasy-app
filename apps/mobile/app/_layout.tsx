@@ -5,10 +5,15 @@ import { AppProviders } from '@/providers/AppProviders';
 
 export default function RootLayout() {
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
+    <GestureHandlerRootView style={{ flex: 1, backgroundColor: '#0B0F0D' }}>
       <AppProviders>
-        <StatusBar style="auto" />
-        <Stack screenOptions={{ headerShown: false }}>
+        <StatusBar style="light" />
+        <Stack
+          screenOptions={{
+            headerShown: false,
+            contentStyle: { backgroundColor: '#0B0F0D' },
+          }}
+        >
           <Stack.Screen name="(tabs)" />
           <Stack.Screen name="(auth)" />
           <Stack.Screen name="+not-found" />
