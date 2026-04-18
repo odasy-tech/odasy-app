@@ -16,7 +16,7 @@ export const dictionaries = {
       subtitlePost: '.',
       cta: 'Abrir expediente',
       footerLeft: 'fundado 2026 · bogotá · co',
-      footerRight: 'v.01 · construido en abierto',
+      footerRight: 'v.01 · beta privada',
     },
     premise: {
       chapter: 'Capítulo I · La premisa',
@@ -109,7 +109,7 @@ export const dictionaries = {
         { label: 'Términos', href: '#' },
         { label: 'Contacto', href: '#' },
       ],
-      copyright: '© 2026 Odasy · Construido en abierto',
+      copyright: '© 2026 Odasy · Beta privada',
     },
     toggle: {
       aria: 'Cambiar idioma',
@@ -124,7 +124,7 @@ export const dictionaries = {
       subtitlePost: '.',
       cta: 'Open the dossier',
       footerLeft: 'est. 2026 · bogotá · co',
-      footerRight: 'v.01 · built in the open',
+      footerRight: 'v.01 · private beta',
     },
     premise: {
       chapter: 'Chapter I · The premise',
@@ -217,7 +217,7 @@ export const dictionaries = {
         { label: 'Terms', href: '#' },
         { label: 'Contact', href: '#' },
       ],
-      copyright: '© 2026 Odasy · Built in the open',
+      copyright: '© 2026 Odasy · Private beta',
     },
     toggle: {
       aria: 'Change language',
