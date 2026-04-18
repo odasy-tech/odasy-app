@@ -1,4 +1,4 @@
-import { protectedProcedure, router } from '../trpc.js';
+import { protectedProcedure, router } from '../trpc';
 
 export const passportRouter = router({
   get: protectedProcedure.query(async ({ ctx: _ctx }) => {

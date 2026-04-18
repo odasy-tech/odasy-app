@@ -1,7 +1,7 @@
 import { z } from 'zod';
-import { Coordinates } from './place.js';
-import { MissionId } from './mission.js';
-import { PlaceId } from './place.js';
+import { Coordinates } from './place';
+import { MissionId } from './mission';
+import { PlaceId } from './place';
 
 export const CheckinId = z.string().uuid().brand<'CheckinId'>();
 export type CheckinId = z.infer<typeof CheckinId>;

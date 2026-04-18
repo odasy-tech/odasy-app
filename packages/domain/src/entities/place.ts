@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { CategoryId } from './category.js';
-import { RegionId } from './region.js';
+import { CategoryId } from './category';
+import { RegionId } from './region';
 
 export const PlaceId = z.string().uuid().brand<'PlaceId'>();
 export type PlaceId = z.infer<typeof PlaceId>;

@@ -1,8 +1,8 @@
 import { generateText, Output } from 'ai';
 import { z } from 'zod';
 import type { Mission } from '@odasy/domain';
-import { MODELS } from '../providers/models.js';
-import { fallbackMissionRanker } from '../fallbacks/mission-ranker.js';
+import { MODELS } from '../providers/models';
+import { fallbackMissionRanker } from '../fallbacks/mission-ranker';
 
 export interface RecommendMissionsInput {
   userId: string;

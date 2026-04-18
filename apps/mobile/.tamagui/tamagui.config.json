@@ -28637,8 +28637,11 @@
     },
     "themes": {
       "dark": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -28772,8 +28775,11 @@
         "id": "dark"
       },
       "dark_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -28907,8 +28913,11 @@
         "id": "dark_Button"
       },
       "dark_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -29042,8 +29051,11 @@
         "id": "dark_SliderTrackActive"
       },
       "dark_black_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -29177,8 +29189,11 @@
         "id": "dark_black_Button"
       },
       "dark_black_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -29312,8 +29327,11 @@
         "id": "dark_black_SliderTrackActive"
       },
       "dark_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -29447,8 +29465,11 @@
         "id": "dark_Card"
       },
       "dark_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -29582,8 +29603,11 @@
         "id": "dark_Input"
       },
       "dark_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -29717,8 +29741,11 @@
         "id": "dark_ListItem"
       },
       "dark_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -29852,8 +29879,11 @@
         "id": "dark_Progress"
       },
       "dark_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -29987,8 +30017,11 @@
         "id": "dark_SelectTrigger"
       },
       "dark_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -30122,8 +30155,11 @@
         "id": "dark_SliderTrack"
       },
       "dark_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -30257,8 +30293,11 @@
         "id": "dark_TextArea"
       },
       "dark_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -30392,8 +30431,11 @@
         "id": "dark_TooltipArrow"
       },
       "dark_black_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -30527,8 +30569,11 @@
         "id": "dark_black_Card"
       },
       "dark_black_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -30662,8 +30707,11 @@
         "id": "dark_black_Input"
       },
       "dark_black_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -30797,8 +30845,11 @@
         "id": "dark_black_ListItem"
       },
       "dark_black_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -30932,8 +30983,11 @@
         "id": "dark_black_Progress"
       },
       "dark_black_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -31067,8 +31121,11 @@
         "id": "dark_black_SelectTrigger"
       },
       "dark_black_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -31202,8 +31259,11 @@
         "id": "dark_black_SliderTrack"
       },
       "dark_black_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -31337,8 +31397,11 @@
         "id": "dark_black_TextArea"
       },
       "dark_black_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -31472,8 +31535,11 @@
         "id": "dark_black_TooltipArrow"
       },
       "dark_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -31607,8 +31673,11 @@
         "id": "dark_Checkbox"
       },
       "dark_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -31742,8 +31811,11 @@
         "id": "dark_RadioGroupItem"
       },
       "dark_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -31877,8 +31949,11 @@
         "id": "dark_Switch"
       },
       "dark_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -32012,8 +32087,11 @@
         "id": "dark_TooltipContent"
       },
       "dark_black_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -32147,8 +32225,11 @@
         "id": "dark_black_Checkbox"
       },
       "dark_black_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -32282,8 +32363,11 @@
         "id": "dark_black_RadioGroupItem"
       },
       "dark_black_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -32417,8 +32501,11 @@
         "id": "dark_black_Switch"
       },
       "dark_black_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -32552,8 +32639,11 @@
         "id": "dark_black_TooltipContent"
       },
       "dark_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -32687,8 +32777,11 @@
         "id": "dark_ProgressIndicator"
       },
       "dark_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -32822,8 +32915,11 @@
         "id": "dark_SliderThumb"
       },
       "dark_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -32957,8 +33053,11 @@
         "id": "dark_SwitchThumb"
       },
       "dark_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -33092,8 +33191,11 @@
         "id": "dark_Tooltip"
       },
       "dark_black_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -33227,8 +33329,11 @@
         "id": "dark_black_ProgressIndicator"
       },
       "dark_black_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -33362,8 +33467,11 @@
         "id": "dark_black_SliderThumb"
       },
       "dark_black_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -33497,8 +33605,11 @@
         "id": "dark_black_SwitchThumb"
       },
       "dark_black_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -33632,8 +33743,11 @@
         "id": "dark_black_Tooltip"
       },
       "dark_accent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -33767,8 +33881,11 @@
         "id": "dark_accent"
       },
       "dark_accent_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -33902,8 +34019,11 @@
         "id": "dark_accent_Button"
       },
       "dark_accent_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -34037,8 +34157,11 @@
         "id": "dark_accent_SliderTrackActive"
       },
       "dark_white_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -34172,8 +34295,11 @@
         "id": "dark_white_Button"
       },
       "dark_white_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -34307,8 +34433,11 @@
         "id": "dark_white_SliderTrackActive"
       },
       "dark_accent_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -34442,8 +34571,11 @@
         "id": "dark_accent_Card"
       },
       "dark_accent_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -34577,8 +34709,11 @@
         "id": "dark_accent_Input"
       },
       "dark_accent_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -34712,8 +34847,11 @@
         "id": "dark_accent_ListItem"
       },
       "dark_accent_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -34847,8 +34985,11 @@
         "id": "dark_accent_Progress"
       },
       "dark_accent_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -34982,8 +35123,11 @@
         "id": "dark_accent_SelectTrigger"
       },
       "dark_accent_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -35117,8 +35261,11 @@
         "id": "dark_accent_SliderTrack"
       },
       "dark_accent_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -35252,8 +35399,11 @@
         "id": "dark_accent_TextArea"
       },
       "dark_accent_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -35387,8 +35537,11 @@
         "id": "dark_accent_TooltipArrow"
       },
       "dark_white_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -35522,8 +35675,11 @@
         "id": "dark_white_Card"
       },
       "dark_white_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -35657,8 +35813,11 @@
         "id": "dark_white_Input"
       },
       "dark_white_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -35792,8 +35951,11 @@
         "id": "dark_white_ListItem"
       },
       "dark_white_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -35927,8 +36089,11 @@
         "id": "dark_white_Progress"
       },
       "dark_white_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -36062,8 +36227,11 @@
         "id": "dark_white_SelectTrigger"
       },
       "dark_white_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -36197,8 +36365,11 @@
         "id": "dark_white_SliderTrack"
       },
       "dark_white_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -36332,8 +36503,11 @@
         "id": "dark_white_TextArea"
       },
       "dark_white_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -36467,8 +36641,11 @@
         "id": "dark_white_TooltipArrow"
       },
       "dark_accent_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -36602,8 +36779,11 @@
         "id": "dark_accent_Checkbox"
       },
       "dark_accent_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -36737,8 +36917,11 @@
         "id": "dark_accent_RadioGroupItem"
       },
       "dark_accent_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -36872,8 +37055,11 @@
         "id": "dark_accent_Switch"
       },
       "dark_accent_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -37007,8 +37193,11 @@
         "id": "dark_accent_TooltipContent"
       },
       "dark_white_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -37142,8 +37331,11 @@
         "id": "dark_white_Checkbox"
       },
       "dark_white_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -37277,8 +37469,11 @@
         "id": "dark_white_RadioGroupItem"
       },
       "dark_white_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -37412,8 +37607,11 @@
         "id": "dark_white_Switch"
       },
       "dark_white_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -37547,8 +37745,11 @@
         "id": "dark_white_TooltipContent"
       },
       "dark_accent_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -37682,8 +37883,11 @@
         "id": "dark_accent_ProgressIndicator"
       },
       "dark_accent_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -37817,8 +38021,11 @@
         "id": "dark_accent_SliderThumb"
       },
       "dark_accent_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -37952,8 +38159,11 @@
         "id": "dark_accent_SwitchThumb"
       },
       "dark_accent_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -38087,8 +38297,11 @@
         "id": "dark_accent_Tooltip"
       },
       "dark_black": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -38222,8 +38435,11 @@
         "id": "dark_black"
       },
       "dark_blue": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -38357,8 +38573,11 @@
         "id": "dark_blue"
       },
       "dark_blue_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -38492,8 +38711,11 @@
         "id": "dark_blue_Button"
       },
       "dark_blue_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -38627,8 +38849,11 @@
         "id": "dark_blue_SliderTrackActive"
       },
       "dark_blue_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -38762,8 +38987,11 @@
         "id": "dark_blue_Card"
       },
       "dark_blue_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -38897,8 +39125,11 @@
         "id": "dark_blue_Input"
       },
       "dark_blue_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -39032,8 +39263,11 @@
         "id": "dark_blue_ListItem"
       },
       "dark_blue_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -39167,8 +39401,11 @@
         "id": "dark_blue_Progress"
       },
       "dark_blue_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -39302,8 +39539,11 @@
         "id": "dark_blue_SelectTrigger"
       },
       "dark_blue_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -39437,8 +39677,11 @@
         "id": "dark_blue_SliderTrack"
       },
       "dark_blue_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -39572,8 +39815,11 @@
         "id": "dark_blue_TextArea"
       },
       "dark_blue_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -39707,8 +39953,11 @@
         "id": "dark_blue_TooltipArrow"
       },
       "dark_blue_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -39842,8 +40091,11 @@
         "id": "dark_blue_Checkbox"
       },
       "dark_blue_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -39977,8 +40229,11 @@
         "id": "dark_blue_RadioGroupItem"
       },
       "dark_blue_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -40112,8 +40367,11 @@
         "id": "dark_blue_Switch"
       },
       "dark_blue_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(214, 35%, 9%, 0)",
@@ -40247,8 +40505,11 @@
         "id": "dark_blue_TooltipContent"
       },
       "dark_blue_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(207, 100%, 96%, 0)",
@@ -40382,8 +40643,11 @@
         "id": "dark_blue_ProgressIndicator"
       },
       "dark_blue_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(207, 100%, 96%, 0)",
@@ -40517,8 +40781,11 @@
         "id": "dark_blue_SliderThumb"
       },
       "dark_blue_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(207, 100%, 96%, 0)",
@@ -40652,8 +40919,11 @@
         "id": "dark_blue_SwitchThumb"
       },
       "dark_blue_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(207, 100%, 96%, 0)",
@@ -40787,8 +41057,11 @@
         "id": "dark_blue_Tooltip"
       },
       "dark_green": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -40922,8 +41195,11 @@
         "id": "dark_green"
       },
       "dark_green_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -41057,8 +41333,11 @@
         "id": "dark_green_Button"
       },
       "dark_green_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -41192,8 +41471,11 @@
         "id": "dark_green_SliderTrackActive"
       },
       "dark_green_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -41327,8 +41609,11 @@
         "id": "dark_green_Card"
       },
       "dark_green_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -41462,8 +41747,11 @@
         "id": "dark_green_Input"
       },
       "dark_green_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -41597,8 +41885,11 @@
         "id": "dark_green_ListItem"
       },
       "dark_green_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -41732,8 +42023,11 @@
         "id": "dark_green_Progress"
       },
       "dark_green_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -41867,8 +42161,11 @@
         "id": "dark_green_SelectTrigger"
       },
       "dark_green_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -42002,8 +42299,11 @@
         "id": "dark_green_SliderTrack"
       },
       "dark_green_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -42137,8 +42437,11 @@
         "id": "dark_green_TextArea"
       },
       "dark_green_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -42272,8 +42575,11 @@
         "id": "dark_green_TooltipArrow"
       },
       "dark_green_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -42407,8 +42713,11 @@
         "id": "dark_green_Checkbox"
       },
       "dark_green_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -42542,8 +42851,11 @@
         "id": "dark_green_RadioGroupItem"
       },
       "dark_green_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -42677,8 +42989,11 @@
         "id": "dark_green_Switch"
       },
       "dark_green_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(145, 33%, 7%, 0)",
@@ -42812,8 +43127,11 @@
         "id": "dark_green_TooltipContent"
       },
       "dark_green_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(134, 73%, 94%, 0)",
@@ -42947,8 +43265,11 @@
         "id": "dark_green_ProgressIndicator"
       },
       "dark_green_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(134, 73%, 94%, 0)",
@@ -43082,8 +43403,11 @@
         "id": "dark_green_SliderThumb"
       },
       "dark_green_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(134, 73%, 94%, 0)",
@@ -43217,8 +43541,11 @@
         "id": "dark_green_SwitchThumb"
       },
       "dark_green_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(134, 73%, 94%, 0)",
@@ -43351,9 +43678,150 @@
         "accent12": "hsla(0, 0%, 9%, 1)",
         "id": "dark_green_Tooltip"
       },
+      "dark_odasy": {
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
+        "accentBackground": "hsla(0, 0%, 50%, 1)",
+        "accentColor": "hsla(0, 0%, 93%, 1)",
+        "background0": "hsla(0, 0%, 2%, 0)",
+        "background02": "hsla(0, 0%, 2%, 0.2)",
+        "background04": "hsla(0, 0%, 2%, 0.4)",
+        "background06": "hsla(0, 0%, 2%, 0.6)",
+        "background08": "hsla(0, 0%, 2%, 0.8)",
+        "color1": "hsla(0, 0%, 2%, 1)",
+        "color2": "hsla(0, 0%, 8%, 1)",
+        "color3": "hsla(0, 0%, 10%, 1)",
+        "color4": "hsla(0, 0%, 14%, 1)",
+        "color5": "hsla(0, 0%, 16%, 1)",
+        "color6": "hsla(0, 0%, 20%, 1)",
+        "color7": "hsla(0, 0%, 26%, 1)",
+        "color8": "hsla(0, 0%, 29%, 1)",
+        "color9": "hsla(0, 0%, 33%, 1)",
+        "color10": "hsla(0, 0%, 38%, 1)",
+        "color11": "hsla(0, 0%, 65%, 1)",
+        "color12": "hsla(0, 0%, 100%, 1)",
+        "color0": "hsla(0, 0%, 100%, 0)",
+        "color02": "hsla(0, 0%, 100%, 0.2)",
+        "color04": "hsla(0, 0%, 100%, 0.4)",
+        "color06": "hsla(0, 0%, 100%, 0.6)",
+        "color08": "hsla(0, 0%, 100%, 0.8)",
+        "background": "Function",
+        "backgroundHover": "Function",
+        "backgroundPress": "Function",
+        "backgroundFocus": "Function",
+        "borderColor": "Function",
+        "borderColorHover": "Function",
+        "borderColorPress": "hsla(0, 0%, 10%, 1)",
+        "borderColorFocus": "hsla(0, 0%, 14%, 1)",
+        "color": "Function",
+        "colorHover": "Function",
+        "colorPress": "Function",
+        "colorFocus": "hsla(0, 0%, 65%, 1)",
+        "placeholderColor": "Function",
+        "outlineColor": "hsla(0, 0%, 100%, 0.2)",
+        "colorTransparent": "hsla(0, 0%, 100%, 0)",
+        "blue1": "hsl(212, 35.0%, 9.2%)",
+        "blue2": "hsl(216, 50.0%, 11.8%)",
+        "blue3": "hsl(214, 59.4%, 15.3%)",
+        "blue4": "hsl(214, 65.8%, 17.9%)",
+        "blue5": "hsl(213, 71.2%, 20.2%)",
+        "blue6": "hsl(212, 77.4%, 23.1%)",
+        "blue7": "hsl(211, 85.1%, 27.4%)",
+        "blue8": "hsl(211, 89.7%, 34.1%)",
+        "blue9": "hsl(206, 100%, 50.0%)",
+        "blue10": "hsl(209, 100%, 60.6%)",
+        "blue11": "hsl(210, 100%, 66.1%)",
+        "blue12": "hsl(206, 98.0%, 95.8%)",
+        "green1": "hsl(146, 30.0%, 7.4%)",
+        "green2": "hsl(155, 44.2%, 8.4%)",
+        "green3": "hsl(155, 46.7%, 10.9%)",
+        "green4": "hsl(154, 48.4%, 12.9%)",
+        "green5": "hsl(154, 49.7%, 14.9%)",
+        "green6": "hsl(154, 50.9%, 17.6%)",
+        "green7": "hsl(153, 51.8%, 21.8%)",
+        "green8": "hsl(151, 51.7%, 28.4%)",
+        "green9": "hsl(151, 55.0%, 41.5%)",
+        "green10": "hsl(151, 49.3%, 46.5%)",
+        "green11": "hsl(151, 50.0%, 53.2%)",
+        "green12": "hsl(137, 72.0%, 94.0%)",
+        "red1": "hsl(353, 23.0%, 9.8%)",
+        "red2": "hsl(357, 34.4%, 12.0%)",
+        "red3": "hsl(356, 43.4%, 16.4%)",
+        "red4": "hsl(356, 47.6%, 19.2%)",
+        "red5": "hsl(356, 51.1%, 21.9%)",
+        "red6": "hsl(356, 55.2%, 25.9%)",
+        "red7": "hsl(357, 60.2%, 31.8%)",
+        "red8": "hsl(358, 65.0%, 40.4%)",
+        "red9": "hsl(358, 75.0%, 59.0%)",
+        "red10": "hsl(358, 85.3%, 64.0%)",
+        "red11": "hsl(358, 100%, 69.5%)",
+        "red12": "hsl(351, 89.0%, 96.0%)",
+        "yellow1": "hsl(45, 100%, 5.5%)",
+        "yellow2": "hsl(46, 100%, 6.7%)",
+        "yellow3": "hsl(45, 100%, 8.7%)",
+        "yellow4": "hsl(45, 100%, 10.4%)",
+        "yellow5": "hsl(47, 100%, 12.1%)",
+        "yellow6": "hsl(49, 100%, 14.3%)",
+        "yellow7": "hsl(49, 90.3%, 18.4%)",
+        "yellow8": "hsl(50, 100%, 22.0%)",
+        "yellow9": "hsl(53, 92.0%, 50.0%)",
+        "yellow10": "hsl(54, 100%, 68.0%)",
+        "yellow11": "hsl(48, 100%, 47.0%)",
+        "yellow12": "hsl(53, 100%, 91.0%)",
+        "shadow1": "rgba(0,0,0,0.2)",
+        "shadow2": "rgba(0,0,0,0.3)",
+        "shadow3": "rgba(0,0,0,0.4)",
+        "shadow4": "rgba(0,0,0,0.5)",
+        "shadow5": "rgba(0,0,0,0.6)",
+        "shadow6": "rgba(0,0,0,0.7)",
+        "black1": "#050505",
+        "black2": "#151515",
+        "black3": "#191919",
+        "black4": "#232323",
+        "black5": "#282828",
+        "black6": "#323232",
+        "black7": "#424242",
+        "black8": "#494949",
+        "black9": "#545454",
+        "black10": "#626262",
+        "black11": "#a5a5a5",
+        "black12": "#fff",
+        "white1": "#fff",
+        "white2": "#f2f2f2",
+        "white3": "hsl(0, 0%, 93%)",
+        "white4": "hsl(0, 0%, 91%)",
+        "white5": "hsl(0, 0%, 88%)",
+        "white6": "hsl(0, 0%, 85%)",
+        "white7": "hsl(0, 0%, 82%)",
+        "white8": "hsl(0, 0%, 76%)",
+        "white9": "hsl(0, 0%, 56%)",
+        "white10": "hsl(0, 0%, 50%)",
+        "white11": "hsl(0, 0%, 42%)",
+        "white12": "hsl(0, 0%, 9%)",
+        "shadowColor": "rgba(0,0,0,0.2)",
+        "accent1": "hsla(0, 0%, 100%, 1)",
+        "accent2": "hsla(0, 0%, 95%, 1)",
+        "accent3": "hsla(0, 0%, 93%, 1)",
+        "accent4": "hsla(0, 0%, 91%, 1)",
+        "accent5": "hsla(0, 0%, 88%, 1)",
+        "accent6": "hsla(0, 0%, 85%, 1)",
+        "accent7": "hsla(0, 0%, 82%, 1)",
+        "accent8": "hsla(0, 0%, 76%, 1)",
+        "accent9": "hsla(0, 0%, 56%, 1)",
+        "accent10": "hsla(0, 0%, 50%, 1)",
+        "accent11": "hsla(0, 0%, 42%, 1)",
+        "accent12": "hsla(0, 0%, 9%, 1)",
+        "id": "dark_odasy"
+      },
       "dark_red": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -43487,8 +43955,11 @@
         "id": "dark_red"
       },
       "dark_red_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -43622,8 +44093,11 @@
         "id": "dark_red_Button"
       },
       "dark_red_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -43757,8 +44231,11 @@
         "id": "dark_red_SliderTrackActive"
       },
       "dark_red_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -43892,8 +44369,11 @@
         "id": "dark_red_Card"
       },
       "dark_red_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -44027,8 +44507,11 @@
         "id": "dark_red_Input"
       },
       "dark_red_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -44162,8 +44645,11 @@
         "id": "dark_red_ListItem"
       },
       "dark_red_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -44297,8 +44783,11 @@
         "id": "dark_red_Progress"
       },
       "dark_red_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -44432,8 +44921,11 @@
         "id": "dark_red_SelectTrigger"
       },
       "dark_red_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -44567,8 +45059,11 @@
         "id": "dark_red_SliderTrack"
       },
       "dark_red_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -44702,8 +45197,11 @@
         "id": "dark_red_TextArea"
       },
       "dark_red_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -44837,8 +45335,11 @@
         "id": "dark_red_TooltipArrow"
       },
       "dark_red_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -44972,8 +45473,11 @@
         "id": "dark_red_Checkbox"
       },
       "dark_red_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -45107,8 +45611,11 @@
         "id": "dark_red_RadioGroupItem"
       },
       "dark_red_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -45242,8 +45749,11 @@
         "id": "dark_red_Switch"
       },
       "dark_red_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(351, 25%, 10%, 0)",
@@ -45377,8 +45887,11 @@
         "id": "dark_red_TooltipContent"
       },
       "dark_red_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(353, 90%, 96%, 0)",
@@ -45512,8 +46025,11 @@
         "id": "dark_red_ProgressIndicator"
       },
       "dark_red_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(353, 90%, 96%, 0)",
@@ -45647,8 +46163,11 @@
         "id": "dark_red_SliderThumb"
       },
       "dark_red_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(353, 90%, 96%, 0)",
@@ -45782,8 +46301,11 @@
         "id": "dark_red_SwitchThumb"
       },
       "dark_red_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(353, 90%, 96%, 0)",
@@ -45917,8 +46439,11 @@
         "id": "dark_red_Tooltip"
       },
       "dark_white": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -46052,8 +46577,11 @@
         "id": "dark_white"
       },
       "dark_white_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -46187,8 +46715,11 @@
         "id": "dark_white_ProgressIndicator"
       },
       "dark_white_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -46322,8 +46853,11 @@
         "id": "dark_white_SliderThumb"
       },
       "dark_white_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -46457,8 +46991,11 @@
         "id": "dark_white_SwitchThumb"
       },
       "dark_white_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -46592,8 +47129,11 @@
         "id": "dark_white_Tooltip"
       },
       "dark_yellow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -46727,8 +47267,11 @@
         "id": "dark_yellow"
       },
       "dark_yellow_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -46862,8 +47405,11 @@
         "id": "dark_yellow_Button"
       },
       "dark_yellow_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -46997,8 +47543,11 @@
         "id": "dark_yellow_SliderTrackActive"
       },
       "dark_yellow_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -47132,8 +47681,11 @@
         "id": "dark_yellow_Card"
       },
       "dark_yellow_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -47267,8 +47819,11 @@
         "id": "dark_yellow_Input"
       },
       "dark_yellow_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -47402,8 +47957,11 @@
         "id": "dark_yellow_ListItem"
       },
       "dark_yellow_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -47537,8 +48095,11 @@
         "id": "dark_yellow_Progress"
       },
       "dark_yellow_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -47672,8 +48233,11 @@
         "id": "dark_yellow_SelectTrigger"
       },
       "dark_yellow_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -47807,8 +48371,11 @@
         "id": "dark_yellow_SliderTrack"
       },
       "dark_yellow_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -47942,8 +48509,11 @@
         "id": "dark_yellow_TextArea"
       },
       "dark_yellow_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -48077,8 +48647,11 @@
         "id": "dark_yellow_TooltipArrow"
       },
       "dark_yellow_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -48212,8 +48785,11 @@
         "id": "dark_yellow_Checkbox"
       },
       "dark_yellow_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -48347,8 +48923,11 @@
         "id": "dark_yellow_RadioGroupItem"
       },
       "dark_yellow_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -48482,8 +49061,11 @@
         "id": "dark_yellow_Switch"
       },
       "dark_yellow_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(46, 100%, 5%, 0)",
@@ -48617,8 +49199,11 @@
         "id": "dark_yellow_TooltipContent"
       },
       "dark_yellow_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(53, 100%, 91%, 0)",
@@ -48752,8 +49337,11 @@
         "id": "dark_yellow_ProgressIndicator"
       },
       "dark_yellow_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(53, 100%, 91%, 0)",
@@ -48887,8 +49475,11 @@
         "id": "dark_yellow_SliderThumb"
       },
       "dark_yellow_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(53, 100%, 91%, 0)",
@@ -49022,8 +49613,11 @@
         "id": "dark_yellow_SwitchThumb"
       },
       "dark_yellow_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(53, 100%, 91%, 0)",
@@ -49157,8 +49751,11 @@
         "id": "dark_yellow_Tooltip"
       },
       "light": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -49292,8 +49889,11 @@
         "id": "light"
       },
       "light_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -49427,8 +50027,11 @@
         "id": "light_Button"
       },
       "light_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -49562,8 +50165,11 @@
         "id": "light_SliderTrackActive"
       },
       "light_white_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -49697,8 +50303,11 @@
         "id": "light_white_Button"
       },
       "light_white_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -49832,8 +50441,11 @@
         "id": "light_white_SliderTrackActive"
       },
       "light_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -49967,8 +50579,11 @@
         "id": "light_Card"
       },
       "light_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -50102,8 +50717,11 @@
         "id": "light_Input"
       },
       "light_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -50237,8 +50855,11 @@
         "id": "light_ListItem"
       },
       "light_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -50372,8 +50993,11 @@
         "id": "light_Progress"
       },
       "light_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -50507,8 +51131,11 @@
         "id": "light_SelectTrigger"
       },
       "light_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -50642,8 +51269,11 @@
         "id": "light_SliderTrack"
       },
       "light_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -50777,8 +51407,11 @@
         "id": "light_TextArea"
       },
       "light_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -50912,8 +51545,11 @@
         "id": "light_TooltipArrow"
       },
       "light_white_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -51047,8 +51683,11 @@
         "id": "light_white_Card"
       },
       "light_white_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -51182,8 +51821,11 @@
         "id": "light_white_Input"
       },
       "light_white_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -51317,8 +51959,11 @@
         "id": "light_white_ListItem"
       },
       "light_white_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -51452,8 +52097,11 @@
         "id": "light_white_Progress"
       },
       "light_white_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -51587,8 +52235,11 @@
         "id": "light_white_SelectTrigger"
       },
       "light_white_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -51722,8 +52373,11 @@
         "id": "light_white_SliderTrack"
       },
       "light_white_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -51857,8 +52511,11 @@
         "id": "light_white_TextArea"
       },
       "light_white_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -51992,8 +52649,11 @@
         "id": "light_white_TooltipArrow"
       },
       "light_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -52127,8 +52787,11 @@
         "id": "light_Checkbox"
       },
       "light_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -52262,8 +52925,11 @@
         "id": "light_RadioGroupItem"
       },
       "light_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -52397,8 +53063,11 @@
         "id": "light_Switch"
       },
       "light_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -52532,8 +53201,11 @@
         "id": "light_TooltipContent"
       },
       "light_white_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -52667,8 +53339,11 @@
         "id": "light_white_Checkbox"
       },
       "light_white_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -52802,8 +53477,11 @@
         "id": "light_white_RadioGroupItem"
       },
       "light_white_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -52937,8 +53615,11 @@
         "id": "light_white_Switch"
       },
       "light_white_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -53072,8 +53753,11 @@
         "id": "light_white_TooltipContent"
       },
       "light_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -53207,8 +53891,11 @@
         "id": "light_ProgressIndicator"
       },
       "light_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -53342,8 +54029,11 @@
         "id": "light_SliderThumb"
       },
       "light_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -53477,8 +54167,11 @@
         "id": "light_SwitchThumb"
       },
       "light_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -53612,8 +54305,11 @@
         "id": "light_Tooltip"
       },
       "light_white_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -53747,8 +54443,11 @@
         "id": "light_white_ProgressIndicator"
       },
       "light_white_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -53882,8 +54581,11 @@
         "id": "light_white_SliderThumb"
       },
       "light_white_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -54017,8 +54719,11 @@
         "id": "light_white_SwitchThumb"
       },
       "light_white_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 9%, 0)",
@@ -54152,8 +54857,11 @@
         "id": "light_white_Tooltip"
       },
       "light_accent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -54287,8 +54995,11 @@
         "id": "light_accent"
       },
       "light_accent_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -54422,8 +55133,11 @@
         "id": "light_accent_Button"
       },
       "light_accent_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -54557,8 +55271,11 @@
         "id": "light_accent_SliderTrackActive"
       },
       "light_black_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -54692,8 +55409,11 @@
         "id": "light_black_Button"
       },
       "light_black_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -54827,8 +55547,11 @@
         "id": "light_black_SliderTrackActive"
       },
       "light_accent_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -54962,8 +55685,11 @@
         "id": "light_accent_Card"
       },
       "light_accent_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -55097,8 +55823,11 @@
         "id": "light_accent_Input"
       },
       "light_accent_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -55232,8 +55961,11 @@
         "id": "light_accent_ListItem"
       },
       "light_accent_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -55367,8 +56099,11 @@
         "id": "light_accent_Progress"
       },
       "light_accent_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -55502,8 +56237,11 @@
         "id": "light_accent_SelectTrigger"
       },
       "light_accent_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -55637,8 +56375,11 @@
         "id": "light_accent_SliderTrack"
       },
       "light_accent_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -55772,8 +56513,11 @@
         "id": "light_accent_TextArea"
       },
       "light_accent_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -55907,8 +56651,11 @@
         "id": "light_accent_TooltipArrow"
       },
       "light_black_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -56042,8 +56789,11 @@
         "id": "light_black_Card"
       },
       "light_black_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -56177,8 +56927,11 @@
         "id": "light_black_Input"
       },
       "light_black_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -56312,8 +57065,11 @@
         "id": "light_black_ListItem"
       },
       "light_black_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -56447,8 +57203,11 @@
         "id": "light_black_Progress"
       },
       "light_black_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -56582,8 +57341,11 @@
         "id": "light_black_SelectTrigger"
       },
       "light_black_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -56717,8 +57479,11 @@
         "id": "light_black_SliderTrack"
       },
       "light_black_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -56852,8 +57617,11 @@
         "id": "light_black_TextArea"
       },
       "light_black_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -56987,8 +57755,11 @@
         "id": "light_black_TooltipArrow"
       },
       "light_accent_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -57122,8 +57893,11 @@
         "id": "light_accent_Checkbox"
       },
       "light_accent_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -57257,8 +58031,11 @@
         "id": "light_accent_RadioGroupItem"
       },
       "light_accent_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -57392,8 +58169,11 @@
         "id": "light_accent_Switch"
       },
       "light_accent_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 93%, 1)",
         "accentColor": "hsla(0, 0%, 50%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -57527,8 +58307,11 @@
         "id": "light_accent_TooltipContent"
       },
       "light_black_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -57662,8 +58445,11 @@
         "id": "light_black_Checkbox"
       },
       "light_black_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -57797,8 +58583,11 @@
         "id": "light_black_RadioGroupItem"
       },
       "light_black_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -57932,8 +58721,11 @@
         "id": "light_black_Switch"
       },
       "light_black_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -58067,8 +58859,11 @@
         "id": "light_black_TooltipContent"
       },
       "light_accent_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -58202,8 +58997,11 @@
         "id": "light_accent_ProgressIndicator"
       },
       "light_accent_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -58337,8 +59135,11 @@
         "id": "light_accent_SliderThumb"
       },
       "light_accent_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -58472,8 +59273,11 @@
         "id": "light_accent_SwitchThumb"
       },
       "light_accent_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 50%, 1)",
         "accentColor": "hsla(0, 0%, 93%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -58607,8 +59411,11 @@
         "id": "light_accent_Tooltip"
       },
       "light_black": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 2%, 0)",
@@ -58742,8 +59549,11 @@
         "id": "light_black"
       },
       "light_black_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -58877,8 +59687,11 @@
         "id": "light_black_ProgressIndicator"
       },
       "light_black_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -59012,8 +59825,11 @@
         "id": "light_black_SliderThumb"
       },
       "light_black_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -59147,8 +59963,11 @@
         "id": "light_black_SwitchThumb"
       },
       "light_black_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -59282,8 +60101,11 @@
         "id": "light_black_Tooltip"
       },
       "light_blue": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -59417,8 +60239,11 @@
         "id": "light_blue"
       },
       "light_blue_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -59552,8 +60377,11 @@
         "id": "light_blue_Button"
       },
       "light_blue_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -59687,8 +60515,11 @@
         "id": "light_blue_SliderTrackActive"
       },
       "light_blue_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -59822,8 +60653,11 @@
         "id": "light_blue_Card"
       },
       "light_blue_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -59957,8 +60791,11 @@
         "id": "light_blue_Input"
       },
       "light_blue_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -60092,8 +60929,11 @@
         "id": "light_blue_ListItem"
       },
       "light_blue_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -60227,8 +61067,11 @@
         "id": "light_blue_Progress"
       },
       "light_blue_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -60362,8 +61205,11 @@
         "id": "light_blue_SelectTrigger"
       },
       "light_blue_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -60497,8 +61343,11 @@
         "id": "light_blue_SliderTrack"
       },
       "light_blue_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -60632,8 +61481,11 @@
         "id": "light_blue_TextArea"
       },
       "light_blue_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -60767,8 +61619,11 @@
         "id": "light_blue_TooltipArrow"
       },
       "light_blue_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -60902,8 +61757,11 @@
         "id": "light_blue_Checkbox"
       },
       "light_blue_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -61037,8 +61895,11 @@
         "id": "light_blue_RadioGroupItem"
       },
       "light_blue_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -61172,8 +62033,11 @@
         "id": "light_blue_Switch"
       },
       "light_blue_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(216, 100%, 99%, 0)",
@@ -61307,8 +62171,11 @@
         "id": "light_blue_TooltipContent"
       },
       "light_blue_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(211, 100%, 15%, 0)",
@@ -61442,8 +62309,11 @@
         "id": "light_blue_ProgressIndicator"
       },
       "light_blue_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(211, 100%, 15%, 0)",
@@ -61577,8 +62447,11 @@
         "id": "light_blue_SliderThumb"
       },
       "light_blue_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(211, 100%, 15%, 0)",
@@ -61712,8 +62585,11 @@
         "id": "light_blue_SwitchThumb"
       },
       "light_blue_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(211, 100%, 15%, 0)",
@@ -61847,8 +62723,11 @@
         "id": "light_blue_Tooltip"
       },
       "light_green": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -61982,8 +62861,11 @@
         "id": "light_green"
       },
       "light_green_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -62117,8 +62999,11 @@
         "id": "light_green_Button"
       },
       "light_green_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -62252,8 +63137,11 @@
         "id": "light_green_SliderTrackActive"
       },
       "light_green_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -62387,8 +63275,11 @@
         "id": "light_green_Card"
       },
       "light_green_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -62522,8 +63413,11 @@
         "id": "light_green_Input"
       },
       "light_green_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -62657,8 +63551,11 @@
         "id": "light_green_ListItem"
       },
       "light_green_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -62792,8 +63689,11 @@
         "id": "light_green_Progress"
       },
       "light_green_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -62927,8 +63827,11 @@
         "id": "light_green_SelectTrigger"
       },
       "light_green_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -63062,8 +63965,11 @@
         "id": "light_green_SliderTrack"
       },
       "light_green_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -63197,8 +64103,11 @@
         "id": "light_green_TextArea"
       },
       "light_green_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -63332,8 +64241,11 @@
         "id": "light_green_TooltipArrow"
       },
       "light_green_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -63467,8 +64379,11 @@
         "id": "light_green_Checkbox"
       },
       "light_green_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -63602,8 +64517,11 @@
         "id": "light_green_RadioGroupItem"
       },
       "light_green_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -63737,8 +64655,11 @@
         "id": "light_green_Switch"
       },
       "light_green_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(140, 60%, 99%, 0)",
@@ -63872,8 +64793,11 @@
         "id": "light_green_TooltipContent"
       },
       "light_green_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(155, 41%, 14%, 0)",
@@ -64007,8 +64931,11 @@
         "id": "light_green_ProgressIndicator"
       },
       "light_green_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(155, 41%, 14%, 0)",
@@ -64142,8 +65069,11 @@
         "id": "light_green_SliderThumb"
       },
       "light_green_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(155, 41%, 14%, 0)",
@@ -64277,8 +65207,11 @@
         "id": "light_green_SwitchThumb"
       },
       "light_green_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(155, 41%, 14%, 0)",
@@ -64412,8 +65345,11 @@
         "id": "light_green_Tooltip"
       },
       "light_red": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -64547,8 +65483,11 @@
         "id": "light_red"
       },
       "light_red_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -64682,8 +65621,11 @@
         "id": "light_red_Button"
       },
       "light_red_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -64817,8 +65759,11 @@
         "id": "light_red_SliderTrackActive"
       },
       "light_red_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -64952,8 +65897,11 @@
         "id": "light_red_Card"
       },
       "light_red_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -65087,8 +66035,11 @@
         "id": "light_red_Input"
       },
       "light_red_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -65222,8 +66173,11 @@
         "id": "light_red_ListItem"
       },
       "light_red_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -65357,8 +66311,11 @@
         "id": "light_red_Progress"
       },
       "light_red_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -65492,8 +66449,11 @@
         "id": "light_red_SelectTrigger"
       },
       "light_red_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -65627,8 +66587,11 @@
         "id": "light_red_SliderTrack"
       },
       "light_red_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -65762,8 +66725,11 @@
         "id": "light_red_TextArea"
       },
       "light_red_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -65897,8 +66863,11 @@
         "id": "light_red_TooltipArrow"
       },
       "light_red_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -66032,8 +67001,11 @@
         "id": "light_red_Checkbox"
       },
       "light_red_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -66167,8 +67139,11 @@
         "id": "light_red_RadioGroupItem"
       },
       "light_red_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -66302,8 +67277,11 @@
         "id": "light_red_Switch"
       },
       "light_red_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 100%, 99%, 0)",
@@ -66437,8 +67415,11 @@
         "id": "light_red_TooltipContent"
       },
       "light_red_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(355, 48%, 15%, 0)",
@@ -66572,8 +67553,11 @@
         "id": "light_red_ProgressIndicator"
       },
       "light_red_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(355, 48%, 15%, 0)",
@@ -66707,8 +67691,11 @@
         "id": "light_red_SliderThumb"
       },
       "light_red_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(355, 48%, 15%, 0)",
@@ -66842,8 +67829,11 @@
         "id": "light_red_SwitchThumb"
       },
       "light_red_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(355, 48%, 15%, 0)",
@@ -66977,8 +67967,11 @@
         "id": "light_red_Tooltip"
       },
       "light_white": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(0, 0%, 100%, 0)",
@@ -67112,8 +68105,11 @@
         "id": "light_white"
       },
       "light_yellow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -67247,8 +68243,11 @@
         "id": "light_yellow"
       },
       "light_yellow_Button": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -67382,8 +68381,11 @@
         "id": "light_yellow_Button"
       },
       "light_yellow_SliderTrackActive": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -67517,8 +68519,11 @@
         "id": "light_yellow_SliderTrackActive"
       },
       "light_yellow_Card": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -67652,8 +68657,11 @@
         "id": "light_yellow_Card"
       },
       "light_yellow_Input": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -67787,8 +68795,11 @@
         "id": "light_yellow_Input"
       },
       "light_yellow_ListItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -67922,8 +68933,11 @@
         "id": "light_yellow_ListItem"
       },
       "light_yellow_Progress": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -68057,8 +69071,11 @@
         "id": "light_yellow_Progress"
       },
       "light_yellow_SelectTrigger": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -68192,8 +69209,11 @@
         "id": "light_yellow_SelectTrigger"
       },
       "light_yellow_SliderTrack": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -68327,8 +69347,11 @@
         "id": "light_yellow_SliderTrack"
       },
       "light_yellow_TextArea": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -68462,8 +69485,11 @@
         "id": "light_yellow_TextArea"
       },
       "light_yellow_TooltipArrow": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -68597,8 +69623,11 @@
         "id": "light_yellow_TooltipArrow"
       },
       "light_yellow_Checkbox": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -68732,8 +69761,11 @@
         "id": "light_yellow_Checkbox"
       },
       "light_yellow_RadioGroupItem": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -68867,8 +69899,11 @@
         "id": "light_yellow_RadioGroupItem"
       },
       "light_yellow_Switch": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -69002,8 +70037,11 @@
         "id": "light_yellow_Switch"
       },
       "light_yellow_TooltipContent": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 10%, 1)",
         "accentColor": "hsla(0, 0%, 38%, 1)",
         "background0": "hsla(60, 45%, 98%, 0)",
@@ -69137,8 +70175,11 @@
         "id": "light_yellow_TooltipContent"
       },
       "light_yellow_ProgressIndicator": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(41, 55%, 13%, 0)",
@@ -69272,8 +70313,11 @@
         "id": "light_yellow_ProgressIndicator"
       },
       "light_yellow_SliderThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(41, 55%, 13%, 0)",
@@ -69407,8 +70451,11 @@
         "id": "light_yellow_SliderThumb"
       },
       "light_yellow_SwitchThumb": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(41, 55%, 13%, 0)",
@@ -69542,8 +70589,11 @@
         "id": "light_yellow_SwitchThumb"
       },
       "light_yellow_Tooltip": {
-        "displayName": "ProxyWorm - Check excludeReactNativeWebExports",
-        "_isProxyWorm": true,
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": "",
         "accentBackground": "hsla(0, 0%, 38%, 1)",
         "accentColor": "hsla(0, 0%, 10%, 1)",
         "background0": "hsla(41, 55%, 13%, 0)",
@@ -69775,6 +70825,20 @@
           "key": "$true",
           "name": "c-radius-true",
           "val": 9,
+          "variable": ""
+        },
+        "displayName": {
+          "isVar": true,
+          "key": "$displayName",
+          "name": "c-radius-displayName",
+          "val": "ProxyWorm - Check excludeReactNativeWebExports",
+          "variable": ""
+        },
+        "_isProxyWorm": {
+          "isVar": true,
+          "key": "$_isProxyWorm",
+          "name": "c-radius-_isProxyWorm",
+          "val": true,
           "variable": ""
         }
       },
@@ -70429,20 +71493,11 @@
         }
       },
       "color": {
-        "displayName": {
-          "isVar": true,
-          "key": "$displayName",
-          "name": "c-color-displayName",
-          "val": "ProxyWorm - Check excludeReactNativeWebExports",
-          "variable": ""
-        },
-        "_isProxyWorm": {
-          "isVar": true,
-          "key": "$_isProxyWorm",
-          "name": "c-color-_isProxyWorm",
-          "val": true,
-          "variable": ""
-        }
+        "isVar": true,
+        "key": "$color",
+        "name": "c-color",
+        "val": "Function",
+        "variable": ""
       }
     },
     "selectionStyles": "Function",
@@ -70545,20 +71600,11 @@
     "defaultFont": "body",
     "fontSizeTokens": {},
     "specificTokens": {
-      "$color._isProxyWorm": {
-        "isVar": true,
-        "key": "$_isProxyWorm",
-        "name": "c-color-_isProxyWorm",
-        "val": true,
-        "variable": ""
-      },
-      "$color.displayName": {
-        "isVar": true,
-        "key": "$displayName",
-        "name": "c-color-displayName",
-        "val": "ProxyWorm - Check excludeReactNativeWebExports",
-        "variable": ""
-      },
+      "$color.isVar": true,
+      "$color.key": "$color",
+      "$color.name": "c-color",
+      "$color.val": "Function",
+      "$color.variable": "",
       "$radius.0": {
         "isVar": true,
         "key": "$0",
@@ -70648,6 +71694,20 @@
         "key": "$9",
         "name": "c-radius-9",
         "val": 26,
+        "variable": ""
+      },
+      "$radius._isProxyWorm": {
+        "isVar": true,
+        "key": "$_isProxyWorm",
+        "name": "c-radius-_isProxyWorm",
+        "val": true,
+        "variable": ""
+      },
+      "$radius.displayName": {
+        "isVar": true,
+        "key": "$displayName",
+        "name": "c-radius-displayName",
+        "val": "ProxyWorm - Check excludeReactNativeWebExports",
         "variable": ""
       },
       "$radius.true": {

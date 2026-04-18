@@ -1,2 +1,2 @@
-export * from './entities/index.js';
-export * from './rules/index.js';
+export * from './entities/index';
+export * from './rules/index';

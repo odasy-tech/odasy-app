@@ -1,8 +1,8 @@
 import { z } from 'zod';
-import { CategoryId } from './category.js';
-import { Difficulty } from './place.js';
-import { PlaceId } from './place.js';
-import { RegionId } from './region.js';
+import { CategoryId } from './category';
+import { Difficulty } from './place';
+import { PlaceId } from './place';
+import { RegionId } from './region';
 
 export const MissionId = z.string().uuid().brand<'MissionId'>();
 export type MissionId = z.infer<typeof MissionId>;

@@ -1,6 +1,6 @@
 import { generateText } from 'ai';
-import { MODELS } from '../providers/models.js';
-import { fallbackProgressSummary } from '../fallbacks/template-summaries.js';
+import { MODELS } from '../providers/models';
+import { fallbackProgressSummary } from '../fallbacks/template-summaries';
 
 export interface SummarizeProgressInput {
   userId: string;

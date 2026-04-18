@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { MissionType } from '@odasy/domain';
-import { publicProcedure, protectedProcedure, router } from '../trpc.js';
+import { publicProcedure, protectedProcedure, router } from '../trpc';
 
 export const missionsRouter = router({
   list: publicProcedure

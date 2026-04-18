@@ -8,9 +8,9 @@ import {
   timestamp,
   uuid,
 } from 'drizzle-orm/pg-core';
-import { missions } from './missions.js';
-import { places } from './places.js';
-import { users } from './users.js';
+import { missions } from './missions';
+import { places } from './places';
+import { users } from './users';
 
 export const checkins = pgTable(
   'checkins',

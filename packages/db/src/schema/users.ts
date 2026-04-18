@@ -1,5 +1,5 @@
 import { boolean, integer, pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
-import { regions } from './regions.js';
+import { regions } from './regions';
 
 /**
  * `users.id` is a TEXT column because it mirrors the Clerk user ID

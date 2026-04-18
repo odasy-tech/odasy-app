@@ -1,2 +1,2 @@
-export { appRouter, type AppRouter } from './root.js';
-export { createTRPCContext, type Context } from './context.js';
+export { appRouter, type AppRouter } from './root';
+export { createTRPCContext, type Context } from './context';

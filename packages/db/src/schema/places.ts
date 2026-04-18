@@ -10,8 +10,8 @@ import {
   timestamp,
   uuid,
 } from 'drizzle-orm/pg-core';
-import { categories } from './categories.js';
-import { regions } from './regions.js';
+import { categories } from './categories';
+import { regions } from './regions';
 
 /**
  * PostGIS geography(Point, 4326) column. Drizzle does not ship a geography

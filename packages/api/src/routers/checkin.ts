@@ -1,6 +1,6 @@
 import { TRPCError } from '@trpc/server';
 import { CheckinInput } from '@odasy/domain';
-import { protectedProcedure, router } from '../trpc.js';
+import { protectedProcedure, router } from '../trpc';
 
 export const checkinRouter = router({
   create: protectedProcedure

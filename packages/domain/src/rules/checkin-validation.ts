@@ -1,4 +1,4 @@
-import type { Coordinates } from '../entities/place.js';
+import type { Coordinates } from '../entities/place';
 
 /**
  * Haversine great-circle distance in meters between two lat/lng points.

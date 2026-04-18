@@ -1,5 +1,5 @@
-import type { MissionRecapInput } from '../use-cases/generate-mission-recap.js';
-import type { SummarizeProgressInput } from '../use-cases/summarize-progress.js';
+import type { MissionRecapInput } from '../use-cases/generate-mission-recap';
+import type { SummarizeProgressInput } from '../use-cases/summarize-progress';
 
 export function fallbackProgressSummary(input: SummarizeProgressInput): string {
   if (input.recentCheckinCount === 0) {

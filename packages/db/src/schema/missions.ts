@@ -8,11 +8,11 @@ import {
   timestamp,
   uuid,
 } from 'drizzle-orm/pg-core';
-import { badges } from './badges.js';
-import { categories } from './categories.js';
-import { places } from './places.js';
-import { regions } from './regions.js';
-import { users } from './users.js';
+import { badges } from './badges';
+import { categories } from './categories';
+import { places } from './places';
+import { regions } from './regions';
+import { users } from './users';
 
 export const missions = pgTable(
   'missions',

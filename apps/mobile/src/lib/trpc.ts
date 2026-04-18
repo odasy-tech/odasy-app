@@ -2,7 +2,7 @@ import { createTRPCReact } from '@trpc/react-query';
 import { httpBatchLink } from '@trpc/client';
 import superjson from 'superjson';
 import type { AppRouter } from '@odasy/api';
-import { env } from './env.js';
+import { env } from './env';
 
 /** Typed tRPC React hooks for the Odasy API. */
 export const trpc = createTRPCReact<AppRouter>();

@@ -1,4 +1,4 @@
-import type { Badge, BadgeRule } from '../entities/badge.js';
+import type { Badge, BadgeRule } from '../entities/badge';
 
 /**
  * Snapshot of the signals needed to evaluate any badge rule.

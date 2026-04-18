@@ -1,7 +1,7 @@
 import { z } from 'zod';
-import { CategoryId } from './category.js';
-import { CheckinId } from './checkin.js';
-import { PlaceId } from './place.js';
+import { CategoryId } from './category';
+import { CheckinId } from './checkin';
+import { PlaceId } from './place';
 
 export const StampId = z.string().uuid().brand<'StampId'>();
 export type StampId = z.infer<typeof StampId>;

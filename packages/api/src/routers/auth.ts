@@ -1,4 +1,4 @@
-import { protectedProcedure, publicProcedure, router } from '../trpc.js';
+import { protectedProcedure, publicProcedure, router } from '../trpc';
 
 export const authRouter = router({
   /** Returns `null` if not signed in, or the current user if authenticated. */

@@ -1,8 +1,8 @@
 import { index, pgTable, text, timestamp, unique, uuid } from 'drizzle-orm/pg-core';
-import { categories } from './categories.js';
-import { checkins } from './checkins.js';
-import { places } from './places.js';
-import { users } from './users.js';
+import { categories } from './categories';
+import { checkins } from './checkins';
+import { places } from './places';
+import { users } from './users';
 
 export const stamps = pgTable(
   'stamps',

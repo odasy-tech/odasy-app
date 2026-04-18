@@ -1,6 +1,6 @@
 import { defaultConfig } from '@tamagui/config/v4';
 import { createTamagui } from 'tamagui';
-import { odasyColors, odasyRadii } from './src/theme/tokens.js';
+import { odasyColors, odasyRadii } from './src/theme/tokens';
 
 /**
  * Shared Tamagui config for mobile and web.

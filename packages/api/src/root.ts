@@ -1,9 +1,9 @@
-import { router } from './trpc.js';
-import { authRouter } from './routers/auth.js';
-import { checkinRouter } from './routers/checkin.js';
-import { missionsRouter } from './routers/missions.js';
-import { passportRouter } from './routers/passport.js';
-import { placesRouter } from './routers/places.js';
+import { router } from './trpc';
+import { authRouter } from './routers/auth';
+import { checkinRouter } from './routers/checkin';
+import { missionsRouter } from './routers/missions';
+import { passportRouter } from './routers/passport';
+import { placesRouter } from './routers/places';
 
 export const appRouter = router({
   auth: authRouter,

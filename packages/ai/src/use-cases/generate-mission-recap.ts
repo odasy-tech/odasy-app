@@ -1,7 +1,7 @@
 import { generateText } from 'ai';
 import type { Mission } from '@odasy/domain';
-import { MODELS } from '../providers/models.js';
-import { fallbackMissionRecap } from '../fallbacks/template-summaries.js';
+import { MODELS } from '../providers/models';
+import { fallbackMissionRecap } from '../fallbacks/template-summaries';
 
 export interface MissionRecapInput {
   displayName: string;

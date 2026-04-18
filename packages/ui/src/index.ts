@@ -1,5 +1,5 @@
-export * from './theme/tokens.js';
-export { default as tamaguiConfig } from '../tamagui.config.js';
+export * from './theme/tokens';
+export { default as tamaguiConfig } from '../tamagui.config';
 // Re-export commonly used Tamagui primitives for ergonomic imports.
 export {
   Button,

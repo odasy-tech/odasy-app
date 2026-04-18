@@ -1,5 +1,5 @@
 import type { Mission } from '@odasy/domain';
-import type { RecommendMissionsInput } from '../use-cases/recommend-missions.js';
+import type { RecommendMissionsInput } from '../use-cases/recommend-missions';
 
 /**
  * Deterministic, dependency-free mission ranker used when the AI Gateway
