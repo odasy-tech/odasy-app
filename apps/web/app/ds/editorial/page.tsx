@@ -72,16 +72,11 @@ export default function EditorialPage() {
 
       {/* ── Environmental components ───────────────────────────── */}
       <ShowcaseDemo
-        title="ChapterRail · SweepLine · TopoBg · CompassBackdrop"
+        title="SweepLine · TopoBg · CompassBackdrop"
         index={3}
         description="Visible only on the live landing."
       >
-        <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2">
-          <EnvCard
-            title="ChapterRail"
-            blurb="Right-edge index that lights up the active section as you scroll. Hidden until 60vh in."
-            anchor="chapter-rail"
-          />
+        <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-3">
           <EnvCard
             title="SweepLine"
             blurb="A one-shot hairline that sweeps across the top of the viewport on load — the instrument powering up."

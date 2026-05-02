@@ -102,7 +102,7 @@ export const PLATES: PlateEntry[] = [
     plate: 'IX',
     group: 'tier3',
     status: 'live',
-    blurb: 'Compass, ChapterRail, TopoBg — the landing instruments.',
+    blurb: 'Compass, SweepLine, TopoBg — the landing instruments.',
   },
   {
     href: '/ds/patterns',

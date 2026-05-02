@@ -102,7 +102,7 @@ export default function IdentityPage() {
           <PaletteCallout
             label="Volt highlight"
             hex="#D4DAFF (dark theme accent)"
-            body="The high-key counterpart in dark mode. Used for ChapterRail dots, accent italics, and any 'aha' moment where the eye should land."
+            body="The high-key counterpart in dark mode. Used for active CTAs, accent italics, and any 'aha' moment where the eye should land."
             swatch="#D4DAFF"
           />
           <PaletteCallout

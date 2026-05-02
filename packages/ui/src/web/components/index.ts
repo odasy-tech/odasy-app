@@ -10,8 +10,7 @@
  *   · MissionCard · PlaceCard · RewardChip · Stamp · StampGrid · XPBar
  *
  * Tier 3 · editorial (landing surfaces):
- *   Archetype · ChapterRail · Compass · CompassBackdrop · Coordinates
- *   · SweepLine · TopoBg
+ *   Archetype · Compass · CompassBackdrop · Coordinates · SweepLine · TopoBg
  */
 
 /* Tier 1 — primitives */
@@ -84,9 +83,6 @@ export type { XPBarProps } from './xp-bar';
 /* Tier 3 — editorial */
 export { Archetype } from './archetype';
 export type { ArchetypeProps, ArchetypeAccent } from './archetype';
-
-export { ChapterRail } from './chapter-rail';
-export type { ChapterRailProps, ChapterEntry } from './chapter-rail';
 
 export { Compass } from './compass';
 export type { CompassProps } from './compass';
