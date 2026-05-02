@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
-import { Fraunces, Geist, JetBrains_Mono } from 'next/font/google';
+import { DM_Sans, DM_Serif_Display, Fraunces, Geist, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 
 const fraunces = Fraunces({
@@ -22,6 +22,20 @@ const mono = JetBrains_Mono({
   variable: '--font-mono',
 });
 
+// V2 landing typography — DM family (see app/v2/).
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-dm-sans',
+});
+
+const dmSerifDisplay = DM_Serif_Display({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-dm-serif',
+});
+
 export const metadata: Metadata = {
   title: 'Odasy — Explorer Dossier',
   description:
@@ -32,7 +46,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${geist.variable} ${mono.variable}`}
+      className={`${fraunces.variable} ${geist.variable} ${mono.variable} ${dmSans.variable} ${dmSerifDisplay.variable}`}
     >
       <body className="bg-ink-950 text-bone antialiased">{children}</body>
     </html>

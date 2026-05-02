@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Odasy — MVP Prototype · Eje Cafetero</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F7F6FC;
+  --bg2: #EEEAF7;
+  --surface: #ffffff;
+  --surface2: #F0EEF8;
+  --border: rgba(107,92,231,0.12);
+  --border2: rgba(107,92,231,0.2);
+  --text: #1A1830;
+  --text2: #7B7699;
+  --text3: #A8A4C0;
+  --violet: #6B5CE7;
+  --violet-dark: #3D2D9E;
+  --violet-deep: #5046C8;
+  --violet-light: #EDE9FF;
+  --violet-mid: #C8C2F5;
+  --blue-soft: #E8ECFF;
+  --blue-accent: #8B9EFF;
+  --lime: #A8FF3E;
+  --alert: #C45C2E;
+  --alert-bg: #FEF3EE;
+  --gold: #FFD700;
+  --silver: #A8A9AD;
+  --bronze: #CD7F32;
+  --phone-bg: #F7F6FC;
+  --phone-border: #1A1830;
+  --nav-bg: #ffffff;
+  --nav-border: rgba(107,92,231,0.12);
+  --hero-bg: #3D2D9E;
+  --card-bg: #ffffff;
+  --card-border: rgba(107,92,231,0.12);
+  --muted-bg: #F0EEF8;
+  --stamp-locked: #F0EEF8;
+  --dark-surface: #1A1930;
+  --dark-deep: #0F0E1A;
+}
+[data-theme="dark"] {
+  --bg: #0A0918;
+  --bg2: #0F0E1A;
+  --surface: #141322;
+  --surface2: #1A1930;
+  --border: rgba(139,158,255,0.08);
+  --border2: rgba(139,158,255,0.15);
+  --text: #F0EEF8;
+  --text2: rgba(240,238,248,0.5);
+  --text3: rgba(240,238,248,0.3);
+  --violet-light: rgba(107,92,231,0.12);
+  --violet-mid: rgba(139,158,255,0.2);
+  --blue-soft: rgba(139,158,255,0.08);
+  --phone-bg: #0F0E1A;
+  --phone-border: rgba(255,255,255,0.15);
+  --nav-bg: #141322;
+  --nav-border: rgba(255,255,255,0.06);
+  --hero-bg: #1A1930;
+  --card-bg: #1A1930;
+  --card-border: rgba(255,255,255,0.06);
+  --muted-bg: rgba(255,255,255,0.04);
+  --stamp-locked: rgba(255,255,255,0.04);
+  --surface: #141322;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* PAGE LAYOUT */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+/* HEADER */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 48px;
+}
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.site-logo-wordmark {
+  font-family: 'DM Serif Display', serif;
+  font-size: 24px;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+.site-logo-badge {
+  font-size: 10px;
+  color: var(--text2);
+  background: var(--violet-light);
+  padding: 3px 8px;
+  border-radius: 20px;
+  border: 1px solid var(--border2);
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.theme-toggle {
+  width: 52px;
+  height: 28px;
+  border-radius: 20px;
+  background: var(--violet-light);
+  border: 1.5px solid var(--violet-mid);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+.theme-toggle-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--violet-deep);
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+[data-theme="dark"] .theme-toggle-thumb { transform: translateX(24px); }
+[data-theme="dark"] .theme-toggle { background: rgba(80,70,200,0.25); border-color: rgba(139,158,255,0.3); }
+.theme-label { font-size: 12px; color: var(--text2); }
+.download-btn {
+  background: var(--violet-deep);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 9px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: opacity 0.2s;
+  text-decoration: none;
+}
+.download-btn:hover { opacity: 0.85; }
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--violet);
+  margin-bottom: 16px;
+}
+.hero-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(36px, 6vw, 64px);
+  color: var(--text);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.hero-title em { font-style: italic; color: var(--violet); }
+.hero-sub {
+  font-size: 17px;
+  color: var(--text2);
+  line-height: 1.7;
+  max-width: 520px;
+  margin: 0 auto 32px;
+}
+.hero-stats {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.hero-stat { text-align: center; }
+.hero-stat-n {
+  font-family: 'DM Serif Display', serif;
+  font-size: 32px;
+  color: var(--violet);
+}
+.hero-stat-l { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; }
+
+/* PROTOTYPE SECTION */
+.prototype-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.screen-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: var(--surface2);
+  padding: 6px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+.stab {
+  font-size: 12px;
+  padding: 7px 14px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  color: var(--text2);
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.stab.on {
+  background: var(--violet-deep);
+  color: #fff;
+}
+
+/* PHONE */
+.phone-wrap {
+  perspective: 1200px;
+}
+.phone {
+  width: 320px;
+  min-height: 660px;
+  border-radius: 44px;
+  border: 2px solid var(--phone-border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--phone-bg);
+  box-shadow:
+    0 0 0 1px rgba(107,92,231,0.06),
+    0 32px 80px rgba(0,0,0,0.18),
+    0 8px 24px rgba(107,92,231,0.12);
+  transition: background 0.3s;
+}
+.sbar {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: var(--phone-bg);
+  flex-shrink: 0;
+}
+.sbar-time { font-size: 11px; font-weight: 600; color: var(--text); }
+.sbar-icons { font-size: 10px; color: var(--text2); }
+
+.screen { display: none; flex-direction: column; flex: 1; }
+.screen.on { display: flex; }
+
+/* SHARED COMPONENTS */
+.topbar {
+  padding: 12px 18px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--phone-bg);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.topbar-title { font-size: 15px; font-weight: 500; color: var(--text); flex: 1; }
+.back-btn { font-size: 11px; color: var(--violet); cursor: pointer; }
+.body-scroll { flex: 1; overflow-y: auto; padding: 14px 16px; display: flex; flex-direction: column; gap: 12px; }
+.body-scroll::-webkit-scrollbar { width: 0; }
+
+/* BUTTONS — always inline styles for reliability */
+.btn-primary {
+  display: block; width: 100%; padding: 13px;
+  background: #5046C8; color: #ffffff;
+  border-radius: 12px; font-size: 13px; font-weight: 500;
+  text-align: center; cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  border: none; transition: opacity 0.2s;
+}
+.btn-primary:hover { opacity: 0.88; }
+.btn-secondary {
+  display: block; width: 100%; padding: 12px;
+  background: var(--surface); color: #5046C8;
+  border-radius: 12px; font-size: 13px; font-weight: 500;
+  text-align: center; cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  border: 1.5px solid #6B5CE7; transition: opacity 0.2s;
+}
+.btn-lime {
+  display: block; width: 100%; padding: 13px;
+  background: #A8FF3E; color: #0F0E1A;
+  border-radius: 12px; font-size: 13px; font-weight: 500;
+  text-align: center; cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  border: none; transition: opacity 0.2s;
+}
+.btn-lime:hover { opacity: 0.88; }
+
+.card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  border: 1px solid var(--card-border);
+  padding: 12px 14px;
+}
+.pill { display: inline-block; font-size: 10px; padding: 3px 9px; border-radius: 20px; margin-right: 4px; margin-bottom: 4px; }
+.p-v { background: var(--violet-light); color: var(--violet-dark); }
+.p-b { background: var(--blue-soft); color: #2D3DAE; }
+.p-g { background: var(--muted-bg); color: var(--text2); }
+.p-a { background: var(--alert-bg); color: var(--alert); }
+.p-lime { background: rgba(168,255,62,0.12); color: #A8FF3E; }
+
+.divider { height: 1px; background: var(--border); }
+
+.prog-track { background: var(--border); border-radius: 20px; height: 5px; }
+.prog-fill-v { background: var(--violet); border-radius: 20px; height: 5px; }
+.prog-fill-lime { background: #A8FF3E; border-radius: 20px; height: 5px; }
+
+.xp-chip { background: var(--violet-light); color: var(--violet-dark); font-size: 9px; padding: 2px 8px; border-radius: 20px; }
+.xp-chip-lime { background: rgba(168,255,62,0.12); color: #A8FF3E; font-size: 9px; padding: 2px 8px; border-radius: 20px; }
+
+.stat2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.stat3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.sbox { background: var(--violet-light); border-radius: 12px; padding: 10px 8px; text-align: center; }
+.sbox-n { font-size: 20px; font-weight: 500; color: var(--text); }
+.sbox-l { font-size: 9px; color: var(--text2); margin-top: 2px; }
+
+.list-row { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.list-ico { width: 38px; height: 38px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.list-t { font-size: 12px; font-weight: 500; color: var(--text); }
+.list-s { font-size: 10px; color: var(--text2); }
+
+.mcard { background: var(--card-bg); border-radius: 16px; border: 1px solid var(--card-border); display: flex; align-items: stretch; overflow: hidden; }
+.mcard-sw { width: 54px; display: flex; align-items: center; justify-content: center; font-size: 26px; flex-shrink: 0; }
+.mcard-b { padding: 11px 10px; flex: 1; min-width: 0; }
+.mcard-t { font-size: 12px; font-weight: 500; color: var(--text); margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mcard-s { font-size: 10px; color: var(--text2); margin-bottom: 7px; }
+.mcard-r { padding: 11px 12px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end; flex-shrink: 0; }
+.arr { width: 24px; height: 24px; border-radius: 50%; background: var(--violet-light); display: flex; align-items: center; justify-content: center; }
+
+.nc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.ncard { background: var(--card-bg); border-radius: 14px; border: 1px solid var(--card-border); overflow: hidden; }
+.ncard-img { height: 64px; display: flex; align-items: center; justify-content: center; font-size: 30px; }
+.ncard-body { padding: 8px 10px; }
+.ntag { font-size: 8px; padding: 2px 7px; border-radius: 20px; display: inline-block; }
+
+.sync-strip { background: var(--alert-bg); border-radius: 12px; padding: 8px 12px; display: flex; align-items: center; gap: 8px; }
+.sync-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--alert); flex-shrink: 0; }
+.sync-txt { font-size: 10px; color: var(--alert); }
+
+.ai-card { background: var(--violet-light); border-radius: 16px; border: 1px solid var(--violet-mid); padding: 12px 14px; display: flex; gap: 10px; }
+.ai-ico { width: 30px; height: 30px; border-radius: 10px; background: #5046C8; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+/* BNAV */
+.bnav { height: 62px; background: var(--nav-bg); border-top: 1px solid var(--nav-border); display: flex; align-items: center; justify-content: space-around; padding: 0 8px; flex-shrink: 0; }
+.bni { display: flex; flex-direction: column; align-items: center; gap: 3px; cursor: pointer; }
+.bni-lbl { font-size: 8px; color: var(--text3); }
+.bni.on .bni-lbl { color: var(--violet); }
+
+/* SPLASH */
+.splash-hero { flex: 1; background: var(--hero-bg); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 36px 28px; }
+.splash-bottom { background: var(--phone-bg); padding: 20px 24px 28px; display: flex; flex-direction: column; gap: 10px; }
+
+/* ONBOARDING */
+.steps { display: flex; gap: 5px; justify-content: center; }
+.step-d { width: 6px; height: 6px; border-radius: 50%; background: var(--border2); }
+.step-d.on { background: var(--violet); width: 20px; border-radius: 3px; }
+.int-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.int-btn { border: 1px solid var(--card-border); border-radius: 16px; padding: 14px 10px; display: flex; flex-direction: column; align-items: center; gap: 7px; cursor: pointer; background: var(--card-bg); }
+.int-btn.sel { background: var(--violet-light); border-color: var(--violet); }
+.int-lbl { font-size: 11px; color: var(--text); }
+
+/* HERO BANNER */
+.hero-banner { background: var(--hero-bg); border-radius: 20px; padding: 16px; margin-bottom: -24px; z-index: 2; position: relative; }
+
+/* MAP */
+.map-box { background: var(--blue-soft); border-radius: 16px; height: 200px; position: relative; overflow: hidden; border: 1px solid var(--violet-mid); }
+.mdot { width: 11px; height: 11px; border-radius: 50%; position: absolute; }
+
+/* MISSION DETAIL HEADER */
+.mdetail-hdr { height: 130px; position: relative; display: flex; align-items: flex-end; padding: 14px 16px; flex-shrink: 0; }
+
+/* PLACE CHIPS */
+.place-chip { display: flex; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 12px; border: 1px solid var(--card-border); background: var(--card-bg); }
+.pc-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+.pc-name { font-size: 11px; color: var(--text); flex: 1; }
+
+/* CHECKIN CELEBRATION */
+.ci-celebration { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 24px; position: relative; background: var(--bg2); }
+[data-theme="dark"] .ci-celebration { background: #0F0E1A; }
+.ci-ring { position: absolute; border-radius: 50%; border: 1px solid var(--violet-mid); top: 50%; left: 50%; transform: translate(-50%,-50%); }
+.stamp-hero { width: 140px; height: 140px; border-radius: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; background: var(--violet-light); border: 2px solid var(--violet-mid); position: relative; z-index: 1; }
+.reward-row { display: flex; gap: 10px; }
+.reward-chip { background: var(--surface2); border: 1px solid var(--border2); border-radius: 10px; padding: 8px 14px; text-align: center; }
+.reward-n { font-size: 16px; font-weight: 500; color: var(--violet); }
+[data-theme="dark"] .reward-n { color: #A8FF3E; }
+.reward-l { font-size: 9px; color: var(--text2); margin-top: 1px; }
+
+/* PASSPORT */
+.pp-header { background: var(--hero-bg); padding: 20px 18px 16px; border-bottom: 1px solid var(--border); }
+.pp-av { width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 500; color: #fff; flex-shrink: 0; }
+
+/* STAMPS */
+.stamp-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; }
+.stamp { border-radius: 14px; aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; position: relative; border: 1px solid var(--border); background: var(--stamp-locked); }
+.stamp.bronze { background: rgba(205,127,50,0.1); border-color: rgba(205,127,50,0.35); }
+.stamp.silver { background: rgba(168,169,173,0.1); border-color: rgba(168,169,173,0.35); }
+.stamp.gold { background: rgba(255,215,0,0.1); border-color: rgba(255,215,0,0.3); }
+.stamp-ico { font-size: 20px; }
+.stamp-lbl { font-size: 8px; color: var(--text2); text-align: center; }
+.stamp-rarity { font-size: 7px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; position: absolute; bottom: 5px; }
+
+.badge-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; }
+.badge-item { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.badge-ico { width: 46px; height: 46px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; background: var(--violet-light); border: 1px solid var(--violet-mid); }
+.badge-ico.locked { opacity: 0.4; }
+.badge-name { font-size: 9px; color: var(--text2); text-align: center; }
+
+/* RARITY BAR */
+.rarity-bar { display: flex; gap: 4px; align-items: center; }
+.rdot { width: 8px; height: 8px; border-radius: 50%; }
+
+/* PROFILE */
+.profile-av { width: 58px; height: 58px; border-radius: 50%; background: var(--violet-light); border: 2px solid var(--violet-mid); display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 500; color: var(--violet-dark); flex-shrink: 0; }
+
+/* DARK OVERRIDES */
+[data-theme="dark"] .sbar { background: var(--phone-bg); }
+[data-theme="dark"] .sbar-time { color: rgba(255,255,255,0.85); }
+[data-theme="dark"] .sbar-icons { color: rgba(255,255,255,0.45); }
+[data-theme="dark"] .topbar { background: var(--phone-bg); }
+[data-theme="dark"] .hero-banner { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); }
+[data-theme="dark"] .int-btn { background: var(--surface2); border-color: rgba(255,255,255,0.06); }
+[data-theme="dark"] .int-btn.sel { background: rgba(107,92,231,0.15); border-color: var(--violet); }
+[data-theme="dark"] .map-box { background: rgba(139,158,255,0.05); border-color: rgba(139,158,255,0.15); }
+[data-theme="dark"] .bni.on .bni-lbl { color: #A8FF3E; }
+[data-theme="dark"] .bni.on svg path, [data-theme="dark"] .bni.on svg rect, [data-theme="dark"] .bni.on svg circle, [data-theme="dark"] .bni.on svg line { stroke: #A8FF3E !important; fill: #A8FF3E !important; }
+[data-theme="dark"] .bni.on svg path[fill="none"] { fill: none !important; stroke: #A8FF3E !important; }
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  padding: 48px 0 32px;
+  color: var(--text2);
+  font-size: 12px;
+  border-top: 1px solid var(--border);
+  margin-top: 64px;
+}
+.footer-logo { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--text); margin-bottom: 8px; }
+
+/* TRANSITION */
+*, *::before, *::after {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease;
+}
+.phone, .stamp, .card, .mcard, .ncard, .ai-card, .sync-strip, .sbox, .btn-primary, .btn-secondary { transition: background-color 0.3s ease, border-color 0.3s ease; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-logo">
+      <svg width="32" height="32" viewBox="0 0 60 60" fill="none">
+        <circle cx="30" cy="27" r="19" stroke="url(#hg1)" stroke-width="4.5" fill="none"/>
+        <circle cx="22" cy="33" r="8" fill="var(--bg)"/>
+        <path d="M13 38 Q22 46 42 36" stroke="url(#hg2)" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="hg1" x1="10" y1="10" x2="50" y2="45" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#a78bfa"/>
+            <stop offset="100%" stop-color="#6366f1"/>
+          </linearGradient>
+          <linearGradient id="hg2" x1="13" y1="38" x2="42" y2="36" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#a78bfa"/>
+            <stop offset="100%" stop-color="#818cf8"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="site-logo-wordmark">Odasy</span>
+      <span class="site-logo-badge">MVP v1</span>
+    </div>
+    <div class="header-right">
+      <span class="theme-label" id="theme-label">Light</span>
+      <div class="theme-toggle" onclick="toggleTheme()" title="Cambiar tema">
+        <div class="theme-toggle-thumb" id="theme-thumb">☀️</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-eyebrow">Prototipo interactivo · Abril 2026</div>
+    <h1 class="hero-title">Explora el Eje Cafetero.<br><em>Gana tu pasaporte.</em></h1>
+    <p class="hero-sub">Odasy convierte cada lugar que visitas en un sello, cada ruta en una misión, y cada aventura en una historia que queda registrada en tu pasaporte digital.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-n">30</div><div class="hero-stat-l">Lugares</div></div>
+      <div class="hero-stat"><div class="hero-stat-n">10</div><div class="hero-stat-l">Misiones</div></div>
+      <div class="hero-stat"><div class="hero-stat-n">8</div><div class="hero-stat-l">Badges</div></div>
+      <div class="hero-stat"><div class="hero-stat-n">6</div><div class="hero-stat-l">Pantallas</div></div>
+    </div>
+  </section>
+
+  <!-- PROTOTYPE -->
+  <section class="prototype-section">
+    <div class="screen-tabs" id="tabs">
+      <button class="stab on" onclick="go('splash')">Splash</button>
+      <button class="stab" onclick="go('login')">Login</button>
+      <button class="stab" onclick="go('onboarding')">Onboarding</button>
+      <button class="stab" onclick="go('home')">Home</button>
+      <button class="stab" onclick="go('missions')">Misiones</button>
+      <button class="stab" onclick="go('mdetail')">Detalle misión</button>
+      <button class="stab" onclick="go('map')">Mapa</button>
+      <button class="stab" onclick="go('checkin')">Check-in</button>
+      <button class="stab" onclick="go('passport')">Pasaporte</button>
+      <button class="stab" onclick="go('profile')">Perfil</button>
+    </div>
+
+    <div class="phone-wrap">
+      <div class="phone">
+        <div class="sbar"><span class="sbar-time">9:41</span><span class="sbar-icons">●●● 100%</span></div>
+
+        <!-- SPLASH -->
+        <div class="screen on" id="s-splash">
+          <div class="splash-hero">
+            <svg width="72" height="72" viewBox="0 0 60 60" fill="none"><rect width="60" height="60" rx="18" fill="rgba(255,255,255,0.12)"/><circle cx="30" cy="27" r="17" stroke="rgba(255,255,255,0.85)" stroke-width="4.5" fill="none"/><circle cx="22" cy="33" r="8" fill="rgba(61,45,158,0.8)"/><path d="M13 38 Q22 46 42 36" stroke="rgba(255,255,255,0.85)" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+            <div style="font-family:'DM Serif Display',serif;font-size:28px;color:#fff;letter-spacing:0.04em;">Odasy</div>
+            <div style="font-size:13px;color:rgba(255,255,255,0.6);text-align:center;line-height:1.6;">Explora el Eje Cafetero.<br>Gana tu pasaporte de territorios.</div>
+          </div>
+          <div class="splash-bottom">
+            <div class="btn-primary" onclick="go('login')">Comenzar exploración →</div>
+            <div class="btn-secondary" onclick="go('login')">Ya tengo cuenta</div>
+          </div>
+        </div>
+
+        <!-- LOGIN -->
+        <div class="screen" id="s-login">
+          <div class="body-scroll" style="justify-content:center;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:28px;">
+              <svg width="52" height="52" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="27" r="19" stroke="url(#lg1)" stroke-width="5" fill="none"/><circle cx="22" cy="33" r="9" fill="var(--phone-bg)"/><path d="M13 38 Q22 46 42 36" stroke="url(#lg2)" stroke-width="4.5" fill="none" stroke-linecap="round"/><defs><linearGradient id="lg1" x1="10" y1="10" x2="50" y2="45" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#6366f1"/></linearGradient><linearGradient id="lg2" x1="13" y1="38" x2="42" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient></defs></svg>
+              <div style="font-family:'DM Serif Display',serif;font-size:22px;color:var(--text);">Odasy</div>
+              <div style="font-size:12px;color:var(--text2);">Tu pasaporte de territorios</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="font-size:11px;color:var(--text2);">Correo electrónico</div>
+              <div style="border:1px solid var(--border2);border-radius:12px;padding:11px 14px;font-size:13px;color:var(--text3);background:var(--card-bg);">tu@correo.com</div>
+              <div style="font-size:11px;color:var(--text2);margin-top:4px;">Contraseña</div>
+              <div style="border:1px solid var(--border2);border-radius:12px;padding:11px 14px;font-size:13px;color:var(--text3);background:var(--card-bg);">••••••••</div>
+              <div style="text-align:right;font-size:11px;color:var(--violet);">¿Olvidaste tu contraseña?</div>
+              <div class="btn-primary" style="margin-top:6px;" onclick="go('onboarding')">Iniciar sesión</div>
+              <div style="text-align:center;font-size:12px;color:var(--text2);">¿No tienes cuenta? <span style="color:var(--violet);font-weight:500;cursor:pointer;" onclick="go('onboarding')">Regístrate</span></div>
+              <div class="divider" style="margin:4px 0;"></div>
+              <div class="btn-secondary">Continuar con Google</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONBOARDING -->
+        <div class="screen" id="s-onboarding">
+          <div class="body-scroll">
+            <div class="steps"><div class="step-d"></div><div class="step-d on"></div><div class="step-d"></div><div class="step-d"></div></div>
+            <div style="margin-top:12px;">
+              <div style="font-family:'DM Serif Display',serif;font-size:20px;color:var(--text);margin-bottom:6px;">¿Qué te mueve?</div>
+              <div style="font-size:12px;color:var(--text2);margin-bottom:18px;line-height:1.6;">Elige tus intereses para personalizar tu experiencia en el Eje Cafetero.</div>
+            </div>
+            <div class="int-grid">
+              <div class="int-btn sel"><div style="font-size:24px;">☕</div><div class="int-lbl">Café</div></div>
+              <div class="int-btn sel"><div style="font-size:24px;">🌿</div><div class="int-lbl">Naturaleza</div></div>
+              <div class="int-btn"><div style="font-size:24px;">🏘️</div><div class="int-lbl">Pueblos</div></div>
+              <div class="int-btn"><div style="font-size:24px;">🍽️</div><div class="int-lbl">Gastronomía</div></div>
+              <div class="int-btn"><div style="font-size:24px;">🎭</div><div class="int-lbl">Cultura</div></div>
+              <div class="int-btn"><div style="font-size:24px;">🔭</div><div class="int-lbl">Miradores</div></div>
+            </div>
+            <div style="flex:1;min-height:20px;"></div>
+            <div style="display:flex;flex-direction:column;gap:8px;margin-top:16px;">
+              <div class="btn-primary" onclick="go('home')">Continuar →</div>
+              <div style="text-align:center;font-size:11px;color:var(--text3);">Paso 2 de 4</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HOME -->
+        <div class="screen" id="s-home">
+          <div style="background:var(--phone-bg);padding:14px 18px 0;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
+              <div style="display:flex;align-items:center;gap:7px;">
+                <svg width="24" height="24" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="27" r="19" stroke="url(#ghh)" stroke-width="5" fill="none"/><circle cx="22" cy="33" r="9" fill="var(--phone-bg)"/><path d="M13 38 Q22 46 42 36" stroke="url(#ghh2)" stroke-width="4.5" fill="none" stroke-linecap="round"/><defs><linearGradient id="ghh" x1="10" y1="10" x2="50" y2="45" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#6366f1"/></linearGradient><linearGradient id="ghh2" x1="13" y1="38" x2="42" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#818cf8"/></linearGradient></defs></svg>
+                <span style="font-family:'DM Serif Display',serif;font-size:18px;color:var(--text);">Odasy</span>
+              </div>
+              <div style="width:32px;height:32px;border-radius:50%;border:1.5px solid var(--border2);background:var(--card-bg);display:flex;align-items:center;justify-content:center;position:relative;">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 2a4.5 4.5 0 0 0-4.5 4.5c0 2.5-1.5 4-1.5 4h12s-1.5-1.5-1.5-4A4.5 4.5 0 0 0 8 2Z" stroke="var(--text2)" stroke-width="1.2" fill="none"/><path d="M6.5 12.5a1.5 1.5 0 0 0 3 0" stroke="var(--text2)" stroke-width="1.2" stroke-linecap="round"/></svg>
+                <div style="width:7px;height:7px;border-radius:50%;background:#C45C2E;position:absolute;top:4px;right:4px;"></div>
+              </div>
+            </div>
+            <div style="font-size:11px;color:var(--text2);margin-bottom:3px;">Hola de nuevo,</div>
+            <div style="font-family:'DM Serif Display',serif;font-size:22px;color:var(--text);margin-bottom:16px;">Valentina ✦</div>
+            <div class="hero-banner">
+              <div style="font-size:9px;font-weight:500;color:rgba(255,255,255,0.45);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;">Tu pasaporte · Eje Cafetero</div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:7px;">
+                <span style="background:#6B5CE7;color:#EDE9FF;font-size:10px;font-weight:500;padding:3px 10px;border-radius:20px;">Nivel 3 · Explorador</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.45);">620 / 1000 XP</span>
+              </div>
+              <div style="background:rgba(255,255,255,0.12);border-radius:20px;height:5px;margin-bottom:14px;"><div style="background:#8B9EFF;border-radius:20px;height:5px;width:62%;"></div></div>
+              <div class="stat3">
+                <div style="background:rgba(255,255,255,0.1);border-radius:10px;padding:8px 6px;text-align:center;"><div style="font-size:18px;font-weight:500;color:#fff;">7</div><div style="font-size:9px;color:rgba(255,255,255,0.45);margin-top:2px;">Lugares</div></div>
+                <div style="background:rgba(255,255,255,0.1);border-radius:10px;padding:8px 6px;text-align:center;"><div style="font-size:18px;font-weight:500;color:#fff;">2</div><div style="font-size:9px;color:rgba(255,255,255,0.45);margin-top:2px;">Misiones</div></div>
+                <div style="background:rgba(255,255,255,0.1);border-radius:10px;padding:8px 6px;text-align:center;"><div style="font-size:18px;font-weight:500;color:#fff;">3</div><div style="font-size:9px;color:rgba(255,255,255,0.45);margin-top:2px;">Badges</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="body-scroll" style="padding-top:32px;">
+            <div class="sync-strip"><div class="sync-dot"></div><div class="sync-txt">1 check-in pendiente por sincronizar</div></div>
+            <div class="ai-card">
+              <div class="ai-ico"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1L8.2 5 12 6 8.2 7 7 11 5.8 7 2 6 5.8 5Z" fill="#8B9EFF"/></svg></div>
+              <div><div style="font-size:9px;font-weight:500;color:var(--violet-dark);text-transform:uppercase;letter-spacing:.07em;margin-bottom:3px;">Sugerencia para hoy</div><div style="font-size:11px;color:var(--violet-dark);line-height:1.55;">Estás a 2 lugares de completar tu ruta cafetera. Visita el Jardín Botánico — 2.3 km.</div></div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;"><span style="font-size:13px;font-weight:500;color:var(--text);">Misiones en curso</span><span style="font-size:11px;color:var(--violet);cursor:pointer;" onclick="go('missions')">Ver todas</span></div>
+            <div class="mcard" onclick="go('mdetail')" style="cursor:pointer;">
+              <div class="mcard-sw" style="background:var(--violet-light);">☕</div>
+              <div class="mcard-b"><div class="mcard-t">Ruta del café · Quindío</div><div class="mcard-s">2 de 4 lugares</div><div style="display:flex;align-items:center;gap:6px;"><div class="prog-track" style="flex:1;"><div class="prog-fill-v" style="width:50%;"></div></div><span style="font-size:9px;color:var(--text2);">50%</span></div></div>
+              <div class="mcard-r"><span class="xp-chip">+300 XP</span><div class="arr"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 2L7 5 3 8" stroke="var(--violet)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;"><span style="font-size:13px;font-weight:500;color:var(--text);">Cerca de ti</span><span style="font-size:11px;color:var(--violet);cursor:pointer;" onclick="go('map')">Ver mapa</span></div>
+            <div class="nc-grid">
+              <div class="ncard"><div class="ncard-img" style="background:var(--violet-light);">🌿</div><div class="ncard-body"><div style="font-size:11px;font-weight:500;color:var(--text);">Jardín Botánico</div><div style="font-size:9px;color:var(--text2);margin-bottom:5px;">2.3 km · Naturaleza</div><span class="ntag" style="background:var(--violet-light);color:var(--violet-dark);">En misión</span></div></div>
+              <div class="ncard"><div class="ncard-img" style="background:var(--blue-soft);">🏘️</div><div class="ncard-body"><div style="font-size:11px;font-weight:500;color:var(--text);">Salento</div><div style="font-size:9px;color:var(--text2);margin-bottom:5px;">8.1 km · Pueblo</div><span class="ntag" style="background:var(--alert-bg);color:var(--alert);">Nuevo</span></div></div>
+            </div>
+          </div>
+          <div class="bnav">
+            <div class="bni on"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 9.5L10 3 17 9.5V17H13V13H7V17H3Z" stroke="var(--violet)" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg><span class="bni-lbl">Inicio</span></div>
+            <div class="bni" onclick="go('missions')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="1.5" rx="0.75" fill="var(--text3)"/><rect x="3" y="9" width="10" height="1.5" rx="0.75" fill="var(--text3)"/><rect x="3" y="13" width="12" height="1.5" rx="0.75" fill="var(--text3)"/></svg><span class="bni-lbl">Misiones</span></div>
+            <div class="bni" onclick="go('map')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="var(--text3)" stroke-width="1.5"/><circle cx="10" cy="10" r="2" fill="var(--text3)"/><line x1="10" y1="3" x2="10" y2="6" stroke="var(--text3)" stroke-width="1.5"/><line x1="10" y1="14" x2="10" y2="17" stroke="var(--text3)" stroke-width="1.5"/><line x1="3" y1="10" x2="6" y2="10" stroke="var(--text3)" stroke-width="1.5"/><line x1="14" y1="10" x2="17" y2="10" stroke="var(--text3)" stroke-width="1.5"/></svg><span class="bni-lbl">Mapa</span></div>
+            <div class="bni" onclick="go('passport')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="5" y="2.5" width="10" height="15" rx="2" stroke="var(--text3)" stroke-width="1.5"/><line x1="7.5" y1="7" x2="12.5" y2="7" stroke="var(--text3)" stroke-width="1.2"/><line x1="7.5" y1="10" x2="11" y2="10" stroke="var(--text3)" stroke-width="1.2"/></svg><span class="bni-lbl">Pasaporte</span></div>
+            <div class="bni" onclick="go('profile')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3.5" stroke="var(--text3)" stroke-width="1.5"/><path d="M4 17C4 13.5 6.5 11.5 10 11.5 13.5 11.5 16 13.5 16 17" stroke="var(--text3)" stroke-width="1.5" stroke-linecap="round"/></svg><span class="bni-lbl">Perfil</span></div>
+          </div>
+        </div>
+
+        <!-- MISSIONS -->
+        <div class="screen" id="s-missions">
+          <div class="topbar"><div class="topbar-title" style="font-family:'DM Serif Display',serif;font-size:18px;">Misiones</div></div>
+          <div class="body-scroll">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;"><span class="pill p-v" style="cursor:pointer;">Todas</span><span class="pill p-g">Café</span><span class="pill p-g">Naturaleza</span><span class="pill p-g">Pueblos</span><span class="pill p-g">Cultura</span></div>
+            <div class="stat3">
+              <div class="sbox"><div class="sbox-n" style="color:var(--violet);">1</div><div class="sbox-l">Activa</div></div>
+              <div class="sbox"><div class="sbox-n">0</div><div class="sbox-l">Completadas</div></div>
+              <div class="sbox"><div class="sbox-n">9</div><div class="sbox-l">Disponibles</div></div>
+            </div>
+            <div style="font-size:11px;color:var(--text2);font-weight:500;text-transform:uppercase;letter-spacing:.05em;">En progreso (1)</div>
+            <div class="mcard" style="border-color:var(--violet-mid);cursor:pointer;" onclick="go('mdetail')">
+              <div class="mcard-sw" style="background:var(--violet-light);">☕</div>
+              <div class="mcard-b"><div class="mcard-t">Ruta del café · Quindío</div><div class="mcard-s">4 lugares · Media · +300 XP</div><div style="display:flex;align-items:center;gap:6px;"><div class="prog-track" style="flex:1;"><div class="prog-fill-v" style="width:50%;"></div></div><span style="font-size:9px;color:var(--text2);">50%</span></div></div>
+              <div class="mcard-r"><span class="pill p-v" style="font-size:9px;">Activa</span><div class="arr"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 2L7 5 3 8" stroke="var(--violet)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+            </div>
+            <div style="font-size:11px;color:var(--text2);font-weight:500;text-transform:uppercase;letter-spacing:.05em;">Disponibles (9)</div>
+            <div class="list-row"><div class="list-ico" style="background:var(--blue-soft);">🏔️</div><div style="flex:1;"><div class="list-t">Miradores del Eje</div><div class="list-s">3 lugares · Fácil</div></div><span class="xp-chip">+200 XP</span></div>
+            <div class="list-row"><div class="list-ico" style="background:var(--violet-light);">🏘️</div><div style="flex:1;"><div class="list-t">Pueblos patrimonio</div><div class="list-s">5 lugares · Media</div></div><span class="xp-chip">+350 XP</span></div>
+            <div class="list-row"><div class="list-ico" style="background:var(--blue-soft);">🌿</div><div style="flex:1;"><div class="list-t">Senderos de Risaralda</div><div class="list-s">4 lugares · Media</div></div><span class="xp-chip">+300 XP</span></div>
+            <div class="list-row"><div class="list-ico" style="background:var(--alert-bg);">🍽️</div><div style="flex:1;"><div class="list-t">Sabores del Eje</div><div class="list-s">4 lugares · Fácil</div></div><span class="xp-chip">+250 XP</span></div>
+            <div class="list-row"><div class="list-ico" style="background:var(--violet-light);">☕</div><div style="flex:1;"><div class="list-t">Fincas de Caldas</div><div class="list-s">3 lugares · Difícil</div></div><span class="xp-chip">+400 XP</span></div>
+          </div>
+          <div class="bnav">
+            <div class="bni" onclick="go('home')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 9.5L10 3 17 9.5V17H13V13H7V17H3Z" stroke="var(--text3)" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg><span class="bni-lbl">Inicio</span></div>
+            <div class="bni on"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="1.5" rx="0.75" fill="var(--violet)"/><rect x="3" y="9" width="10" height="1.5" rx="0.75" fill="var(--violet)"/><rect x="3" y="13" width="12" height="1.5" rx="0.75" fill="var(--violet)"/></svg><span class="bni-lbl">Misiones</span></div>
+            <div class="bni" onclick="go('map')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="var(--text3)" stroke-width="1.5"/><circle cx="10" cy="10" r="2" fill="var(--text3)"/><line x1="10" y1="3" x2="10" y2="6" stroke="var(--text3)" stroke-width="1.5"/><line x1="10" y1="14" x2="10" y2="17" stroke="var(--text3)" stroke-width="1.5"/><line x1="3" y1="10" x2="6" y2="10" stroke="var(--text3)" stroke-width="1.5"/><line x1="14" y1="10" x2="17" y2="10" stroke="var(--text3)" stroke-width="1.5"/></svg><span class="bni-lbl">Mapa</span></div>
+            <div class="bni" onclick="go('passport')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="5" y="2.5" width="10" height="15" rx="2" stroke="var(--text3)" stroke-width="1.5"/><line x1="7.5" y1="7" x2="12.5" y2="7" stroke="var(--text3)" stroke-width="1.2"/><line x1="7.5" y1="10" x2="11" y2="10" stroke="var(--text3)" stroke-width="1.2"/></svg><span class="bni-lbl">Pasaporte</span></div>
+            <div class="bni" onclick="go('profile')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3.5" stroke="var(--text3)" stroke-width="1.5"/><path d="M4 17C4 13.5 6.5 11.5 10 11.5 13.5 11.5 16 13.5 16 17" stroke="var(--text3)" stroke-width="1.5" stroke-linecap="round"/></svg><span class="bni-lbl">Perfil</span></div>
+          </div>
+        </div>
+
+        <!-- MISSION DETAIL -->
+        <div class="screen" id="s-mdetail">
+          <div class="mdetail-hdr" style="background:linear-gradient(160deg,#1A2E1A,#2D1A4E);">
+            <div style="position:absolute;top:14px;left:16px;cursor:pointer;z-index:2;" onclick="go('missions')">
+              <div style="width:28px;height:28px;border-radius:50%;background:rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M8 2L4 6 8 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:48px;">☕</div>
+            <div style="position:relative;display:flex;gap:6px;">
+              <span style="font-size:9px;padding:3px 10px;border-radius:20px;font-weight:500;background:rgba(168,255,62,0.15);color:#A8FF3E;">Café</span>
+              <span style="font-size:9px;padding:3px 10px;border-radius:20px;font-weight:500;background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);">Media</span>
+            </div>
+          </div>
+          <div class="body-scroll">
+            <div>
+              <div style="font-size:9px;font-weight:500;color:var(--text2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;">Misión de exploración</div>
+              <div style="font-family:'DM Serif Display',serif;font-size:20px;color:var(--text);margin-bottom:10px;line-height:1.2;">Ruta del café<br>en Quindío</div>
+              <div style="font-size:12px;color:var(--text2);line-height:1.65;margin-bottom:14px;">Recorre los caminos que conectan el paisaje cafetero patrimonio UNESCO. Cada lugar guarda un capítulo diferente de la historia viva del café.</div>
+            </div>
+            <div class="stat2">
+              <div class="card"><div style="font-size:18px;font-weight:500;color:var(--violet);">300</div><div style="font-size:9px;color:var(--text2);margin-top:2px;">XP totales</div></div>
+              <div class="card" style="display:flex;align-items:center;gap:8px;"><span style="font-size:18px;">🏅</span><div><div style="font-size:11px;font-weight:500;color:#FFD700;">Badge Gold</div><div style="font-size:9px;color:var(--text2);">Caficultor</div></div></div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;"><span style="font-size:12px;font-weight:500;color:var(--text);">Lugares a visitar</span><span style="font-size:11px;color:var(--text2);">2 / 4 completados</span></div>
+            <div style="display:flex;flex-direction:column;gap:7px;">
+              <div class="place-chip" style="background:rgba(168,255,62,0.06);border-color:rgba(168,255,62,0.2);">
+                <div style="width:20px;height:20px;border-radius:50%;background:#A8FF3E;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5 8 3" stroke="#0F0E1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <div style="flex:1;"><div style="font-size:11px;font-weight:500;color:var(--text);">Finca El Ocaso</div><div style="font-size:9px;color:var(--text2);">Hacienda · Montenegro</div></div>
+                <span style="font-size:10px;color:#A8FF3E;">+75 XP</span>
+              </div>
+              <div class="place-chip" style="background:rgba(168,255,62,0.06);border-color:rgba(168,255,62,0.2);">
+                <div style="width:20px;height:20px;border-radius:50%;background:#A8FF3E;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5 8 3" stroke="#0F0E1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <div style="flex:1;"><div style="font-size:11px;font-weight:500;color:var(--text);">Museo del Oro Quimbaya</div><div style="font-size:9px;color:var(--text2);">Patrimonio · Armenia</div></div>
+                <span style="font-size:10px;color:#A8FF3E;">+75 XP</span>
+              </div>
+              <div class="place-chip">
+                <div style="width:20px;height:20px;border-radius:50%;border:1.5px solid var(--border2);flex-shrink:0;"></div>
+                <div style="flex:1;"><div style="font-size:11px;font-weight:500;color:var(--text2);">Jardín Botánico del Quindío</div><div style="font-size:9px;color:var(--text3);">Naturaleza · Calarcá</div></div>
+                <span style="font-size:10px;color:var(--text3);">+75 XP</span>
+              </div>
+              <div class="place-chip">
+                <div style="width:20px;height:20px;border-radius:50%;border:1.5px solid var(--border2);flex-shrink:0;"></div>
+                <div style="flex:1;"><div style="font-size:11px;font-weight:500;color:var(--text2);">Mirador El Roble</div><div style="font-size:9px;color:var(--text3);">Mirador · Filandia</div></div>
+                <span style="font-size:10px;color:var(--text3);">+75 XP</span>
+              </div>
+            </div>
+            <div class="btn-primary" onclick="go('checkin')">Ir al siguiente lugar →</div>
+          </div>
+        </div>
+
+        <!-- MAP -->
+        <div class="screen" id="s-map">
+          <div class="topbar"><div class="topbar-title" style="font-family:'DM Serif Display',serif;font-size:18px;">Mapa regional</div></div>
+          <div class="body-scroll">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;"><span class="pill p-v">Todos</span><span class="pill p-g">Visitados</span><span class="pill p-g">En misión</span></div>
+            <div class="map-box">
+              <div style="position:absolute;top:10px;left:14px;font-size:10px;font-weight:500;color:var(--violet-dark);">Eje Cafetero</div>
+              <div style="position:absolute;top:10px;right:14px;font-size:9px;color:var(--violet-dark);background:rgba(255,255,255,0.75);padding:2px 8px;border-radius:20px;">Quindío · Risaralda · Caldas</div>
+              <div class="mdot" style="background:var(--violet-dark);top:38%;left:28%;"></div>
+              <div class="mdot" style="background:var(--violet-dark);top:52%;left:38%;"></div>
+              <div class="mdot" style="background:var(--violet-dark);top:68%;left:33%;"></div>
+              <div class="mdot" style="background:var(--blue-accent);top:28%;left:55%;"></div>
+              <div class="mdot" style="background:var(--blue-accent);top:42%;left:68%;"></div>
+              <div class="mdot" style="background:var(--blue-accent);top:58%;left:60%;"></div>
+              <div class="mdot" style="width:15px;height:15px;background:#C45C2E;border:2.5px solid #fff;top:48%;left:48%;"></div>
+              <div style="position:absolute;bottom:10px;left:14px;display:flex;gap:10px;">
+                <div style="display:flex;align-items:center;gap:4px;"><div style="width:8px;height:8px;border-radius:50%;background:var(--violet-dark);"></div><span style="font-size:9px;color:var(--violet-dark);">Visitado</span></div>
+                <div style="display:flex;align-items:center;gap:4px;"><div style="width:8px;height:8px;border-radius:50%;background:var(--blue-accent);"></div><span style="font-size:9px;color:var(--violet-dark);">Disponible</span></div>
+                <div style="display:flex;align-items:center;gap:4px;"><div style="width:10px;height:10px;border-radius:50%;background:#C45C2E;border:2px solid #fff;"></div><span style="font-size:9px;color:var(--violet-dark);">Tú</span></div>
+              </div>
+            </div>
+            <div style="font-size:13px;font-weight:500;color:var(--text);">Lugares cercanos</div>
+            <div class="list-row"><div class="list-ico" style="background:var(--violet-light);">🌿</div><div style="flex:1;"><div class="list-t">Jardín Botánico del Quindío</div><div class="list-s">2.3 km · En misión</div></div><span style="font-size:11px;color:var(--violet);cursor:pointer;" onclick="go('mdetail')">Ver</span></div>
+            <div class="list-row"><div class="list-ico" style="background:var(--blue-soft);">🏔️</div><div style="flex:1;"><div class="list-t">Mirador El Roble</div><div class="list-s">5.1 km · Mirador</div></div><span style="font-size:11px;color:var(--violet);">Ver</span></div>
+            <div class="list-row"><div class="list-ico" style="background:var(--violet-light);">☕</div><div style="flex:1;"><div class="list-t">Finca La Esperanza</div><div class="list-s">7.8 km · Café</div></div><span style="font-size:11px;color:var(--violet);">Ver</span></div>
+          </div>
+          <div class="bnav">
+            <div class="bni" onclick="go('home')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 9.5L10 3 17 9.5V17H13V13H7V17H3Z" stroke="var(--text3)" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg><span class="bni-lbl">Inicio</span></div>
+            <div class="bni" onclick="go('missions')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="1.5" rx="0.75" fill="var(--text3)"/><rect x="3" y="9" width="10" height="1.5" rx="0.75" fill="var(--text3)"/><rect x="3" y="13" width="12" height="1.5" rx="0.75" fill="var(--text3)"/></svg><span class="bni-lbl">Misiones</span></div>
+            <div class="bni on"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="var(--violet)" stroke-width="1.5"/><circle cx="10" cy="10" r="2" fill="var(--violet)"/><line x1="10" y1="3" x2="10" y2="6" stroke="var(--violet)" stroke-width="1.5"/><line x1="10" y1="14" x2="10" y2="17" stroke="var(--violet)" stroke-width="1.5"/><line x1="3" y1="10" x2="6" y2="10" stroke="var(--violet)" stroke-width="1.5"/><line x1="14" y1="10" x2="17" y2="10" stroke="var(--violet)" stroke-width="1.5"/></svg><span class="bni-lbl">Mapa</span></div>
+            <div class="bni" onclick="go('passport')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="5" y="2.5" width="10" height="15" rx="2" stroke="var(--text3)" stroke-width="1.5"/><line x1="7.5" y1="7" x2="12.5" y2="7" stroke="var(--text3)" stroke-width="1.2"/><line x1="7.5" y1="10" x2="11" y2="10" stroke="var(--text3)" stroke-width="1.2"/></svg><span class="bni-lbl">Pasaporte</span></div>
+            <div class="bni" onclick="go('profile')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3.5" stroke="var(--text3)" stroke-width="1.5"/><path d="M4 17C4 13.5 6.5 11.5 10 11.5 13.5 11.5 16 13.5 16 17" stroke="var(--text3)" stroke-width="1.5" stroke-linecap="round"/></svg><span class="bni-lbl">Perfil</span></div>
+          </div>
+        </div>
+
+        <!-- CHECK-IN CELEBRATION -->
+        <div class="screen" id="s-checkin">
+          <div class="ci-celebration">
+            <div class="ci-ring" style="width:260px;height:260px;border-color:rgba(107,92,231,0.08);"></div>
+            <div class="ci-ring" style="width:200px;height:200px;border-color:rgba(107,92,231,0.12);"></div>
+            <div class="ci-ring" style="width:150px;height:150px;border-color:rgba(107,92,231,0.16);"></div>
+            <div style="font-size:10px;color:var(--text3);letter-spacing:.08em;text-transform:uppercase;position:relative;z-index:1;">4.6380° N, 75.5636° O</div>
+            <div class="stamp-hero">
+              <div style="font-size:44px;">🌿</div>
+              <div style="font-size:11px;font-weight:500;color:var(--violet);letter-spacing:.05em;text-transform:uppercase;">Jardín Botánico</div>
+            </div>
+            <div style="background:rgba(139,158,255,0.12);color:var(--violet);border:1px solid var(--violet-mid);font-size:9px;font-weight:500;padding:3px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:.06em;">✦ Silver</div>
+            <div style="font-size:13px;color:var(--text2);text-align:center;line-height:1.5;position:relative;z-index:1;">Sello desbloqueado.<br>Progreso en misión actualizado.</div>
+            <div class="reward-row">
+              <div class="reward-chip"><div class="reward-n">+75</div><div class="reward-l">XP ganados</div></div>
+              <div class="reward-chip"><div class="reward-n" style="color:var(--text);">3/4</div><div class="reward-l">Misión</div></div>
+              <div class="reward-chip"><div class="reward-n" style="color:var(--blue-accent);">Silver</div><div class="reward-l">Rareza</div></div>
+            </div>
+            <div class="btn-primary" style="position:relative;z-index:1;" onclick="go('mdetail')">Continuar misión →</div>
+            <div style="font-size:11px;color:var(--text3);cursor:pointer;" onclick="go('passport')">Ver en mi pasaporte</div>
+          </div>
+        </div>
+
+        <!-- PASSPORT -->
+        <div class="screen" id="s-passport">
+          <div class="pp-header">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+              <div class="pp-av">V</div>
+              <div style="flex:1;">
+                <div style="font-family:'DM Serif Display',serif;font-size:16px;color:#fff;">Valentina Ríos</div>
+                <div style="font-size:11px;color:rgba(255,255,255,0.5);">@v.exploradora · Nivel 3</div>
+              </div>
+              <div style="text-align:right;">
+                <div style="font-size:8px;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:.08em;">Explorador</div>
+                <div style="font-size:11px;color:rgba(255,255,255,0.5);font-weight:500;">NO. 00003741</div>
+              </div>
+            </div>
+            <div style="background:rgba(255,255,255,0.08);border-radius:10px;padding:8px 12px;">
+              <div style="display:flex;justify-content:space-between;margin-bottom:6px;"><span style="font-size:10px;color:rgba(255,255,255,0.4);">Nivel 3 → 4</span><span style="font-size:10px;color:#A8FF3E;">620 / 1000 XP</span></div>
+              <div style="background:rgba(255,255,255,0.1);border-radius:20px;height:4px;"><div style="background:#8B9EFF;border-radius:20px;height:4px;width:62%;"></div></div>
+            </div>
+          </div>
+          <div class="body-scroll">
+            <div class="ai-card">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="flex-shrink:0;margin-top:1px;"><path d="M7 1L8.2 5 12 6 8.2 7 7 11 5.8 7 2 6 5.8 5Z" fill="var(--violet)"/></svg>
+              <div style="font-size:11px;color:var(--violet-dark);line-height:1.6;">Completaste una ruta cafetera en Quindío y avanzas en tu exploración cultural del Eje.</div>
+            </div>
+            <div class="stat2">
+              <div class="sbox"><div class="sbox-n">7</div><div class="sbox-l">Lugares</div></div>
+              <div class="sbox"><div class="sbox-n">5</div><div class="sbox-l">Sellos</div></div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <span style="font-size:13px;font-weight:500;color:var(--text);">Sellos</span>
+              <div class="rarity-bar"><div class="rdot" style="background:#CD7F32;"></div><div class="rdot" style="background:#A8A9AD;"></div><div class="rdot" style="background:#FFD700;"></div><div class="rdot" style="background:#E5E4E2;"></div><div class="rdot" style="background:#B9F2FF;"></div><span style="font-size:9px;color:var(--text3);margin-left:4px;">Rareza</span></div>
+            </div>
+            <div class="stamp-grid">
+              <div class="stamp bronze"><div class="stamp-ico">☕</div><div class="stamp-lbl">Finca El Ocaso</div><div class="stamp-rarity" style="color:#CD7F32;">Bronze</div></div>
+              <div class="stamp silver"><div class="stamp-ico">🏛️</div><div class="stamp-lbl">Museo Quimbaya</div><div class="stamp-rarity" style="color:#A8A9AD;">Silver</div></div>
+              <div class="stamp silver"><div class="stamp-ico">🌿</div><div class="stamp-lbl">Jardín Botánico</div><div class="stamp-rarity" style="color:#8B9EFF;">Silver</div></div>
+              <div class="stamp gold"><div class="stamp-ico">🏘️</div><div class="stamp-lbl">Salento</div><div class="stamp-rarity" style="color:#FFD700;">Gold</div></div>
+              <div class="stamp bronze"><div class="stamp-ico">🔭</div><div class="stamp-lbl">El Roble</div><div class="stamp-rarity" style="color:#CD7F32;">Bronze</div></div>
+              <div class="stamp"><div class="stamp-ico" style="opacity:.2;font-size:16px;">?</div><div class="stamp-lbl" style="opacity:.3;">Por ganar</div></div>
+              <div class="stamp"><div class="stamp-ico" style="opacity:.2;font-size:16px;">?</div><div class="stamp-lbl" style="opacity:.3;">Por ganar</div></div>
+              <div class="stamp"><div class="stamp-ico" style="opacity:.2;font-size:16px;">?</div><div class="stamp-lbl" style="opacity:.3;">Por ganar</div></div>
+              <div class="stamp"><div class="stamp-ico" style="opacity:.2;font-size:16px;">?</div><div class="stamp-lbl" style="opacity:.3;">Por ganar</div></div>
+            </div>
+            <div style="font-size:13px;font-weight:500;color:var(--text);">Badges</div>
+            <div class="badge-grid">
+              <div class="badge-item"><div class="badge-ico">🥾</div><div class="badge-name">Primer check-in</div></div>
+              <div class="badge-item"><div class="badge-ico">✅</div><div class="badge-name">1ra misión</div></div>
+              <div class="badge-item"><div class="badge-ico" style="background:rgba(255,215,0,0.1);border-color:rgba(255,215,0,0.3);">☕</div><div class="badge-name">Caficultor</div></div>
+              <div class="badge-item"><div class="badge-ico locked">🌿</div><div class="badge-name">Naturalista</div></div>
+              <div class="badge-item"><div class="badge-ico locked">🏘️</div><div class="badge-name">Viajero</div></div>
+              <div class="badge-item"><div class="badge-ico locked">🗺️</div><div class="badge-name">Regional</div></div>
+            </div>
+          </div>
+          <div class="bnav">
+            <div class="bni" onclick="go('home')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 9.5L10 3 17 9.5V17H13V13H7V17H3Z" stroke="var(--text3)" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg><span class="bni-lbl">Inicio</span></div>
+            <div class="bni" onclick="go('missions')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="1.5" rx="0.75" fill="var(--text3)"/><rect x="3" y="9" width="10" height="1.5" rx="0.75" fill="var(--text3)"/><rect x="3" y="13" width="12" height="1.5" rx="0.75" fill="var(--text3)"/></svg><span class="bni-lbl">Misiones</span></div>
+            <div class="bni" onclick="go('map')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="var(--text3)" stroke-width="1.5"/><circle cx="10" cy="10" r="2" fill="var(--text3)"/><line x1="10" y1="3" x2="10" y2="6" stroke="var(--text3)" stroke-width="1.5"/><line x1="10" y1="14" x2="10" y2="17" stroke="var(--text3)" stroke-width="1.5"/><line x1="3" y1="10" x2="6" y2="10" stroke="var(--text3)" stroke-width="1.5"/><line x1="14" y1="10" x2="17" y2="10" stroke="var(--text3)" stroke-width="1.5"/></svg><span class="bni-lbl">Mapa</span></div>
+            <div class="bni on"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="5" y="2.5" width="10" height="15" rx="2" stroke="var(--violet)" stroke-width="1.5"/><line x1="7.5" y1="7" x2="12.5" y2="7" stroke="var(--violet)" stroke-width="1.2"/><line x1="7.5" y1="10" x2="11" y2="10" stroke="var(--violet)" stroke-width="1.2"/></svg><span class="bni-lbl">Pasaporte</span></div>
+            <div class="bni" onclick="go('profile')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3.5" stroke="var(--text3)" stroke-width="1.5"/><path d="M4 17C4 13.5 6.5 11.5 10 11.5 13.5 11.5 16 13.5 16 17" stroke="var(--text3)" stroke-width="1.5" stroke-linecap="round"/></svg><span class="bni-lbl">Perfil</span></div>
+          </div>
+        </div>
+
+        <!-- PROFILE -->
+        <div class="screen" id="s-profile">
+          <div class="topbar"><div class="topbar-title" style="font-family:'DM Serif Display',serif;font-size:18px;">Perfil y ajustes</div></div>
+          <div class="body-scroll">
+            <div style="display:flex;align-items:center;gap:14px;padding:4px 0;">
+              <div class="profile-av">V</div>
+              <div>
+                <div style="font-family:'DM Serif Display',serif;font-size:17px;color:var(--text);">Valentina Ríos</div>
+                <div style="font-size:11px;color:var(--text2);">@v.exploradora · NO. 00003741</div>
+                <div style="margin-top:5px;"><span class="pill p-v">Nivel 3</span><span class="pill p-b">620 XP</span></div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;"><span style="font-size:13px;font-weight:500;color:var(--text);">Mis intereses</span><span style="font-size:11px;color:var(--violet);cursor:pointer;">Editar</span></div>
+            <div><span class="pill p-v">Café</span><span class="pill p-b">Naturaleza</span><span class="pill p-g">Cultura</span></div>
+            <div class="card">
+              <div style="font-size:10px;color:var(--text2);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em;">Región activa</div>
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <div><div style="font-size:13px;font-weight:500;color:var(--text);">Eje Cafetero</div><div style="font-size:11px;color:var(--text2);">Quindío · Risaralda · Caldas</div></div>
+                <span class="pill p-v">Activa</span>
+              </div>
+            </div>
+            <div class="sync-strip"><div class="sync-dot"></div><div class="sync-txt">1 check-in pendiente por sincronizar</div></div>
+            <div style="font-size:11px;font-weight:500;color:var(--text2);text-transform:uppercase;letter-spacing:.05em;">Cuenta</div>
+            <div class="list-row"><div style="flex:1;"><div class="list-t">Editar perfil</div></div><span style="font-size:14px;color:var(--text3);">›</span></div>
+            <div class="list-row"><div style="flex:1;"><div class="list-t">Notificaciones</div></div><span style="font-size:14px;color:var(--text3);">›</span></div>
+            <div class="list-row"><div style="flex:1;"><div class="list-t">Permisos de ubicación</div></div><span style="font-size:11px;color:var(--violet);font-weight:500;">Activo</span></div>
+            <div class="list-row"><div style="flex:1;"><div class="list-t" style="color:var(--alert);">Cerrar sesión</div></div></div>
+          </div>
+          <div class="bnav">
+            <div class="bni" onclick="go('home')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 9.5L10 3 17 9.5V17H13V13H7V17H3Z" stroke="var(--text3)" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg><span class="bni-lbl">Inicio</span></div>
+            <div class="bni" onclick="go('missions')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="1.5" rx="0.75" fill="var(--text3)"/><rect x="3" y="9" width="10" height="1.5" rx="0.75" fill="var(--text3)"/><rect x="3" y="13" width="12" height="1.5" rx="0.75" fill="var(--text3)"/></svg><span class="bni-lbl">Misiones</span></div>
+            <div class="bni" onclick="go('map')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="var(--text3)" stroke-width="1.5"/><circle cx="10" cy="10" r="2" fill="var(--text3)"/><line x1="10" y1="3" x2="10" y2="6" stroke="var(--text3)" stroke-width="1.5"/><line x1="10" y1="14" x2="10" y2="17" stroke="var(--text3)" stroke-width="1.5"/><line x1="3" y1="10" x2="6" y2="10" stroke="var(--text3)" stroke-width="1.5"/><line x1="14" y1="10" x2="17" y2="10" stroke="var(--text3)" stroke-width="1.5"/></svg><span class="bni-lbl">Mapa</span></div>
+            <div class="bni" onclick="go('passport')"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="5" y="2.5" width="10" height="15" rx="2" stroke="var(--text3)" stroke-width="1.5"/><line x1="7.5" y1="7" x2="12.5" y2="7" stroke="var(--text3)" stroke-width="1.2"/><line x1="7.5" y1="10" x2="11" y2="10" stroke="var(--text3)" stroke-width="1.2"/></svg><span class="bni-lbl">Pasaporte</span></div>
+            <div class="bni on"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3.5" stroke="var(--violet)" stroke-width="1.5"/><path d="M4 17C4 13.5 6.5 11.5 10 11.5 13.5 11.5 16 13.5 16 17" stroke="var(--violet)" stroke-width="1.5" stroke-linecap="round"/></svg><span class="bni-lbl">Perfil</span></div>
+          </div>
+        </div>
+
+      </div><!-- /phone -->
+    </div><!-- /phone-wrap -->
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-logo">Odasy</div>
+    <div>MVP Prototype · Eje Cafetero · Abril 2026</div>
+    <div style="margin-top:6px;color:var(--text3);">Colombiano Coffee Region · 30 lugares · 10 misiones · 8 badges</div>
+  </footer>
+
+</div><!-- /page -->
+
+<script>
+function go(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('on'));
+  document.querySelectorAll('.stab').forEach(t => t.classList.remove('on'));
+  const s = document.getElementById('s-' + id);
+  if (s) s.classList.add('on');
+  const ids = ['splash','login','onboarding','home','missions','mdetail','map','checkin','passport','profile'];
+  const tabs = document.querySelectorAll('.stab');
+  const i = ids.indexOf(id);
+  if (i >= 0 && tabs[i]) tabs[i].classList.add('on');
+}
+
+function toggleTheme() {
+  const html = document.documentElement;
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  document.getElementById('theme-thumb').textContent = isDark ? '☀️' : '🌙';
+  document.getElementById('theme-label').textContent = isDark ? 'Light' : 'Dark';
+}
+</script>
+</body>
+</html>
