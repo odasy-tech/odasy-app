@@ -107,11 +107,13 @@ function PlateHeader({ plate, title }: { plate: string; title: string }) {
           <div className="flex items-center gap-5">
             <Link
               href="/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden items-center gap-2 text-[10px] uppercase tracking-[0.32em] text-[var(--color-ink-secondary)] transition-colors hover:text-[var(--color-accent-action)] sm:inline-flex"
               style={{ fontFamily: 'var(--font-sans)', fontWeight: 600 }}
             >
               <span>Live landing</span>
-              <span aria-hidden>→</span>
+              <span aria-hidden>↗</span>
             </Link>
             <LiveClock />
             <ThemeToggle />
