@@ -1,27 +1,25 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
-import { Fraunces, Geist } from 'next/font/google';
+import { Fraunces, Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
-/**
- * Variable Fraunces serif — the editorial display family for the Aurora
- * DS. Variable axes (SOFT, WONK, opsz) let one family handle book copy,
- * editorial heads and wonky heroes.
- */
 const fraunces = Fraunces({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-display',
+  variable: '--font-fraunces',
   axes: ['SOFT', 'WONK', 'opsz'],
 });
 
-/**
- * Geist sans — body, labels, UI.
- */
 const geist = Geist({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-sans',
+  variable: '--font-geist',
+});
+
+const geistMono = Geist_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-geist-mono',
 });
 
 export const metadata: Metadata = {
@@ -32,7 +30,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${geist.variable}`}>
+    <html
+      lang="en"
+      className={`${fraunces.variable} ${geist.variable} ${geistMono.variable}`}
+    >
       <body className="antialiased">{children}</body>
     </html>
   );

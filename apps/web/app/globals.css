@@ -14,3 +14,9 @@
 @import "tailwindcss";
 @import "@odasy/ui/styles/tokens.css";
 @import "@odasy/ui/styles/utilities.css";
+
+@layer base {
+  :root {
+    --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", "Menlo", monospace;
+  }
+}
