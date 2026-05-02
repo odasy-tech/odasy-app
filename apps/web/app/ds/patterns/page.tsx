@@ -44,13 +44,6 @@ export default function PatternsPage() {
             style={{ fontFamily: 'var(--font-display)' }}
           >
             Odasy
-            <span
-              aria-hidden
-              className="ml-2 align-top text-[14px] tracking-[0.32em] text-[var(--color-accent-action)]"
-              style={{ fontFamily: 'var(--font-sans)', fontWeight: 600 }}
-            >
-              01
-            </span>
           </h2>
           <p
             className="max-w-md text-[15px] leading-[1.55] text-[var(--color-ink-secondary)] sm:text-[18px]"

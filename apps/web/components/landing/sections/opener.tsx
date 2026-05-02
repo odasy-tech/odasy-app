@@ -70,16 +70,7 @@ export function Opener() {
               fontFamily: 'var(--font-display)',
             }}
           >
-            <span className="relative inline-block">
-              Odasy
-              <span
-                aria-hidden
-                className="absolute -right-3 top-3 text-[0.18em] tracking-[0.4em] text-[var(--color-accent-action)]"
-                style={{ fontFamily: 'var(--font-sans)', fontWeight: 600 }}
-              >
-                01
-              </span>
-            </span>
+            Odasy
           </motion.h1>
 
           <motion.p
