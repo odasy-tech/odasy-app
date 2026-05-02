@@ -7,21 +7,35 @@
   "types": "./src/index.ts",
   "exports": {
     ".": "./src/index.ts",
-    "./tokens": "./src/theme/tokens.ts",
-    "./tamagui.config": "./tamagui.config.ts"
+    "./theme": "./src/theme/index.ts",
+    "./tokens": "./src/theme/index.ts",
+    "./web": "./src/web/index.ts",
+    "./native": "./src/native/index.ts",
+    "./utils": "./src/shared/utils/index.ts",
+    "./hooks": "./src/shared/hooks/index.ts",
+    "./tamagui.config": "./tamagui.config.ts",
+    "./styles/tokens.css": "./src/web/styles/tokens.generated.css",
+    "./styles/utilities.css": "./src/web/styles/utilities.css"
   },
   "scripts": {
     "lint": "biome check .",
     "typecheck": "tsc --noEmit",
-    "clean": "rm -rf dist .turbo"
+    "gen:tokens": "tsx scripts/generate-css-tokens.ts",
+    "build": "pnpm gen:tokens",
+    "clean": "rm -rf dist .turbo src/web/styles/tokens.generated.css"
   },
   "dependencies": {
     "@tamagui/config": "1.144.4",
+    "clsx": "2.1.1",
+    "lucide-react": "1.8.0",
+    "motion": "12.38.0",
+    "tailwind-merge": "3.5.0",
     "tamagui": "1.144.4"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.11",
     "@odasy/config": "workspace:*",
+    "tsx": "4.21.0",
     "typescript": "5.9.3"
   },
   "peerDependencies": {

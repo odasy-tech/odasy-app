@@ -1,9 +1,8 @@
 'use client';
 
+import { Divider, MetaLabel } from '@odasy/ui/web';
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
-import { Divider } from '../atoms/divider';
-import { MetaLabel } from '../atoms/meta-label';
 import { useLocale } from '@/lib/i18n/locale-context';
 
 export function Premise() {
@@ -12,36 +11,50 @@ export function Premise() {
   const { t } = useLocale();
 
   return (
-    <section id="premise" ref={ref} className="relative mx-auto max-w-6xl px-6 py-32 sm:px-10 sm:py-40">
+    <section
+      id="chapter-premise"
+      ref={ref}
+      className="relative mx-auto max-w-6xl px-6 py-32 sm:px-12 sm:py-48"
+    >
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 24 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
+        transition={{ duration: 0.9, ease: 'easeOut' }}
         className="flex flex-col items-center text-center"
       >
-        <MetaLabel className="mb-10">{t.premise.chapter}</MetaLabel>
+        <MetaLabel tone="accent" className="mb-12">
+          {t.premise.chapter}
+        </MetaLabel>
 
         <motion.h2
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="max-w-4xl font-[family-name:var(--font-display)] leading-[1.02] tracking-[-0.035em] text-bone"
+          transition={{ duration: 1.1, delay: 0.2 }}
+          className="max-w-4xl leading-[1.04] tracking-[-0.025em] text-[var(--color-ink-primary)] sm:leading-[0.98]"
           style={{
             fontSize: 'clamp(2.5rem, 6.5vw, 5.5rem)',
-            fontVariationSettings: '"SOFT" 100, "opsz" 80',
+            fontFamily: 'var(--font-family-display)',
           }}
         >
           <span>{t.premise.h1Part1}</span>
-          <span className="italic text-bone-mute">{t.premise.h1Part2}</span>
+          <span style={{ fontStyle: 'italic' }} className="text-[var(--color-ink-secondary)]">
+            {t.premise.h1Part2}
+          </span>
           <span>{t.premise.h1Part3}</span>
-          <span className="text-volt italic">{t.premise.h1Accent}</span>
+          <span
+            style={{ fontStyle: 'italic' }}
+            className="text-[var(--color-accent-action)]"
+          >
+            {t.premise.h1Accent}
+          </span>
         </motion.h2>
 
         <motion.p
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 14 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-14 max-w-2xl text-lg leading-relaxed text-bone-mute sm:text-xl"
+          transition={{ duration: 0.9, delay: 0.6 }}
+          className="mt-16 max-w-2xl text-lg leading-[1.7] text-[var(--color-ink-secondary)] sm:text-xl"
+          style={{ fontFamily: 'var(--font-family-sans)' }}
         >
           {t.premise.paragraph}
         </motion.p>

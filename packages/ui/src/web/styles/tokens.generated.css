@@ -1,0 +1,238 @@
+/**
+ * Odasy Design System — generated CSS tokens.
+ *
+ * AUTO-GENERATED. Do not edit by hand.
+ * Source of truth: packages/ui/src/theme/*.ts
+ * Regenerate: pnpm --filter @odasy/ui gen:tokens
+ */
+
+@theme {
+  --color-bg-canvas: #F7F6FC;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-elevated: #F0EEF8;
+  --color-bg-muted: #EEEAF7;
+  --color-ink-primary: #1A1830;
+  --color-ink-secondary: #7B7699;
+  --color-ink-tertiary: #A8A4C0;
+  --color-ink-inverse: #FFFFFF;
+  --color-ink-on-accent: #FFFFFF;
+  --color-border-default: rgba(80, 70, 200, 0.14);
+  --color-border-strong: rgba(80, 70, 200, 0.32);
+  --color-border-subtle: rgba(80, 70, 200, 0.06);
+  --color-accent-base: #6B5CE7;
+  --color-accent-action: #5046C8;
+  --color-accent-hover: #3D2D9E;
+  --color-accent-deep: #3D2D9E;
+  --color-accent-soft: #EDE9FF;
+  --color-accent-on-surface: #5046C8;
+  --color-warm-base: #F2B84C;
+  --color-warm-soft: #FBE9C0;
+  --color-warm-ink: #1A1830;
+  --color-nature-base: #4A8B6F;
+  --color-nature-soft: #D7E8DD;
+  --color-nature-ink: #1A1830;
+  --color-info-base: #8B9EFF;
+  --color-info-soft: #E8ECFF;
+  --color-status-success: #4A8B6F;
+  --color-status-warning: #F2B84C;
+  --color-status-danger: #C45C2E;
+  --color-status-info: #8B9EFF;
+  --color-stamp-bronze: #CD7F32;
+  --color-stamp-silver: #A8A9AD;
+  --color-stamp-gold: #F2B84C;
+  --color-stamp-platinum: #D9DFDC;
+  --color-stamp-diamond: #5046C8;
+  --color-stamp-ink: #5046C8;
+  --color-selection-bg: #EDE9FF;
+  --color-selection-fg: #3D2D9E;
+  --color-overlay-scrim: rgba(11, 10, 30, 0.55);
+  --color-overlay-glow: rgba(80, 70, 200, 0.08);
+  --shadow-none: none;
+  --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 1);
+  --shadow-raised: 0 1px 0 rgba(255, 255, 255, 1) inset, 0 8px 24px -12px rgba(80, 70, 200, 0.18);
+  --shadow-hover: 0 1px 0 rgba(255, 255, 255, 1) inset, 0 16px 36px -16px rgba(80, 70, 200, 0.32);
+  --shadow-modal: 0 24px 64px -16px rgba(11, 10, 30, 0.32);
+  --font-family-display: var(--font-display), "Fraunces", "Times New Roman", Georgia, serif;
+  --font-family-sans: var(--font-sans), "Geist", system-ui, sans-serif;
+  --text-meta: 11px;
+  --text-micro: 12px;
+  --text-small: 14px;
+  --text-body: 16px;
+  --text-lead: 19px;
+  --text-h4: 22px;
+  --text-h3: 30px;
+  --text-h2: clamp(2.5rem, 4.6vw, 4.5rem);
+  --text-h1: clamp(4rem, 9.5vw, 9rem);
+  --text-hero: clamp(5rem, 16vw, 12.5rem);
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  --tracking-tightest: -0.045em;
+  --tracking-tight: -0.025em;
+  --tracking-snug: -0.012em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.06em;
+  --tracking-wider: 0.16em;
+  --tracking-widest: 0.32em;
+  --leading-display: 0.95;
+  --leading-tight: 1.04;
+  --leading-snug: 1.18;
+  --leading-body: 1.55;
+  --leading-loose: 1.7;
+  --spacing-0: 0;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 28px;
+  --spacing-8: 32px;
+  --spacing-9: 36px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-14: 56px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-28: 112px;
+  --spacing-32: 128px;
+  --spacing-40: 160px;
+  --spacing-48: 192px;
+  --spacing-px: 1px;
+  --radius-none: 0;
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+  --duration-instant: 120ms;
+  --duration-fast: 200ms;
+  --duration-base: 320ms;
+  --duration-slow: 520ms;
+  --duration-narrate: 900ms;
+  --duration-epic: 1400ms;
+  --ease-standard: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-entrance: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-exit: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-precise: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-narrative: cubic-bezier(0.87, 0, 0.13, 1);
+  --ease-linear: linear;
+}
+
+/* Dark mode — applied to <html class="ds-dark"> or any subtree. */
+.ds-dark {
+  --color-bg-canvas: #0A0918;
+  --color-bg-surface: #141322;
+  --color-bg-elevated: #1A1930;
+  --color-bg-muted: #0F0E1A;
+  --color-ink-primary: #F0EEF8;
+  --color-ink-secondary: #A8A4C0;
+  --color-ink-tertiary: #7B7699;
+  --color-ink-inverse: #1A1830;
+  --color-ink-on-accent: #FFFFFF;
+  --color-border-default: rgba(139, 158, 255, 0.14);
+  --color-border-strong: rgba(139, 158, 255, 0.34);
+  --color-border-subtle: rgba(139, 158, 255, 0.06);
+  --color-accent-base: #8270F5;
+  --color-accent-action: #6B5CE7;
+  --color-accent-hover: #9C8EFF;
+  --color-accent-deep: #3D2D9E;
+  --color-accent-soft: rgba(107, 92, 231, 0.18);
+  --color-accent-on-surface: #A8B2FF;
+  --color-warm-base: #F2B84C;
+  --color-warm-soft: rgba(242, 184, 76, 0.18);
+  --color-warm-ink: #1A1830;
+  --color-nature-base: #6BA67F;
+  --color-nature-soft: rgba(74, 139, 111, 0.20);
+  --color-nature-ink: #FFFFFF;
+  --color-info-base: #8B9EFF;
+  --color-info-soft: rgba(139, 158, 255, 0.10);
+  --color-status-success: #7DC59B;
+  --color-status-warning: #FAD27D;
+  --color-status-danger: #E58864;
+  --color-status-info: #B4BEFF;
+  --color-stamp-bronze: #CD7F32;
+  --color-stamp-silver: #A8A9AD;
+  --color-stamp-gold: #F2B84C;
+  --color-stamp-platinum: #D9DFDC;
+  --color-stamp-diamond: #C5CCFF;
+  --color-stamp-ink: #C5CCFF;
+  --color-selection-bg: rgba(139, 158, 255, 0.35);
+  --color-selection-fg: #FFFFFF;
+  --color-overlay-scrim: rgba(0, 0, 0, 0.65);
+  --color-overlay-glow: rgba(139, 158, 255, 0.10);
+  --shadow-none: none;
+  --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  --shadow-raised: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 12px 40px -16px rgba(0, 0, 0, 0.5);
+  --shadow-hover: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 24px 56px -16px rgba(0, 0, 0, 0.6);
+  --shadow-modal: 0 32px 80px -20px rgba(0, 0, 0, 0.7);
+}
+
+html, body {
+  background-color: var(--color-bg-canvas);
+  color: var(--color-ink-primary);
+  font-family: var(--font-family-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--color-selection-bg);
+  color: var(--color-selection-fg);
+}
+
+/* ─── Named keyframes — every motion choreography lives here ── */
+
+@keyframes ds-sweep {
+  0%   { transform: translateX(-100%); opacity: 0; }
+  10%  { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes ds-rise {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ds-pulse {
+  0%, 100% { transform: scale(1);   opacity: 0.7; }
+  50%      { transform: scale(1.6); opacity: 0;   }
+}
+
+@keyframes ds-rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes ds-breathe {
+  0%, 100% { opacity: 0.18; }
+  50%      { opacity: 0.32; }
+}
+
+@keyframes ds-draw-path {
+  from { stroke-dashoffset: var(--dash-length, 2000); }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes ds-scan-down {
+  0%   { transform: translateY(-100vh); opacity: 0; }
+  15%  { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { transform: translateY(100vh);  opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

@@ -123,7 +123,7 @@ export function OdasyTabBar({ state, descriptors, navigation }: BottomTabBarProp
               onPress={onPress}
               onLongPress={onLongPress}
               accessibilityLabel={options?.tabBarAccessibilityLabel ?? meta.label}
-              testID={options?.tabBarButtonTestID}
+              {...(options?.tabBarButtonTestID ? { testID: options.tabBarButtonTestID } : {})}
             />
           );
         })}
