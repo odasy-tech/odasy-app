@@ -12,6 +12,7 @@ export function FieldV2() {
 
   return (
     <section
+      id="chapter-field"
       ref={ref}
       className="relative mx-auto grid max-w-6xl gap-16 px-6 py-32 sm:px-12 sm:py-44 md:grid-cols-[1.1fr_1fr] md:gap-20"
     >
@@ -36,93 +37,283 @@ export function FieldV2() {
               className="text-[9px] uppercase tracking-[0.32em] text-[var(--color-aurora-ink-dim)]"
               style={{ fontFamily: 'var(--font-family-aurora-sans)' }}
             >
-              Q · R · C
+              Quindío · Risaralda · Caldas
             </span>
           </div>
 
+          {/* Catalogue mark — top-right (where no other HTML lives) */}
+          <div
+            className="absolute right-7 top-7 z-10 text-[9px] uppercase tracking-[0.32em] text-[var(--color-aurora-ink-dim)]"
+            style={{ fontFamily: 'var(--font-family-aurora-sans)' }}
+          >
+            N° I · MMXXVI
+          </div>
+
           <svg viewBox="0 0 400 400" className="relative h-full w-full" aria-hidden>
-            {/* Concentric range rings — light density */}
-            <g fill="none" strokeWidth="0.7">
-              {[200, 170, 140, 110, 80, 55].map((r, i) => (
-                <circle
-                  key={r}
-                  cx="200"
-                  cy="210"
-                  r={r}
-                  stroke={i === 3 ? 'var(--color-aurora-deep)' : 'var(--color-aurora-blue)'}
-                  strokeOpacity={i === 3 ? 0.55 : 0.18 + i * 0.04}
-                />
-              ))}
+            <defs>
+              {/* Land tint — subtle violet wash for the territory */}
+              <linearGradient id="landTint" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stopColor="var(--color-aurora-blue)" stopOpacity="0.06" />
+                <stop offset="100%" stopColor="var(--color-aurora-violet)" stopOpacity="0.10" />
+              </linearGradient>
+              {/* Discovered area — warm amber centred on Salento */}
+              <radialGradient id="warmZone" cx="63%" cy="71%" r="20%">
+                <stop offset="0%" stopColor="var(--color-aurora-amber)" stopOpacity="0.28" />
+                <stop offset="60%" stopColor="var(--color-aurora-amber)" stopOpacity="0.08" />
+                <stop offset="100%" stopColor="var(--color-aurora-amber)" stopOpacity="0" />
+              </radialGradient>
+              {/* Region clip — discovered wash respects the land outline */}
+              <clipPath id="regionClip">
+                <path d="M 108 64
+                         L 172 50
+                         C 200 48, 224 52, 240 60
+                         C 264 64, 280 70, 290 80
+                         L 320 124
+                         C 332 138, 340 148, 340 160
+                         C 338 178, 334 192, 332 204
+                         C 330 220, 326 232, 322 244
+                         C 318 256, 314 264, 310 272
+                         L 290 312
+                         C 268 332, 250 344, 240 348
+                         C 220 354, 200 356, 180 354
+                         C 158 354, 140 348, 124 336
+                         C 110 328, 100 318, 96 304
+                         C 86 290, 80 274, 76 260
+                         C 70 248, 66 234, 66 220
+                         C 64 200, 62 184, 62 168
+                         C 64 152, 70 134, 74 124
+                         C 78 112, 84 100, 88 92
+                         C 96 80, 102 70, 108 64 Z" />
+              </clipPath>
+            </defs>
+
+            {/* === LAND — Eje Cafetero outer silhouette === */}
+            <path
+              d="M 108 64
+                 L 172 50
+                 C 200 48, 224 52, 240 60
+                 C 264 64, 280 70, 290 80
+                 L 320 124
+                 C 332 138, 340 148, 340 160
+                 C 338 178, 334 192, 332 204
+                 C 330 220, 326 232, 322 244
+                 C 318 256, 314 264, 310 272
+                 L 290 312
+                 C 268 332, 250 344, 240 348
+                 C 220 354, 200 356, 180 354
+                 C 158 354, 140 348, 124 336
+                 C 110 328, 100 318, 96 304
+                 C 86 290, 80 274, 76 260
+                 C 70 248, 66 234, 66 220
+                 C 64 200, 62 184, 62 168
+                 C 64 152, 70 134, 74 124
+                 C 78 112, 84 100, 88 92
+                 C 96 80, 102 70, 108 64 Z"
+              fill="url(#landTint)"
+              stroke="var(--color-aurora-deep)"
+              strokeOpacity="0.55"
+              strokeWidth="1.2"
+              strokeLinejoin="round"
+            />
+
+            {/* Discovered warm zone — clipped to the land */}
+            <g clipPath="url(#regionClip)">
+              <rect x="0" y="0" width="400" height="400" fill="url(#warmZone)" />
             </g>
 
-            {/* Trail */}
+            {/* === Department borders (internal) — dashed hairlines === */}
+            <g
+              fill="none"
+              stroke="var(--color-aurora-deep)"
+              strokeOpacity="0.32"
+              strokeWidth="0.7"
+              strokeDasharray="3 2"
+            >
+              {/* Caldas / Risaralda */}
+              <path d="M 64 178 C 130 168, 200 175, 264 168 L 338 174" />
+              {/* Risaralda / Quindío */}
+              <path d="M 70 264 C 140 256, 200 268, 260 258 L 326 268" />
+            </g>
+
+            {/* === Río Otún — sinuous blue thread crossing through Pereira === */}
             <path
-              d="M140 230 L160 160 L200 210 L230 260 L280 230"
+              d="M 338 198
+                 C 300 210, 260 218, 220 220
+                 C 188 222, 140 232, 100 248
+                 C 80 256, 70 268, 64 280"
+              fill="none"
+              stroke="var(--color-aurora-blue)"
+              strokeOpacity="0.42"
+              strokeWidth="0.7"
+              strokeLinecap="round"
+            />
+
+            {/* === Department labels — caps tracked, low alpha === */}
+            <g
+              fontFamily="var(--font-family-aurora-sans)"
+              fontWeight="700"
+              fill="var(--color-aurora-deep)"
+              fillOpacity="0.34"
+              letterSpacing="3"
+            >
+              <text x="180" y="100" fontSize="6">CALDAS</text>
+              <text x="174" y="222" fontSize="6">RISARALDA</text>
+              <text x="178" y="320" fontSize="6">QUINDÍO</text>
+            </g>
+
+            {/* === Trail — dashed line connecting discovered cities === */}
+            <g
+              fill="none"
               stroke="var(--color-aurora-deep)"
               strokeOpacity="0.55"
               strokeWidth="0.9"
-              fill="none"
-              strokeDasharray="3 4"
-            />
+              strokeDasharray="2.4 2.6"
+              strokeLinecap="round"
+            >
+              {/* Salento → Armenia */}
+              <path d="M 250 274 Q 220 286 188 290" />
+              {/* Armenia → Pereira */}
+              <path d="M 188 290 Q 170 256 170 220" />
+              {/* Pereira → Manizales */}
+              <path d="M 170 220 Q 200 178 220 138" />
+            </g>
 
+            {/* === GHOST PINS (undiscovered) — hollow dashed circles === */}
             {[
-              { x: 200, y: 210, main: true, label: 'Salento' },
-              { x: 260, y: 180, label: 'Filandia' },
-              { x: 160, y: 160, label: 'Manizales' },
-              { x: 230, y: 260, label: 'Armenia' },
-              { x: 140, y: 230, label: 'Pereira' },
-              { x: 280, y: 230, label: 'Circasia' },
-              { x: 190, y: 130, label: 'Cocora' },
+              { x: 244, y: 264, label: 'Filandia', tx: 252, ty: 263 },
+              { x: 218, y: 286, label: 'Circasia', tx: 226, ty: 296 },
+              { x: 274, y: 282, label: 'Cocora',   tx: 282, ty: 281 },
             ].map((p) => (
               <g key={p.label}>
                 <circle
                   cx={p.x}
                   cy={p.y}
-                  r={p.main ? 5.5 : 3}
-                  fill={p.main ? 'var(--color-aurora-deep)' : 'var(--color-aurora-ink-mute)'}
+                  r="2.4"
+                  fill="none"
+                  stroke="var(--color-aurora-ink-mute)"
+                  strokeOpacity="0.42"
+                  strokeWidth="0.6"
+                  strokeDasharray="0.8 1.2"
                 />
-                {p.main && (
-                  <>
-                    <circle cx={p.x} cy={p.y} r="14" stroke="var(--color-aurora-deep)" strokeOpacity="0.45" fill="none" />
-                    <circle cx={p.x} cy={p.y} r="24" stroke="var(--color-aurora-deep)" strokeOpacity="0.2" fill="none" />
-                  </>
-                )}
                 <text
-                  x={p.x + 9}
-                  y={p.y + 3}
-                  fontSize="7"
-                  fontFamily="var(--font-family-aurora-sans)"
-                  fontWeight={p.main ? 600 : 500}
-                  letterSpacing="0.5"
-                  fill={p.main ? 'var(--color-aurora-deep)' : 'var(--color-aurora-ink-mute)'}
-                  opacity={p.main ? 1 : 0.78}
+                  x={p.tx}
+                  y={p.ty}
+                  fontSize="6.2"
+                  fontFamily="var(--font-family-aurora-display)"
+                  fontStyle="italic"
+                  fill="var(--color-aurora-ink-mute)"
+                  fillOpacity="0.55"
+                  letterSpacing="0.35"
                 >
-                  {p.label.toUpperCase()}
+                  {p.label}
                 </text>
               </g>
             ))}
 
-            {/* Coordinate ticks */}
-            <text x="14" y="18" fontSize="6" fontFamily="var(--font-family-aurora-sans)" fill="var(--color-aurora-ink-dim)" letterSpacing="0.6" fontWeight={500}>
-              N 04°32&apos;
-            </text>
-            <text x="386" y="18" fontSize="6" fontFamily="var(--font-family-aurora-sans)" fill="var(--color-aurora-ink-dim)" letterSpacing="0.6" fontWeight={500} textAnchor="end">
-              W 075°40&apos;
-            </text>
-            <text x="14" y="394" fontSize="6" fontFamily="var(--font-family-aurora-sans)" fill="var(--color-aurora-ink-dim)" letterSpacing="0.6" fontWeight={500}>
-              N 04°28&apos;
-            </text>
-            <text x="386" y="394" fontSize="6" fontFamily="var(--font-family-aurora-sans)" fill="var(--color-aurora-ink-dim)" letterSpacing="0.6" fontWeight={500} textAnchor="end">
-              W 075°33&apos;
-            </text>
+            {/* === DISCOVERED PINS === */}
+            {[
+              { x: 220, y: 138, label: 'Manizales', tx: 228, ty: 137 },
+              { x: 170, y: 220, label: 'Pereira',   tx: 178, ty: 219 },
+              { x: 188, y: 290, label: 'Armenia',   tx: 196, ty: 295 },
+            ].map((p) => (
+              <g key={p.label}>
+                {/* Subtle outer ring */}
+                <circle
+                  cx={p.x}
+                  cy={p.y}
+                  r="6"
+                  fill="none"
+                  stroke="var(--color-aurora-deep)"
+                  strokeOpacity="0.22"
+                  strokeWidth="0.5"
+                />
+                {/* Solid pin */}
+                <circle cx={p.x} cy={p.y} r="2.6" fill="var(--color-aurora-deep)" />
+                {/* Label */}
+                <text
+                  x={p.tx}
+                  y={p.ty}
+                  fontSize="7.6"
+                  fontFamily="var(--font-family-aurora-display)"
+                  fontStyle="italic"
+                  fill="var(--color-aurora-deep)"
+                  fillOpacity="0.96"
+                  letterSpacing="0.3"
+                >
+                  {p.label}
+                </text>
+              </g>
+            ))}
+
+            {/* === SALENTO — primary pin (active beachhead) === */}
+            <g>
+              {/* Pulse rings */}
+              <circle cx="250" cy="274" r="22" stroke="var(--color-aurora-amber)" strokeOpacity="0.24" fill="none" strokeWidth="0.5" />
+              <circle cx="250" cy="274" r="13" stroke="var(--color-aurora-amber)" strokeOpacity="0.5" fill="none" strokeWidth="0.7" />
+              {/* Solid amber pin */}
+              <circle cx="250" cy="274" r="4.2" fill="var(--color-aurora-amber)" />
+              {/* Bright centre */}
+              <circle cx="250" cy="274" r="1.6" fill="#FFFFFF" />
+              {/* Star indicator above the pin */}
+              <text x="250" y="261" textAnchor="middle" fontSize="6" fill="var(--color-aurora-amber)" fillOpacity="0.85">★</text>
+              {/* Salento label — italic serif, prominent */}
+              <text
+                x="262" y="276"
+                fontSize="10.2"
+                fontFamily="var(--font-family-aurora-display)"
+                fontStyle="italic"
+                fill="var(--color-aurora-amber)"
+                fontWeight="700"
+                letterSpacing="0.4"
+              >
+                Salento
+              </text>
+              <text
+                x="262" y="285"
+                fontSize="3.4"
+                fontFamily="var(--font-family-aurora-sans)"
+                fontWeight="700"
+                fill="var(--color-aurora-amber)"
+                fillOpacity="0.78"
+                letterSpacing="2.6"
+              >
+                BEACHHEAD · 01
+              </text>
+            </g>
+
+            {/* === Compass rose — cartographic stamp top-right ===
+             * Only chrome that lives inside the SVG. The corner coordinate
+             * ticks were removed because the HTML overlays (title, sub-region
+             * ticker, exploration progress) occupy the same corners. */}
+            <g transform="translate(348 78)">
+              <circle r="14" fill="var(--color-vellum)" fillOpacity="0.7" stroke="var(--color-aurora-deep)" strokeOpacity="0.32" strokeWidth="0.45" />
+              <path d="M 0 -12 L 1.4 -2 L 0 -3.5 L -1.4 -2 Z" fill="var(--color-aurora-deep)" fillOpacity="0.85" />
+              <path d="M 0 12 L 1.4 2 L 0 3.5 L -1.4 2 Z" fill="var(--color-aurora-deep)" fillOpacity="0.4" />
+              <path d="M 12 0 L 2 1.4 L 3.5 0 L 2 -1.4 Z" fill="var(--color-aurora-deep)" fillOpacity="0.4" />
+              <path d="M -12 0 L -2 1.4 L -3.5 0 L -2 -1.4 Z" fill="var(--color-aurora-deep)" fillOpacity="0.4" />
+              <circle r="0.7" fill="var(--color-aurora-deep)" fillOpacity="0.85" />
+              <text x="0" y="-15" fontSize="3.6" textAnchor="middle" fill="var(--color-aurora-deep)" fillOpacity="0.85" fontFamily="var(--font-family-aurora-display)" fontStyle="italic">N</text>
+            </g>
           </svg>
 
           <div className="absolute bottom-7 left-7 z-10 flex items-center gap-2.5">
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-aurora-deep)]" />
             <AuroraMetaLabel>{t.field.mapSubregions}</AuroraMetaLabel>
           </div>
-          <div className="absolute bottom-7 right-7 z-10">
-            <AuroraMetaLabel tone="accent">SCALE 1:60K</AuroraMetaLabel>
+          {/* Exploration progress — overlay communicating the "Living Map" pillar */}
+          <div className="absolute bottom-7 right-7 z-10 flex flex-col items-end gap-1.5">
+            <div
+              className="text-[10px] uppercase tracking-[0.32em] text-[var(--color-aurora-amber)]"
+              style={{ fontFamily: 'var(--font-family-aurora-sans)', fontWeight: 700 }}
+            >
+              Explorado · 18%
+            </div>
+            <div className="h-[3px] w-24 overflow-hidden rounded-full bg-[var(--color-rule)]">
+              <div
+                className="h-full rounded-full bg-[var(--color-aurora-amber)]"
+                style={{ width: '18%' }}
+              />
+            </div>
           </div>
         </div>
       </motion.div>

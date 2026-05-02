@@ -3,6 +3,7 @@
 import { motion } from 'motion/react';
 import { ArrowDown } from 'lucide-react';
 import { AuroraCompass } from '../atoms/aurora-compass';
+import { AuroraCompassBackdrop } from '../atoms/aurora-compass-backdrop';
 import { AuroraCoordinates } from '../atoms/aurora-coordinates';
 import { AuroraMetaLabel } from '../atoms/aurora-meta-label';
 import { AuroraThemeToggle } from '../atoms/aurora-theme-toggle';
@@ -13,7 +14,11 @@ export function OpenerV2() {
   const { t } = useLocale();
 
   return (
-    <section className="relative flex min-h-screen flex-col overflow-hidden">
+    <section
+      id="chapter-opener"
+      className="relative flex min-h-screen flex-col overflow-hidden"
+    >
+      <AuroraCompassBackdrop />
       <AuroraTopoBg />
 
       <header className="relative z-10 flex items-start justify-between gap-4 px-6 pt-7 sm:px-12 sm:pt-9">

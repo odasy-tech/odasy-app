@@ -15,7 +15,7 @@ export const dictionaries = {
       subtitleAccent: 'signifiquen algo',
       subtitlePost: '.',
       cta: 'Abrir expediente',
-      footerLeft: 'fundado 2026 · bogotá · co',
+      footerLeft: 'fundado 2026 · colombia',
       footerRight: 'v.01 · beta privada',
     },
     premise: {
@@ -26,6 +26,28 @@ export const dictionaries = {
       h1Accent: 'recuerdan.',
       paragraph:
         'Odasy es el sistema operativo del explorador moderno: un pasaporte vivo, un mapa que se revela al recorrerlo y un juego que se despliega en lugares reales. Cada sello se gana en campo, nunca se compra. Cada página, un capítulo que solo tú has escrito.',
+    },
+    explorer: {
+      meta: 'Identidad · interludio',
+      heading: 'No eres turista. Eres explorador.',
+      paragraph:
+        'Cada decisión revela tu arquetipo. Tu pasaporte no acumula visitas — refleja quién has llegado a ser. Siete formas de explorar, una mezcla única en cada persona.',
+      archetypes: [
+        { id: 'navigator', name: 'Navegante', copy: 'Siempre buscando nuevos horizontes.' },
+        { id: 'contemplator', name: 'Contemplador', copy: 'Viaja lento. Conoce profundo.' },
+        { id: 'adventurer', name: 'Aventurero', copy: 'Adrenalina y desafío físico.' },
+        { id: 'sibarite', name: 'Sibarita', copy: 'Descubre el mundo con el paladar.' },
+        { id: 'cultural', name: 'Cultural', copy: 'Personas, historias, tradiciones.' },
+        { id: 'chronicler', name: 'Cronista', copy: 'Documenta, comparte, recuerda.' },
+        { id: 'conscious', name: 'Consciente', copy: 'Viaja con responsabilidad e impacto.' },
+      ],
+      profileLabel: 'Tu perfil de exploración',
+      profileMix: [
+        { archetype: 'Contemplador', pct: 38 },
+        { archetype: 'Cultural', pct: 27 },
+        { archetype: 'Sibarita', pct: 18 },
+        { archetype: 'Navegante', pct: 17 },
+      ],
     },
     apparatus: {
       chapter: 'Capítulo II · El instrumental',
@@ -99,7 +121,7 @@ export const dictionaries = {
     dossier: {
       blocks: [
         { label: 'Clasificación', value: 'Expediente público · v.01' },
-        { label: 'Compilado', value: 'Bogotá · 2026' },
+        { label: 'Compilado', value: 'Colombia · 2026' },
         { label: 'Coordenadas', value: 'N 04°32\u2032 · W 075°40\u2032' },
         { label: 'Próxima revisión', value: 'Q3 2026' },
       ],
@@ -110,6 +132,7 @@ export const dictionaries = {
         { label: 'Contacto', href: '#' },
       ],
       copyright: '© 2026 Odasy · Beta privada',
+      communityHint: 'Hermandad de exploradores · próximamente',
     },
     toggle: {
       aria: 'Cambiar idioma',
@@ -123,7 +146,7 @@ export const dictionaries = {
       subtitleAccent: 'mean something',
       subtitlePost: '.',
       cta: 'Open the dossier',
-      footerLeft: 'est. 2026 · bogotá · co',
+      footerLeft: 'est. 2026 · colombia',
       footerRight: 'v.01 · private beta',
     },
     premise: {
@@ -134,6 +157,28 @@ export const dictionaries = {
       h1Accent: 'remember.',
       paragraph:
         'Odasy is the operating system for the modern explorer — a living passport, a map that reveals itself as you walk it, and a game that unfolds across real places. Every stamp is earned in the field, never bought. Every page, a chapter only you have written.',
+    },
+    explorer: {
+      meta: 'Identity · interlude',
+      heading: 'You are not a tourist. You are an explorer.',
+      paragraph:
+        "Every choice reveals your archetype. Your passport does not collect visits — it reflects who you've become. Seven ways to explore, one unique blend in every person.",
+      archetypes: [
+        { id: 'navigator', name: 'Navigator', copy: 'Always seeking new horizons.' },
+        { id: 'contemplator', name: 'Contemplator', copy: 'Travels slow. Knows deep.' },
+        { id: 'adventurer', name: 'Adventurer', copy: 'Adrenaline and physical challenge.' },
+        { id: 'sibarite', name: 'Sibarite', copy: 'Discovers the world with the palate.' },
+        { id: 'cultural', name: 'Cultural', copy: 'People, stories, traditions.' },
+        { id: 'chronicler', name: 'Chronicler', copy: 'Documents, shares, remembers.' },
+        { id: 'conscious', name: 'Conscious', copy: 'Travels with responsibility and impact.' },
+      ],
+      profileLabel: 'Your explorer profile',
+      profileMix: [
+        { archetype: 'Contemplator', pct: 38 },
+        { archetype: 'Cultural', pct: 27 },
+        { archetype: 'Sibarite', pct: 18 },
+        { archetype: 'Navigator', pct: 17 },
+      ],
     },
     apparatus: {
       chapter: 'Chapter II · The apparatus',
@@ -207,7 +252,7 @@ export const dictionaries = {
     dossier: {
       blocks: [
         { label: 'Classification', value: 'Public dossier · v.01' },
-        { label: 'Compiled', value: 'Bogotá · 2026' },
+        { label: 'Compiled', value: 'Colombia · 2026' },
         { label: 'Coordinates', value: 'N 04°32\u2032 · W 075°40\u2032' },
         { label: 'Next review', value: 'Q3 2026' },
       ],
@@ -218,6 +263,7 @@ export const dictionaries = {
         { label: 'Contact', href: '#' },
       ],
       copyright: '© 2026 Odasy · Private beta',
+      communityHint: 'Brotherhood of explorers · opening soon',
     },
     toggle: {
       aria: 'Change language',

@@ -4,14 +4,27 @@ import { motion, useInView } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { AuroraMetaLabel } from '../atoms/aurora-meta-label';
+import { useAuroraTheme } from '../lib/theme-context';
 import { useLocale } from '@/lib/i18n/locale-context';
 
+/**
+ * Expedition CTA — the page's only saturated moment.
+ *
+ * In LIGHT theme: a deep violet band slammed into the paper. The contrast
+ * makes the call-to-action unmistakable.
+ *
+ * In DARK theme: the band INVERTS to light paper — a "signature page"
+ * sewn into a dark dossier. This preserves the contrast principle
+ * (always the inverse of the surrounding surface) and creates a
+ * cinematic moment of light when the rest of the page is dark.
+ */
 export function ExpeditionV2() {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.3 });
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const { t } = useLocale();
+  const { theme } = useAuroraTheme();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,22 +32,45 @@ export function ExpeditionV2() {
     setSubmitted(true);
   };
 
+  // Light theme: dark band, white type. Dark theme: light band, ink type.
+  const isLightSignature = theme === 'dark';
+  const sectionBg = isLightSignature ? '#F7F6FC' : 'var(--color-aurora-dark)';
+  const headlineColor = isLightSignature ? '#1A1830' : '#FFFFFF';
+  const accentColor = isLightSignature ? 'var(--color-aurora-deep)' : 'var(--color-aurora-blue)';
+  const bodyColor = isLightSignature ? '#7B7699' : 'rgba(255,255,255,0.75)';
+  const inputBorder = isLightSignature ? 'rgba(80,70,200,0.18)' : 'rgba(255,255,255,0.15)';
+  const inputBg = isLightSignature ? '#FFFFFF' : 'rgba(255,255,255,0.05)';
+  const inputText = isLightSignature ? '#1A1830' : '#FFFFFF';
+  const inputPlaceholder = isLightSignature ? '#A8A4C0' : 'rgba(255,255,255,0.4)';
+  const submitBg = isLightSignature ? 'var(--color-aurora-deep)' : '#FFFFFF';
+  const submitText = isLightSignature ? '#FFFFFF' : 'var(--color-aurora-dark)';
+  const metaTone = isLightSignature ? 'mute' : 'inverse';
+
   return (
-    <section
-      id="beta"
-      ref={ref}
-      className="relative overflow-hidden"
-    >
-      {/* Inverted dark band — the only saturated moment in the page */}
-      <div className="relative bg-[var(--color-aurora-dark)] px-6 py-32 sm:px-12 sm:py-44">
+    <section id="chapter-expedition" ref={ref} className="relative overflow-hidden">
+      <div
+        className="relative px-6 py-32 sm:px-12 sm:py-44"
+        style={{ backgroundColor: sectionBg }}
+      >
+        {/* Atmospheric overlays — same vocabulary in both themes, different alpha */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
           style={{
-            background:
-              'radial-gradient(ellipse at 70% 30%, rgba(168, 178, 255, 0.18), transparent 55%), radial-gradient(ellipse at 20% 80%, rgba(107, 92, 231, 0.4), transparent 55%)',
+            background: isLightSignature
+              ? 'radial-gradient(ellipse at 70% 30%, rgba(80, 70, 200, 0.06), transparent 55%), radial-gradient(ellipse at 20% 80%, rgba(139, 158, 255, 0.10), transparent 55%)'
+              : 'radial-gradient(ellipse at 70% 30%, rgba(168, 178, 255, 0.18), transparent 55%), radial-gradient(ellipse at 20% 80%, rgba(107, 92, 231, 0.4), transparent 55%)',
           }}
         />
+
+        {/* Stitched-in border (only in dark "signature page" mode) */}
+        {isLightSignature && (
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-6 inset-y-12 border border-dashed sm:inset-x-12 sm:inset-y-16"
+            style={{ borderColor: 'rgba(80,70,200,0.25)' }}
+          />
+        )}
 
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -42,30 +78,28 @@ export function ExpeditionV2() {
           transition={{ duration: 0.9 }}
           className="relative z-10 mx-auto flex max-w-3xl flex-col items-center text-center"
         >
-          <AuroraMetaLabel tone="inverse" className="mb-8">
+          <AuroraMetaLabel tone={metaTone} className="mb-8">
             {t.expedition.chapter}
           </AuroraMetaLabel>
 
           <h2
-            className="max-w-3xl leading-[1.02] tracking-[-0.03em] text-white"
+            className="max-w-3xl leading-[1.02] tracking-[-0.03em]"
             style={{
               fontSize: 'clamp(2.4rem, 6vw, 5rem)',
               fontFamily: 'var(--font-family-aurora-display)',
+              color: headlineColor,
             }}
           >
             <span>{t.expedition.headingPre}</span>
-            <span
-              style={{ fontStyle: 'italic' }}
-              className="text-[var(--color-aurora-blue)]"
-            >
+            <span style={{ fontStyle: 'italic', color: accentColor }}>
               {t.expedition.headingAccent}
             </span>
             <span>{t.expedition.headingPost}</span>
           </h2>
 
           <p
-            className="mt-8 max-w-xl text-base leading-[1.7] text-white/75 sm:text-lg"
-            style={{ fontFamily: 'var(--font-family-aurora-sans)' }}
+            className="mt-8 max-w-xl text-base leading-[1.7] sm:text-lg"
+            style={{ fontFamily: 'var(--font-family-aurora-sans)', color: bodyColor }}
           >
             {t.expedition.paragraph}
           </p>
@@ -81,14 +115,26 @@ export function ExpeditionV2() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder={t.expedition.emailPlaceholder}
               disabled={submitted}
-              className="flex-1 border border-white/15 bg-white/5 px-5 py-4 text-sm tracking-wider text-white placeholder:text-white/40 focus:border-[var(--color-aurora-blue)] focus:bg-white/10 focus:outline-none disabled:opacity-50"
-              style={{ fontFamily: 'var(--font-family-aurora-sans)' }}
+              className="flex-1 border px-5 py-4 text-sm tracking-wider focus:outline-none disabled:opacity-50"
+              style={{
+                fontFamily: 'var(--font-family-aurora-sans)',
+                borderColor: inputBorder,
+                backgroundColor: inputBg,
+                color: inputText,
+                ['--placeholder-color' as string]: inputPlaceholder,
+              }}
             />
             <button
               type="submit"
               disabled={submitted}
-              className="group flex items-center justify-center gap-3 border border-white bg-white px-7 py-4 text-xs uppercase tracking-[0.32em] text-[var(--color-aurora-dark)] transition hover:border-[var(--color-aurora-blue)] hover:bg-[var(--color-aurora-blue)] disabled:cursor-default disabled:opacity-60"
-              style={{ fontFamily: 'var(--font-family-aurora-sans)', fontWeight: 600 }}
+              className="group flex items-center justify-center gap-3 border px-7 py-4 text-xs uppercase tracking-[0.32em] transition disabled:cursor-default disabled:opacity-60"
+              style={{
+                fontFamily: 'var(--font-family-aurora-sans)',
+                fontWeight: 600,
+                borderColor: submitBg,
+                backgroundColor: submitBg,
+                color: submitText,
+              }}
             >
               <span>{submitted ? t.expedition.submitted : t.expedition.submit}</span>
               {!submitted && (
@@ -101,7 +147,7 @@ export function ExpeditionV2() {
             </button>
           </form>
 
-          <AuroraMetaLabel tone="inverse" className="mt-8">
+          <AuroraMetaLabel tone={metaTone} className="mt-8">
             {t.expedition.meta}
           </AuroraMetaLabel>
         </motion.div>

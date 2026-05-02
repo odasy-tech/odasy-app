@@ -13,7 +13,7 @@ export function PremiseV2() {
 
   return (
     <section
-      id="premise"
+      id="chapter-premise"
       ref={ref}
       className="relative mx-auto max-w-6xl px-6 py-32 sm:px-12 sm:py-48"
     >
@@ -31,7 +31,7 @@ export function PremiseV2() {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 1.1, delay: 0.2 }}
-          className="max-w-4xl leading-[0.98] tracking-[-0.025em] text-[var(--color-aurora-ink)]"
+          className="max-w-4xl leading-[1.04] tracking-[-0.025em] text-[var(--color-aurora-ink)] sm:leading-[0.98]"
           style={{
             fontSize: 'clamp(2.5rem, 6.5vw, 5.5rem)',
             fontFamily: 'var(--font-family-aurora-display)',

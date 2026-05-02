@@ -53,6 +53,26 @@ export function DossierV2() {
             <AuroraMetaLabel>{t.dossier.copyright}</AuroraMetaLabel>
           </div>
         </div>
+
+        {/* Community guiño — pillar 5 hint */}
+        <div className="mt-10 flex items-center justify-between border-t border-[var(--color-rule)] pt-6">
+          <span
+            className="flex items-center gap-2 text-[10px] uppercase tracking-[0.32em] text-[var(--color-aurora-ink-mute)]"
+            style={{ fontFamily: 'var(--font-family-aurora-sans)' }}
+          >
+            <span
+              aria-hidden
+              className="inline-block h-1.5 w-1.5 rounded-full bg-[var(--color-aurora-moss)]"
+            />
+            {t.dossier.communityHint}
+          </span>
+          <span
+            className="text-[10px] tracking-[0.32em] text-[var(--color-aurora-ink-dim)]"
+            style={{ fontFamily: 'var(--font-family-aurora-sans)' }}
+          >
+            04°32′ N · 75°40′ W
+          </span>
+        </div>
       </div>
     </footer>
   );

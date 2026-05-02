@@ -4,6 +4,7 @@ import { ApparatusV2 } from '@/components/landing-v2/sections/apparatus';
 import { ArtifactV2 } from '@/components/landing-v2/sections/artifact';
 import { DossierV2 } from '@/components/landing-v2/sections/dossier';
 import { ExpeditionV2 } from '@/components/landing-v2/sections/expedition';
+import { ExplorerV2 } from '@/components/landing-v2/sections/explorer';
 import { FieldV2 } from '@/components/landing-v2/sections/field';
 import { OpenerV2 } from '@/components/landing-v2/sections/opener';
 import { PremiseV2 } from '@/components/landing-v2/sections/premise';
@@ -24,6 +25,7 @@ export default function HomePageV2() {
           <AuroraSweepLine />
           <OpenerV2 />
           <PremiseV2 />
+          <ExplorerV2 />
           <ApparatusV2 />
           <FieldV2 />
           <ArtifactV2 />

@@ -70,12 +70,23 @@
   --color-aurora-blue: #8B9EFF;
   --color-aurora-blue-soft: #E8ECFF;
 
+  /* V2 secondary accents — heritage warmth + nature green */
+  --color-aurora-amber: #F2B84C;
+  --color-aurora-amber-soft: #FBE9C0;
+  --color-aurora-moss: #4A8B6F;
+  --color-aurora-moss-soft: #D7E8DD;
+
   /* V2 stamp tiers (prototype values) */
   --color-aurora-bronze: #CD7F32;
   --color-aurora-silver: #A8A9AD;
   --color-aurora-gold: #FFD700;
   --color-aurora-platinum: #D9DFDC;
   --color-aurora-alert: #C45C2E;
+
+  /* Stamp ink — strongest reading colour against the current surface.
+   * Used for rings, engraved text, glyphs, and the Diamond tier. */
+  --color-stamp-ink: #5046C8;
+  --color-stamp-ink-dim: #A8A4C0;
 }
 
 html, body {
@@ -90,6 +101,17 @@ html, body {
 *::selection {
   background-color: var(--color-volt);
   color: var(--color-ink-950);
+}
+
+/* Selection scoped to v2 — overrides the volt rule above */
+.aurora-paper ::selection {
+  background-color: var(--color-aurora-soft);
+  color: var(--color-aurora-dark);
+}
+
+.aurora-dark ::selection {
+  background-color: rgba(139, 158, 255, 0.35);
+  color: #FFFFFF;
 }
 
 /* ───── Animations ───────────────────────────────────────────────── */
@@ -262,6 +284,11 @@ html, body {
 
   --color-aurora-soft: rgba(107, 92, 231, 0.18);
   --color-aurora-blue-soft: rgba(139, 158, 255, 0.10);
+
+  /* Stamp ink — flips to a soft luminous violet on dark navy.
+   * Diamond tier reuses this token so it remains the brightest jewel. */
+  --color-stamp-ink: #C5CCFF;
+  --color-stamp-ink-dim: #6B6685;
 }
 
 .aurora-dark.aurora-paper {
