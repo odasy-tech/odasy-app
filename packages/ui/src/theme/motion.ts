@@ -69,7 +69,7 @@ export const easingPoints = {
 
 /**
  * Spring presets for physics-based animations.
- * Used by Motion (web) and Reanimated 3 (native).
+ * Used by Motion (web) and Reanimated 4 (native).
  */
 export const spring = {
   /** Soft, dampened — for cards lifting, hover states. */

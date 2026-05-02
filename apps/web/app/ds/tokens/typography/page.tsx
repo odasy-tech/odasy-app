@@ -1,4 +1,4 @@
-import { typography } from '@odasy/ui/theme';
+﻿import { typography } from '@odasy/ui/theme';
 import { Card } from '@odasy/ui/web';
 import { ShowcaseSection } from '@/components/ds-showcase/section';
 
@@ -28,15 +28,15 @@ export default function TypographyPage() {
             >
               <div
                 className="text-[10px] uppercase tracking-[0.32em] text-[var(--color-ink-secondary)] tabular-nums"
-                style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 600 }}
+                style={{ fontFamily: 'var(--font-sans)', fontWeight: 600 }}
               >
                 {key} · {value}
               </div>
               <div
                 style={{
                   fontFamily: key.match(/^(meta|micro|small|body|lead)$/)
-                    ? 'var(--font-family-sans)'
-                    : 'var(--font-family-display)',
+                    ? 'var(--font-sans)'
+                    : 'var(--font-display)',
                   fontSize: value,
                   lineHeight: typography.leading.tight,
                 }}
@@ -52,7 +52,7 @@ export default function TypographyPage() {
       <Card>
         <h3
           className="mb-4 text-[14px] uppercase tracking-[0.32em] text-[var(--color-ink-primary)]"
-          style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+          style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
         >
           Tracking & leading
         </h3>
@@ -66,7 +66,7 @@ export default function TypographyPage() {
                 <span
                   className="text-[14px]"
                   style={{
-                    fontFamily: 'var(--font-family-sans)',
+                    fontFamily: 'var(--font-sans)',
                     letterSpacing: v as string,
                   }}
                 >
@@ -82,7 +82,7 @@ export default function TypographyPage() {
             </div>
             {Object.entries(typography.leading).map(([k, v]) => (
               <div key={k} className="flex items-baseline justify-between border-b border-[var(--color-border-subtle)] py-1.5">
-                <span className="text-[14px] text-[var(--color-ink-primary)]" style={{ fontFamily: 'var(--font-family-sans)' }}>
+                <span className="text-[14px] text-[var(--color-ink-primary)]" style={{ fontFamily: 'var(--font-sans)' }}>
                   {k}
                 </span>
                 <span className="text-[10px] text-[var(--color-ink-tertiary)] tabular-nums">{v as number}</span>

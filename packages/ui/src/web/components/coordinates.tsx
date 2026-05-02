@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useState } from 'react';
 import { cn } from '../../shared/utils';
@@ -46,7 +46,7 @@ export function Coordinates({
         'inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.28em] text-[var(--color-ink-secondary)] tabular-nums',
         className,
       )}
-      style={{ fontFamily: 'var(--font-family-sans)' }}
+      style={{ fontFamily: 'var(--font-sans)' }}
     >
       {withDot && (
         <span

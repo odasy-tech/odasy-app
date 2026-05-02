@@ -1,4 +1,4 @@
-import { radii, spacing } from '@odasy/ui/theme';
+﻿import { radii, spacing } from '@odasy/ui/theme';
 import { Card } from '@odasy/ui/web';
 import { ShowcaseSection } from '@/components/ds-showcase/section';
 
@@ -15,7 +15,7 @@ export default function SpacingPage() {
             <div key={k} className="flex items-center gap-4">
               <span
                 className="w-12 shrink-0 text-right text-[12px] uppercase tracking-[0.22em] text-[var(--color-ink-secondary)] tabular-nums"
-                style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 600 }}
+                style={{ fontFamily: 'var(--font-sans)', fontWeight: 600 }}
               >
                 {k}
               </span>
@@ -29,7 +29,7 @@ export default function SpacingPage() {
       <Card>
         <h3
           className="mb-4 text-[14px] uppercase tracking-[0.32em] text-[var(--color-ink-primary)]"
-          style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+          style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
         >
           Radii
         </h3>

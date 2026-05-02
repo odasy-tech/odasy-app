@@ -90,8 +90,12 @@ function build(): string {
     lines.push(`  --shadow-${camelToKebab(key)}: ${value};`);
   }
   // Typography
-  lines.push(`  --font-family-display: ${fonts.display.web};`);
-  lines.push(`  --font-family-sans: ${fonts.sans.web};`);
+  // Tailwind 4 maps `--font-*` → `font-*` utilities (so these emit
+  // `font-display` and `font-sans`). The raw next/font variables are
+  // `--font-fraunces` and `--font-geist`; these tokens wrap them with
+  // a fallback chain and a stable Tailwind-friendly name.
+  lines.push(`  --font-display: ${fonts.display.web};`);
+  lines.push(`  --font-sans: ${fonts.sans.web};`);
   for (const [key, value] of Object.entries(scale)) {
     lines.push(`  --text-${camelToKebab(key)}: ${value};`);
   }
@@ -136,7 +140,7 @@ function build(): string {
   lines.push('html, body {');
   lines.push('  background-color: var(--color-bg-canvas);');
   lines.push('  color: var(--color-ink-primary);');
-  lines.push('  font-family: var(--font-family-sans);');
+  lines.push('  font-family: var(--font-sans);');
   lines.push('  -webkit-font-smoothing: antialiased;');
   lines.push('  -moz-osx-font-smoothing: grayscale;');
   lines.push('  text-rendering: optimizeLegibility;');

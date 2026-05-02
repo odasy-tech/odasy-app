@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { MetaLabel } from '@odasy/ui/web';
 import { useLocale } from '@/lib/i18n/locale-context';
@@ -19,7 +19,7 @@ export function Dossier() {
               <MetaLabel>{b.label}</MetaLabel>
               <div
                 className="text-[12px] tracking-[0.06em] text-[var(--color-ink-primary)]"
-                style={{ fontFamily: 'var(--font-family-sans)' }}
+                style={{ fontFamily: 'var(--font-sans)' }}
               >
                 {b.value}
               </div>
@@ -31,7 +31,7 @@ export function Dossier() {
           <div
             className="leading-none tracking-[-0.02em] text-[var(--color-ink-primary)]"
             style={{
-              fontFamily: 'var(--font-family-display)',
+              fontFamily: 'var(--font-display)',
               fontSize: '2.6rem',
             }}
           >
@@ -44,7 +44,7 @@ export function Dossier() {
                   key={l.label}
                   href={l.href}
                   className="text-[10px] uppercase tracking-[0.32em] text-[var(--color-ink-secondary)] transition hover:text-[var(--color-accent-action)]"
-                  style={{ fontFamily: 'var(--font-family-sans)' }}
+                  style={{ fontFamily: 'var(--font-sans)' }}
                 >
                   {l.label}
                 </a>
@@ -58,7 +58,7 @@ export function Dossier() {
         <div className="mt-10 flex items-center justify-between border-t border-[var(--color-border-default)] pt-6">
           <span
             className="flex items-center gap-2 text-[10px] uppercase tracking-[0.32em] text-[var(--color-ink-secondary)]"
-            style={{ fontFamily: 'var(--font-family-sans)' }}
+            style={{ fontFamily: 'var(--font-sans)' }}
           >
             <span
               aria-hidden
@@ -68,7 +68,7 @@ export function Dossier() {
           </span>
           <span
             className="text-[10px] tracking-[0.32em] text-[var(--color-ink-tertiary)]"
-            style={{ fontFamily: 'var(--font-family-sans)' }}
+            style={{ fontFamily: 'var(--font-sans)' }}
           >
             04°32′ N · 75°40′ W
           </span>

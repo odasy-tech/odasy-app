@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import {
   forwardRef,
@@ -67,7 +67,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
                 ? 'text-white/70'
                 : 'text-[var(--color-ink-secondary)]',
             )}
-            style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 600 }}
+            style={{ fontFamily: 'var(--font-sans)', fontWeight: 600 }}
           >
             {label}
           </label>
@@ -95,7 +95,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
                 ? 'text-white placeholder:text-white/40'
                 : 'text-[var(--color-ink-primary)] placeholder:text-[var(--color-ink-tertiary)]',
             )}
-            style={{ fontFamily: 'var(--font-family-sans)' }}
+            style={{ fontFamily: 'var(--font-sans)' }}
             {...rest}
           />
           {suffix ? <span className="shrink-0">{suffix}</span> : null}
@@ -107,7 +107,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
               'text-[11px] leading-relaxed',
               isInverse ? 'text-white/55' : 'text-[var(--color-ink-secondary)]',
             )}
-            style={{ fontFamily: 'var(--font-family-sans)' }}
+            style={{ fontFamily: 'var(--font-sans)' }}
           >
             {hint}
           </span>
@@ -116,7 +116,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           <span
             id={errorId}
             className="text-[11px] leading-relaxed text-[var(--color-status-danger)]"
-            style={{ fontFamily: 'var(--font-family-sans)' }}
+            style={{ fontFamily: 'var(--font-sans)' }}
           >
             {error}
           </span>

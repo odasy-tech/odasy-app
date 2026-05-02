@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'motion/react';
 import type { ReactNode } from 'react';
@@ -55,7 +55,7 @@ export function Archetype({
           style={{
             backgroundColor: accentVar,
             color: '#FFFFFF',
-            fontFamily: 'var(--font-family-sans)',
+            fontFamily: 'var(--font-sans)',
             fontWeight: 700,
           }}
         >
@@ -80,7 +80,7 @@ export function Archetype({
       <div
         className="text-[18px] leading-[1.15] tracking-[-0.005em] text-[var(--color-ink-primary)]"
         style={{
-          fontFamily: 'var(--font-family-display)',
+          fontFamily: 'var(--font-display)',
           fontStyle: 'italic',
         }}
       >
@@ -89,7 +89,7 @@ export function Archetype({
 
       <p
         className="text-[12px] leading-[1.55] text-[var(--color-ink-secondary)]"
-        style={{ fontFamily: 'var(--font-family-sans)' }}
+        style={{ fontFamily: 'var(--font-sans)' }}
       >
         {copy}
       </p>

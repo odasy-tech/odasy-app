@@ -1,4 +1,4 @@
-import { cn } from '../../shared/utils';
+﻿import { cn } from '../../shared/utils';
 
 export type MapPinState = 'discovered' | 'undiscovered' | 'active' | 'visited';
 
@@ -74,7 +74,7 @@ export function MapPin({ state = 'undiscovered', label, iconOnly, className }: M
             'text-[10px] uppercase tracking-[0.28em]',
             styles.label,
           )}
-          style={{ fontFamily: 'var(--font-family-sans)' }}
+          style={{ fontFamily: 'var(--font-sans)' }}
         >
           {label}
         </span>

@@ -39,14 +39,18 @@
   mix-blend-mode: multiply;
 }
 
-/* Dark-theme paper variant — recoloured grain + softer radial wash */
-.ds-dark.ds-paper {
+/* Dark-theme paper variant — recoloured grain + softer radial wash.
+ *
+ * Uses a descendant combinator because `ds-dark` is applied to <html> by
+ * ThemeProvider while `ds-paper` typically lives on <main>. The compound
+ * selector `.ds-dark.ds-paper` would never match. */
+.ds-dark .ds-paper {
   background-image:
     radial-gradient(ellipse 80% 60% at 50% -10%, rgba(139, 158, 255, 0.16), transparent 70%),
     radial-gradient(ellipse 60% 40% at 90% 100%, rgba(107, 92, 231, 0.20), transparent 70%);
 }
 
-.ds-dark.ds-paper::before {
+.ds-dark .ds-paper::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.86' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.94  0 0 0 0 0.93  0 0 0 0 0.97  0 0 0 0.5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   opacity: 0.035;
   mix-blend-mode: screen;
@@ -227,4 +231,16 @@
 
 .ds-animate-scan-down {
   animation: ds-scan-down 2.4s ease-out 300ms forwards;
+}
+
+/* ─── Form input placeholder ──────────────────────────────────────
+ * Inputs can override the placeholder colour per-instance by setting
+ * the inline custom property `--placeholder-color`. Falls back to the
+ * tertiary ink token so any input that does NOT override still picks
+ * up the active theme. */
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--placeholder-color, var(--color-ink-tertiary));
+  opacity: 1; /* normalise Firefox's reduced-opacity default */
 }

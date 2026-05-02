@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react';
+﻿import type { HTMLAttributes } from 'react';
 import { cn } from '../../shared/utils';
 import { XPBar } from './xp-bar';
 
@@ -30,7 +30,7 @@ export function LevelIndicator({
         <span
           className="leading-none text-[var(--color-accent-action)]"
           style={{
-            fontFamily: 'var(--font-family-display)',
+            fontFamily: 'var(--font-display)',
             fontStyle: 'italic',
             fontSize: '2.4rem',
           }}
@@ -39,14 +39,14 @@ export function LevelIndicator({
         </span>
         <span
           className="text-[10px] uppercase tracking-[0.32em] text-[var(--color-ink-secondary)]"
-          style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 600 }}
+          style={{ fontFamily: 'var(--font-sans)', fontWeight: 600 }}
         >
           Nivel
         </span>
         {title ? (
           <span
             className="ml-2 text-[12px] italic text-[var(--color-ink-primary)]"
-            style={{ fontFamily: 'var(--font-family-display)' }}
+            style={{ fontFamily: 'var(--font-display)' }}
           >
             {title}
           </span>

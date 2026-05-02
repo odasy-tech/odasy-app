@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion as m } from 'motion/react';
 import { useState } from 'react';
@@ -29,13 +29,13 @@ export default function MotionPage() {
           <div>
             <h3
               className="text-[14px] uppercase tracking-[0.32em] text-[var(--color-ink-primary)]"
-              style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+              style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
             >
               Durations × easings
             </h3>
             <p
               className="mt-1 text-[12px] text-[var(--color-ink-secondary)]"
-              style={{ fontFamily: 'var(--font-family-sans)' }}
+              style={{ fontFamily: 'var(--font-sans)' }}
             >
               Click to retrigger.
             </p>
@@ -52,7 +52,7 @@ export default function MotionPage() {
             >
               <div
                 className="text-[10px] uppercase tracking-[0.28em] text-[var(--color-accent-action)]"
-                style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+                style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
               >
                 {demo.name}
               </div>
@@ -74,7 +74,7 @@ export default function MotionPage() {
       <Card>
         <h3
           className="mb-4 text-[14px] uppercase tracking-[0.32em] text-[var(--color-ink-primary)]"
-          style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+          style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
         >
           Named keyframes
         </h3>
@@ -86,7 +86,7 @@ export default function MotionPage() {
             >
               <span
                 className="text-[10px] uppercase tracking-[0.28em] text-[var(--color-accent-action)]"
-                style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+                style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
               >
                 {kf.name}
               </span>

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'motion/react';
 import { type ReactNode, useId, useState } from 'react';
@@ -159,7 +159,7 @@ export function Stamp({
             fontSize="3.4"
             fill={ink}
             fillOpacity="0.85"
-            fontFamily="var(--font-family-sans)"
+            fontFamily="var(--font-sans)"
             fontWeight="600"
             letterSpacing="2.4"
           >
@@ -174,7 +174,7 @@ export function Stamp({
             fontSize="3.4"
             fill={tierColor}
             fillOpacity="0.95"
-            fontFamily="var(--font-family-sans)"
+            fontFamily="var(--font-sans)"
             fontWeight="700"
             letterSpacing="2.6"
           >
@@ -203,7 +203,7 @@ export function Stamp({
           fontSize="5.2"
           fill={ink}
           fillOpacity={earned ? 0.92 : 0.42}
-          fontFamily="var(--font-family-display)"
+          fontFamily="var(--font-display)"
           fontStyle="italic"
           letterSpacing="0.4"
         >
@@ -218,7 +218,7 @@ export function Stamp({
             fontSize="3"
             fill={ink}
             fillOpacity="0.65"
-            fontFamily="var(--font-family-sans)"
+            fontFamily="var(--font-sans)"
             fontWeight="500"
             letterSpacing="1.6"
           >
@@ -262,7 +262,7 @@ export function Stamp({
             transition={{ duration: 0.2 }}
             className="pointer-events-none absolute -bottom-7 left-1/2 z-20 hidden -translate-x-1/2 whitespace-nowrap text-[10px] tracking-[0.18em] text-[var(--color-ink-secondary)] sm:block"
             style={{
-              fontFamily: 'var(--font-family-display)',
+              fontFamily: 'var(--font-display)',
               fontStyle: 'italic',
             }}
           >
@@ -273,7 +273,7 @@ export function Stamp({
           <div
             className="pointer-events-none mt-3 px-1 text-center text-[10px] tracking-[0.18em] text-[var(--color-ink-secondary)] sm:hidden"
             style={{
-              fontFamily: 'var(--font-family-display)',
+              fontFamily: 'var(--font-display)',
               fontStyle: 'italic',
             }}
           >

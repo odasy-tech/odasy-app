@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { MetaLabel } from '@odasy/ui/web';
 import { motion, useInView } from 'motion/react';
@@ -46,18 +46,18 @@ const graphics: ReactNode[] = [
     ))}
 
     {/* Left page — meta row */}
-    <text x="30" y="92" fontSize="3.8" fill="var(--color-ink-secondary)" fontFamily="var(--font-family-sans)" fontWeight="600" letterSpacing="0.6">SELLOS</text>
-    <text x="92" y="92" fontSize="3.8" fill="var(--color-accent-action)" fontFamily="var(--font-family-sans)" fontWeight="700" letterSpacing="0.6" textAnchor="end">04 / 09</text>
+    <text x="30" y="92" fontSize="3.8" fill="var(--color-ink-secondary)" fontFamily="var(--font-sans)" fontWeight="600" letterSpacing="0.6">SELLOS</text>
+    <text x="92" y="92" fontSize="3.8" fill="var(--color-accent-action)" fontFamily="var(--font-sans)" fontWeight="700" letterSpacing="0.6" textAnchor="end">04 / 09</text>
     <line x1="30" y1="96" x2="92" y2="96" stroke="var(--color-border-default)" strokeWidth="0.35" />
 
     {/* Right page — explorer identity glimpse */}
-    <text x="108" y="24" fontSize="4.2" fill="var(--color-ink-primary)" fontFamily="var(--font-family-display)" letterSpacing="0.2">Valentina Ríos</text>
-    <text x="108" y="30" fontSize="3.3" fill="var(--color-accent-action)" fontFamily="var(--font-family-sans)" fontWeight="600" letterSpacing="0.6">CONTEMPLADOR · NIVEL 3</text>
+    <text x="108" y="24" fontSize="4.2" fill="var(--color-ink-primary)" fontFamily="var(--font-display)" letterSpacing="0.2">Valentina Ríos</text>
+    <text x="108" y="30" fontSize="3.3" fill="var(--color-accent-action)" fontFamily="var(--font-sans)" fontWeight="600" letterSpacing="0.6">CONTEMPLADOR · NIVEL 3</text>
 
     {/* Right page — XP bar */}
     <rect x="108" y="42" width="62" height="3" rx="1.5" fill="var(--color-border-default)" />
     <rect x="108" y="42" width="38" height="3" rx="1.5" fill="var(--color-accent-action)" />
-    <text x="108" y="51" fontSize="3.2" fill="var(--color-ink-secondary)" fontFamily="var(--font-family-sans)" letterSpacing="0.5">620 / 1000 XP</text>
+    <text x="108" y="51" fontSize="3.2" fill="var(--color-ink-secondary)" fontFamily="var(--font-sans)" letterSpacing="0.5">620 / 1000 XP</text>
 
     {/* Right page — stats row */}
     {[
@@ -66,14 +66,14 @@ const graphics: ReactNode[] = [
       { x: 152, label: 'INSIGNIAS', value: '03' },
     ].map((s, i) => (
       <g key={i}>
-        <text x={s.x} y={70} fontSize="6" fill="var(--color-ink-primary)" fontFamily="var(--font-family-display)">{s.value}</text>
-        <text x={s.x} y={76} fontSize="2.6" fill="var(--color-ink-secondary)" fontFamily="var(--font-family-sans)" fontWeight="600" letterSpacing="0.5">{s.label}</text>
+        <text x={s.x} y={70} fontSize="6" fill="var(--color-ink-primary)" fontFamily="var(--font-display)">{s.value}</text>
+        <text x={s.x} y={76} fontSize="2.6" fill="var(--color-ink-secondary)" fontFamily="var(--font-sans)" fontWeight="600" letterSpacing="0.5">{s.label}</text>
       </g>
     ))}
 
     {/* Right page — bottom hairline */}
     <line x1="108" y1="92" x2="170" y2="92" stroke="var(--color-border-default)" strokeWidth="0.35" />
-    <text x="108" y="98" fontSize="3" fill="var(--color-ink-tertiary)" fontFamily="var(--font-family-sans)" letterSpacing="0.6">CAPÍTULO · QUINDÍO</text>
+    <text x="108" y="98" fontSize="3" fill="var(--color-ink-tertiary)" fontFamily="var(--font-sans)" letterSpacing="0.6">CAPÍTULO · QUINDÍO</text>
   </svg>,
 
   // Map — fog of war with revealed route
@@ -137,8 +137,8 @@ const graphics: ReactNode[] = [
     </g>
 
     {/* Top corner classification */}
-    <text x="14" y="14" fontSize="4" fill="var(--color-ink-secondary)" fontFamily="var(--font-family-sans)" fontWeight="600" letterSpacing="0.7">REGIÓN · NIEBLA · 64%</text>
-    <text x="186" y="14" fontSize="4" fill="var(--color-accent-action)" fontFamily="var(--font-family-sans)" fontWeight="700" letterSpacing="0.7" textAnchor="end">REVELADO · 36%</text>
+    <text x="14" y="14" fontSize="4" fill="var(--color-ink-secondary)" fontFamily="var(--font-sans)" fontWeight="600" letterSpacing="0.7">REGIÓN · NIEBLA · 64%</text>
+    <text x="186" y="14" fontSize="4" fill="var(--color-accent-action)" fontFamily="var(--font-sans)" fontWeight="700" letterSpacing="0.7" textAnchor="end">REVELADO · 36%</text>
   </svg>,
 
   // Missions — narrative card with checklist + reward stamp
@@ -146,15 +146,15 @@ const graphics: ReactNode[] = [
     <rect x="20" y="14" width="160" height="92" rx="3" fill="var(--color-bg-elevated)" stroke="var(--color-border-default)" strokeWidth="0.7" />
 
     {/* Mission title row */}
-    <text x="28" y="26" fontSize="5.6" fill="var(--color-ink-primary)" fontFamily="var(--font-family-display)" fontStyle="italic" letterSpacing="0.2">
+    <text x="28" y="26" fontSize="5.6" fill="var(--color-ink-primary)" fontFamily="var(--font-display)" fontStyle="italic" letterSpacing="0.2">
       Ruta del Sabor
     </text>
-    <text x="172" y="26" fontSize="3.4" fill="var(--color-warm-base)" fontFamily="var(--font-family-sans)" fontWeight="700" letterSpacing="0.7" textAnchor="end">
+    <text x="172" y="26" fontSize="3.4" fill="var(--color-warm-base)" fontFamily="var(--font-sans)" fontWeight="700" letterSpacing="0.7" textAnchor="end">
       ★★★★☆
     </text>
 
     {/* Subtitle */}
-    <text x="28" y="33" fontSize="3" fill="var(--color-ink-secondary)" fontFamily="var(--font-family-sans)" fontWeight="600" letterSpacing="0.7">
+    <text x="28" y="33" fontSize="3" fill="var(--color-ink-secondary)" fontFamily="var(--font-sans)" fontWeight="600" letterSpacing="0.7">
       GASTRONÓMICA · ARMENIA · QUINDÍO
     </text>
 
@@ -172,7 +172,7 @@ const graphics: ReactNode[] = [
       <g key={i}>
         <circle cx="34" cy={item.y - 1.2} r="2.4" fill={item.done ? 'var(--color-accent-action)' : 'transparent'} stroke={item.done ? 'var(--color-accent-action)' : 'var(--color-border-default)'} strokeWidth="0.5" />
         {item.done && <path d={`M ${32.6} ${item.y - 1.2} L ${33.8} ${item.y - 0.2} L ${35.6} ${item.y - 2.2}`} stroke="var(--color-bg-surface)" strokeWidth="0.7" fill="none" strokeLinecap="round" />}
-        <text x="40" y={item.y} fontSize="3.4" fill={item.done ? 'var(--color-ink-secondary)' : 'var(--color-ink-primary)'} fontFamily="var(--font-family-sans)" letterSpacing="0.3" style={{ textDecoration: item.done ? 'line-through' : 'none' }}>
+        <text x="40" y={item.y} fontSize="3.4" fill={item.done ? 'var(--color-ink-secondary)' : 'var(--color-ink-primary)'} fontFamily="var(--font-sans)" letterSpacing="0.3" style={{ textDecoration: item.done ? 'line-through' : 'none' }}>
           {item.label}
         </text>
       </g>
@@ -181,13 +181,13 @@ const graphics: ReactNode[] = [
     {/* Progress bar */}
     <rect x="28" y="92" width="100" height="2.5" rx="1.25" fill="var(--color-border-default)" />
     <rect x="28" y="92" width="60" height="2.5" rx="1.25" fill="var(--color-accent-action)" />
-    <text x="28" y="100" fontSize="3" fill="var(--color-accent-action)" fontFamily="var(--font-family-sans)" fontWeight="700" letterSpacing="0.6">3 / 5 · 60%</text>
+    <text x="28" y="100" fontSize="3" fill="var(--color-accent-action)" fontFamily="var(--font-sans)" fontWeight="700" letterSpacing="0.6">3 / 5 · 60%</text>
 
     {/* Reward chip — gold seal */}
     <g>
       <rect x="138" y="89" width="34" height="11" rx="5.5" fill="var(--color-warm-base)" fillOpacity="0.18" stroke="var(--color-warm-base)" strokeOpacity="0.55" strokeWidth="0.4" />
       <circle cx="144" cy="94.5" r="2" fill="var(--color-warm-base)" />
-      <text x="149" y="97" fontSize="3" fill="var(--color-warm-base)" fontFamily="var(--font-family-sans)" fontWeight="700" letterSpacing="0.5">+150 XP · GOLD</text>
+      <text x="149" y="97" fontSize="3" fill="var(--color-warm-base)" fontFamily="var(--font-sans)" fontWeight="700" letterSpacing="0.5">+150 XP · GOLD</text>
     </g>
   </svg>,
 ];
@@ -213,8 +213,8 @@ export function Apparatus() {
         <h2
           className="max-w-3xl leading-[1.05] tracking-[-0.025em] text-[var(--color-ink-primary)]"
           style={{
-            fontSize: 'clamp(2rem, 4.5vw, 3.75rem)',
-            fontFamily: 'var(--font-family-display)',
+            fontSize: 'var(--text-h2)',
+            fontFamily: 'var(--font-display)',
           }}
         >
           {t.apparatus.heading}
@@ -242,13 +242,13 @@ export function Apparatus() {
 
             <h3
               className="mb-3 text-2xl leading-[1.18] tracking-[-0.01em] text-[var(--color-ink-primary)] sm:text-3xl"
-              style={{ fontFamily: 'var(--font-family-display)' }}
+              style={{ fontFamily: 'var(--font-display)' }}
             >
               {p.title}
             </h3>
             <p
               className="text-[15px] leading-[1.7] text-[var(--color-ink-secondary)]"
-              style={{ fontFamily: 'var(--font-family-sans)' }}
+              style={{ fontFamily: 'var(--font-sans)' }}
             >
               {p.copy}
             </p>

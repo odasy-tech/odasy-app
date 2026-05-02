@@ -1,4 +1,4 @@
-import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
+﻿import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
 import { fraunces } from '../../theme/typography';
 import { cn } from '../../shared/utils';
 import { MetaLabel } from './meta-label';
@@ -68,7 +68,7 @@ export const SectionHead = forwardRef<HTMLDivElement, SectionHeadProps>(
         className="max-w-4xl leading-[1.04] tracking-[-0.025em] text-[var(--color-ink-primary)]"
         style={{
           fontSize: 'clamp(2.4rem, 5vw, 4.5rem)',
-          fontFamily: 'var(--font-family-display)',
+          fontFamily: 'var(--font-display)',
           fontVariationSettings: fraunces[expression],
           fontWeight: 500,
         }}
@@ -78,7 +78,7 @@ export const SectionHead = forwardRef<HTMLDivElement, SectionHeadProps>(
       {description ? (
         <p
           className="max-w-2xl text-base leading-[1.7] text-[var(--color-ink-secondary)] sm:text-lg"
-          style={{ fontFamily: 'var(--font-family-sans)' }}
+          style={{ fontFamily: 'var(--font-sans)' }}
         >
           {description}
         </p>

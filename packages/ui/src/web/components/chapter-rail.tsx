@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useState } from 'react';
 import { useTheme } from '../theme';
@@ -122,7 +122,7 @@ export function ChapterRail({
                 onMouseLeave={() => setHoverId(null)}
                 className="flex items-center justify-end gap-2.5"
                 style={{
-                  fontFamily: 'var(--font-family-sans)',
+                  fontFamily: 'var(--font-sans)',
                   fontWeight: isActive ? 700 : 500,
                   textShadow,
                   transition: 'color 0.25s ease',
@@ -144,7 +144,7 @@ export function ChapterRail({
                 <span
                   className="tabular-nums"
                   style={{
-                    fontFamily: 'var(--font-family-display)',
+                    fontFamily: 'var(--font-display)',
                     fontStyle: 'italic',
                     fontSize: '13px',
                     minWidth: '16px',

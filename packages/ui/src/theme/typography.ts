@@ -20,18 +20,22 @@
 /**
  * Font family CSS values.
  *
- * Web wires these to next/font CSS variables (`--font-display`,
- * `--font-sans`) at app boot. Mobile (Tamagui / RN) consumes the literal
- * family names below.
+ * Web wires raw next/font CSS variables (`--font-fraunces`,
+ * `--font-geist`) at app boot. The codegen below emits the full
+ * fallback chain as `--font-display` / `--font-sans` inside the
+ * Tailwind 4 `@theme` block, which both registers Tailwind utilities
+ * (`font-display`, `font-sans`) AND lets components reference them
+ * via `var(--font-display)`. Mobile (Tamagui / RN) consumes the
+ * literal native family names below.
  */
 export const fonts = {
   display: {
-    web: 'var(--font-display), "Fraunces", "Times New Roman", Georgia, serif',
+    web: 'var(--font-fraunces), "Fraunces", "Times New Roman", Georgia, serif',
     /** Mobile family resolved at expo-font load time. */
     native: 'Fraunces_500Medium',
   },
   sans: {
-    web: 'var(--font-sans), "Geist", system-ui, sans-serif',
+    web: 'var(--font-geist), "Geist", system-ui, sans-serif',
     native: 'Geist_400Regular',
   },
 } as const;
@@ -40,8 +44,16 @@ export const fonts = {
  * Type scale — fluid where it makes sense, fixed where it shouldn't move.
  *
  * UI scale (≤19px) is fixed because UI text shouldn't ride the viewport.
- * Display sizes use `clamp(min, vw, max)` so the page breathes smoothly
- * across breakpoints without explicit media queries.
+ * Editorial sizes (h2 and above) use `clamp(min, vw, max)` so the page
+ * breathes smoothly across breakpoints without explicit media queries.
+ *
+ * Editorial buckets (calibrated against the landing sections in
+ * `apps/web/components/landing/sections/*`):
+ *   • h2      — section heads (Apparatus, Field): ~32 → 64px
+ *   • display — manifesto sections (Premise, Explorer, Artifact,
+ *               Expedition): ~38 → 88px
+ *   • h1      — reserved for future long-form heroes: 64 → 144px
+ *   • hero    — Opener mega-display: 72 → 240px
  */
 export const scale = {
   /** 11px — coordinates, eyebrows, the smallest legible label. */
@@ -58,12 +70,14 @@ export const scale = {
   h4: '22px',
   /** 30px — h3 / card headlines. */
   h3: '30px',
-  /** 40 → 72px — h2 / section headlines. */
-  h2: 'clamp(2.5rem, 4.6vw, 4.5rem)',
-  /** 64 → 144px — h1 / page hero. */
+  /** 32 → 64px — h2 / section headlines (Apparatus, Field). */
+  h2: 'clamp(2rem, 4.7vw, 4rem)',
+  /** 38 → 88px — manifesto display (Premise, Explorer, Artifact, Expedition). */
+  display: 'clamp(2.4rem, 6vw, 5.5rem)',
+  /** 64 → 144px — h1 / reserved for long-form heroes. */
   h1: 'clamp(4rem, 9.5vw, 9rem)',
-  /** 80 → 200px — full-bleed display, marketing hero. */
-  hero: 'clamp(5rem, 16vw, 12.5rem)',
+  /** 72 → 240px — Opener mega-display. */
+  hero: 'clamp(4.5rem, 18vw, 15rem)',
 } as const;
 
 /**

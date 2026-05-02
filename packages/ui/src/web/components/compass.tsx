@@ -1,4 +1,4 @@
-export interface CompassProps {
+﻿export interface CompassProps {
   size?: number;
 }
 
@@ -52,7 +52,7 @@ export function Compass({ size = 56 }: CompassProps) {
         fontSize="3.6"
         textAnchor="middle"
         fill="var(--color-accent-action)"
-        fontFamily="var(--font-family-sans)"
+        fontFamily="var(--font-sans)"
         fontWeight="600"
         letterSpacing="0.4"
       >

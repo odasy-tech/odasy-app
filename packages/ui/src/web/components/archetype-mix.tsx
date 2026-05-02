@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react';
+﻿import type { HTMLAttributes } from 'react';
 import { cn } from '../../shared/utils';
 
 export interface ArchetypeMixSegment {
@@ -68,7 +68,7 @@ export function ArchetypeMix({
             <div
               key={segment.archetype}
               className="flex items-center gap-2 text-[10px] uppercase tracking-[0.22em] text-[var(--color-ink-secondary)]"
-              style={{ fontFamily: 'var(--font-family-sans)' }}
+              style={{ fontFamily: 'var(--font-sans)' }}
             >
               <span
                 className="h-1.5 w-1.5 rounded-full"

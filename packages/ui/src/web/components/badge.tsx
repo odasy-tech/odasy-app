@@ -1,4 +1,4 @@
-import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
+﻿import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
 import { cn } from '../../shared/utils';
 
 export type BadgeStatus = 'live' | 'beta' | 'success' | 'warning' | 'danger' | 'info' | 'neutral';
@@ -66,7 +66,7 @@ export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(
           style.text,
           className,
         )}
-        style={{ fontFamily: 'var(--font-family-sans)' }}
+        style={{ fontFamily: 'var(--font-sans)' }}
         {...rest}
       >
         {withDot && (

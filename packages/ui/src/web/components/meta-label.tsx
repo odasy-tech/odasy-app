@@ -1,4 +1,4 @@
-import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
+﻿import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
 import { cn } from '../../shared/utils';
 
 type MetaLabelTone = 'mute' | 'accent' | 'ink' | 'inverse';
@@ -47,7 +47,7 @@ export const MetaLabel = forwardRef<HTMLSpanElement, MetaLabelProps>(
         toneStyles[tone],
         className,
       )}
-      style={{ fontFamily: 'var(--font-family-sans)' }}
+      style={{ fontFamily: 'var(--font-sans)' }}
       {...rest}
     >
       {marker ? (

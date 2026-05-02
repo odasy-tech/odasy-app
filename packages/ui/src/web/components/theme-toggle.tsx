@@ -8,61 +8,36 @@ export interface ThemeToggleProps {
 }
 
 /**
- * Theme switch — two icon buttons. Active icon is rendered in the
- * accent colour, inactive in muted ink.
+ * Editorial theme switch — a single icon that flips between sun and moon.
+ *
+ * Design rationale: the header is a hairline editorial frame, so the
+ * toggle is rendered as a bare glyph (no pill, no chrome). Hover lifts
+ * the icon to the accent colour. Clicking calls `setTheme` directly
+ * with the inverse of the current theme.
  */
 export function ThemeToggle({ className }: ThemeToggleProps) {
   const { theme, setTheme } = useTheme();
   const isDark = theme === 'dark';
 
   return (
-    <div
-      role="group"
-      aria-label="Theme"
+    <button
+      type="button"
+      onClick={() => setTheme(isDark ? 'light' : 'dark')}
+      aria-label={isDark ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro'}
       className={cn(
-        'inline-flex items-center gap-1 rounded-full border p-1',
+        'flex h-7 w-7 items-center justify-center transition-colors',
+        'text-[var(--color-ink-secondary)] hover:text-[var(--color-accent-action)]',
         className,
       )}
-      style={{
-        borderColor: 'var(--color-border-default)',
-        backgroundColor: 'var(--color-bg-elevated)',
-      }}
     >
-      <button
-        type="button"
-        onClick={() => setTheme('light')}
-        aria-pressed={!isDark}
-        aria-label="Light theme"
-        className="flex h-7 w-7 items-center justify-center rounded-full transition-colors"
-        style={{
-          color: !isDark
-            ? 'var(--color-accent-action)'
-            : 'var(--color-ink-secondary)',
-        }}
-      >
-        <SunIcon />
-      </button>
-      <button
-        type="button"
-        onClick={() => setTheme('dark')}
-        aria-pressed={isDark}
-        aria-label="Dark theme"
-        className="flex h-7 w-7 items-center justify-center rounded-full transition-colors"
-        style={{
-          color: isDark
-            ? 'var(--color-accent-action)'
-            : 'var(--color-ink-secondary)',
-        }}
-      >
-        <MoonIcon />
-      </button>
-    </div>
+      {isDark ? <SunIcon /> : <MoonIcon />}
+    </button>
   );
 }
 
 function SunIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
+    <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden>
       <circle cx="7" cy="7" r="2.6" stroke="currentColor" strokeWidth="1.4" />
       <g stroke="currentColor" strokeWidth="1.4" strokeLinecap="round">
         <line x1="7" y1="0.8" x2="7" y2="2.4" />
@@ -80,7 +55,7 @@ function SunIcon() {
 
 function MoonIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
+    <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden>
       <path
         d="M11.5 8.4 A 4.6 4.6 0 0 1 5.6 2.5 A 5 5 0 1 0 11.5 8.4 Z"
         fill="currentColor"

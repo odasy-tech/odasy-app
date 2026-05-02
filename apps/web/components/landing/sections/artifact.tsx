@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { MetaLabel, Stamp, type StampTier } from '@odasy/ui/web';
 import { motion, useInView } from 'motion/react';
@@ -48,8 +48,8 @@ export function Artifact() {
         <h2
           className="max-w-3xl leading-[1.04] tracking-[-0.025em] text-[var(--color-ink-primary)]"
           style={{
-            fontSize: 'clamp(2.2rem, 5vw, 4rem)',
-            fontFamily: 'var(--font-family-display)',
+            fontSize: 'var(--text-display)',
+            fontFamily: 'var(--font-display)',
           }}
         >
           <span>{t.artifact.headingPre}</span>
@@ -78,7 +78,7 @@ export function Artifact() {
             <MetaLabel tone="accent">{t.artifact.collection}</MetaLabel>
             <div
               className="text-[12px] uppercase tracking-[0.28em] text-[var(--color-ink-secondary)]"
-              style={{ fontFamily: 'var(--font-family-sans)' }}
+              style={{ fontFamily: 'var(--font-sans)' }}
             >
               {t.artifact.recovered}
             </div>

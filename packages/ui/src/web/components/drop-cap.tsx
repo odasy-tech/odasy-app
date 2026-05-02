@@ -1,4 +1,4 @@
-import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
+﻿import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
 import { fraunces } from '../../theme/typography';
 import { cn } from '../../shared/utils';
 
@@ -27,14 +27,14 @@ export const DropCap = forwardRef<HTMLParagraphElement, DropCapProps>(
         'relative pl-[3.6rem] text-[17px] leading-[1.7] text-[var(--color-ink-secondary)] sm:text-lg',
         className,
       )}
-      style={{ fontFamily: 'var(--font-family-sans)' }}
+      style={{ fontFamily: 'var(--font-sans)' }}
       {...rest}
     >
       <span
         aria-hidden
         className="float-left mr-3 mt-1 -ml-[3.6rem] inline-block leading-[0.8] tracking-[-0.05em]"
         style={{
-          fontFamily: 'var(--font-family-display)',
+          fontFamily: 'var(--font-display)',
           fontVariationSettings: fraunces.wonky,
           fontWeight: 500,
           fontSize: '4.6rem',

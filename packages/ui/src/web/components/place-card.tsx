@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'motion/react';
 import type { ReactNode } from 'react';
@@ -98,7 +98,7 @@ export function PlaceCard({
               statusPill.bg,
               statusPill.text,
             )}
-            style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+            style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
           >
             <span className={cn('h-1.5 w-1.5 rounded-full', statusPill.dot)} />
             {statusPill.label}
@@ -111,7 +111,7 @@ export function PlaceCard({
         <h3
           className="text-[22px] leading-[1.18] text-[var(--color-ink-primary)]"
           style={{
-            fontFamily: 'var(--font-family-display)',
+            fontFamily: 'var(--font-display)',
             fontStyle: 'italic',
           }}
         >
@@ -121,7 +121,7 @@ export function PlaceCard({
         {description ? (
           <p
             className="mt-2 text-[13.5px] leading-[1.65] text-[var(--color-ink-secondary)]"
-            style={{ fontFamily: 'var(--font-family-sans)' }}
+            style={{ fontFamily: 'var(--font-sans)' }}
           >
             {description}
           </p>

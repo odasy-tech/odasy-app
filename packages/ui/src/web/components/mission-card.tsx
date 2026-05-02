@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'motion/react';
 import type { ReactNode } from 'react';
@@ -102,7 +102,7 @@ export function MissionCard({
         <span
           aria-label={`Dificultad ${difficulty}`}
           className="text-[12px] tracking-[0.4em] text-[var(--color-warm-base)]"
-          style={{ fontFamily: 'var(--font-family-sans)' }}
+          style={{ fontFamily: 'var(--font-sans)' }}
         >
           {Array.from({ length: 5 })
             .map((_, i) => (i < difficulty ? '★' : '☆'))
@@ -113,7 +113,7 @@ export function MissionCard({
       <h3
         className="text-[24px] leading-[1.15] tracking-[-0.005em] text-[var(--color-ink-primary)]"
         style={{
-          fontFamily: 'var(--font-family-display)',
+          fontFamily: 'var(--font-display)',
           fontStyle: 'italic',
         }}
       >
@@ -123,7 +123,7 @@ export function MissionCard({
       {description ? (
         <p
           className="text-[14px] leading-[1.65] text-[var(--color-ink-secondary)]"
-          style={{ fontFamily: 'var(--font-family-sans)' }}
+          style={{ fontFamily: 'var(--font-sans)' }}
         >
           {description}
         </p>
@@ -142,7 +142,7 @@ export function MissionCard({
           </div>
           <span
             className="text-[10px] uppercase tracking-[0.28em] text-[var(--color-accent-action)] tabular-nums"
-            style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+            style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
           >
             {stepsDone} / {stepsTotal}
           </span>
@@ -156,14 +156,14 @@ export function MissionCard({
             statusStyle.bg,
             statusStyle.text,
           )}
-          style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 600 }}
+          style={{ fontFamily: 'var(--font-sans)', fontWeight: 600 }}
         >
           {statusStyle.label}
         </span>
         {reward ? (
           <span
             className="inline-flex items-center gap-1.5 rounded-full bg-[var(--color-warm-soft)] px-3 py-1 text-[10px] uppercase tracking-[0.22em] text-[var(--color-warm-base)]"
-            style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+            style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-warm-base)]" />
             {reward}

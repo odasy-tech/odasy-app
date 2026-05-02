@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { MetaLabel, useTheme } from '@odasy/ui/web';
 import { motion, useInView } from 'motion/react';
@@ -84,8 +84,8 @@ export function Expedition() {
           <h2
             className="max-w-3xl leading-[1.02] tracking-[-0.03em]"
             style={{
-              fontSize: 'clamp(2.4rem, 6vw, 5rem)',
-              fontFamily: 'var(--font-family-display)',
+              fontSize: 'var(--text-display)',
+              fontFamily: 'var(--font-display)',
               color: headlineColor,
             }}
           >
@@ -98,7 +98,7 @@ export function Expedition() {
 
           <p
             className="mt-8 max-w-xl text-base leading-[1.7] sm:text-lg"
-            style={{ fontFamily: 'var(--font-family-sans)', color: bodyColor }}
+            style={{ fontFamily: 'var(--font-sans)', color: bodyColor }}
           >
             {t.expedition.paragraph}
           </p>
@@ -116,7 +116,7 @@ export function Expedition() {
               disabled={submitted}
               className="flex-1 border px-5 py-4 text-sm tracking-wider focus:outline-none disabled:opacity-50"
               style={{
-                fontFamily: 'var(--font-family-sans)',
+                fontFamily: 'var(--font-sans)',
                 borderColor: inputBorder,
                 backgroundColor: inputBg,
                 color: inputText,
@@ -128,7 +128,7 @@ export function Expedition() {
               disabled={submitted}
               className="group flex items-center justify-center gap-3 border px-7 py-4 text-xs uppercase tracking-[0.32em] transition disabled:cursor-default disabled:opacity-60"
               style={{
-                fontFamily: 'var(--font-family-sans)',
+                fontFamily: 'var(--font-sans)',
                 fontWeight: 600,
                 borderColor: submitBg,
                 backgroundColor: submitBg,

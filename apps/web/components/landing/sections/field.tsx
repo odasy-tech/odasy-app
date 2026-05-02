@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { MetaLabel } from '@odasy/ui/web';
 import { motion, useInView } from 'motion/react';
@@ -35,7 +35,7 @@ export function Field() {
             <MetaLabel tone="accent">{t.field.mapTitle}</MetaLabel>
             <span
               className="text-[9px] uppercase tracking-[0.32em] text-[var(--color-ink-tertiary)]"
-              style={{ fontFamily: 'var(--font-family-sans)' }}
+              style={{ fontFamily: 'var(--font-sans)' }}
             >
               Quindío · Risaralda · Caldas
             </span>
@@ -44,7 +44,7 @@ export function Field() {
           {/* Catalogue mark — top-right (where no other HTML lives) */}
           <div
             className="absolute right-7 top-7 z-10 text-[9px] uppercase tracking-[0.32em] text-[var(--color-ink-tertiary)]"
-            style={{ fontFamily: 'var(--font-family-sans)' }}
+            style={{ fontFamily: 'var(--font-sans)' }}
           >
             N° I · MMXXVI
           </div>
@@ -54,7 +54,7 @@ export function Field() {
               {/* Land tint — subtle violet wash for the territory */}
               <linearGradient id="landTint" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stopColor="var(--color-info-base)" stopOpacity="0.06" />
-                <stop offset="100%" stopColor="var(--color-aurora-violet)" stopOpacity="0.10" />
+                <stop offset="100%" stopColor="var(--color-accent-base)" stopOpacity="0.10" />
               </linearGradient>
               {/* Discovered area — warm amber centred on Salento */}
               <radialGradient id="warmZone" cx="63%" cy="71%" r="20%">
@@ -150,7 +150,7 @@ export function Field() {
 
             {/* === Department labels — caps tracked, low alpha === */}
             <g
-              fontFamily="var(--font-family-sans)"
+              fontFamily="var(--font-sans)"
               fontWeight="700"
               fill="var(--color-accent-action)"
               fillOpacity="0.34"
@@ -199,7 +199,7 @@ export function Field() {
                   x={p.tx}
                   y={p.ty}
                   fontSize="6.2"
-                  fontFamily="var(--font-family-display)"
+                  fontFamily="var(--font-display)"
                   fontStyle="italic"
                   fill="var(--color-ink-secondary)"
                   fillOpacity="0.55"
@@ -234,7 +234,7 @@ export function Field() {
                   x={p.tx}
                   y={p.ty}
                   fontSize="7.6"
-                  fontFamily="var(--font-family-display)"
+                  fontFamily="var(--font-display)"
                   fontStyle="italic"
                   fill="var(--color-accent-action)"
                   fillOpacity="0.96"
@@ -260,7 +260,7 @@ export function Field() {
               <text
                 x="262" y="276"
                 fontSize="10.2"
-                fontFamily="var(--font-family-display)"
+                fontFamily="var(--font-display)"
                 fontStyle="italic"
                 fill="var(--color-warm-base)"
                 fontWeight="700"
@@ -271,7 +271,7 @@ export function Field() {
               <text
                 x="262" y="285"
                 fontSize="3.4"
-                fontFamily="var(--font-family-sans)"
+                fontFamily="var(--font-sans)"
                 fontWeight="700"
                 fill="var(--color-warm-base)"
                 fillOpacity="0.78"
@@ -292,7 +292,7 @@ export function Field() {
               <path d="M 12 0 L 2 1.4 L 3.5 0 L 2 -1.4 Z" fill="var(--color-accent-action)" fillOpacity="0.4" />
               <path d="M -12 0 L -2 1.4 L -3.5 0 L -2 -1.4 Z" fill="var(--color-accent-action)" fillOpacity="0.4" />
               <circle r="0.7" fill="var(--color-accent-action)" fillOpacity="0.85" />
-              <text x="0" y="-15" fontSize="3.6" textAnchor="middle" fill="var(--color-accent-action)" fillOpacity="0.85" fontFamily="var(--font-family-display)" fontStyle="italic">N</text>
+              <text x="0" y="-15" fontSize="3.6" textAnchor="middle" fill="var(--color-accent-action)" fillOpacity="0.85" fontFamily="var(--font-display)" fontStyle="italic">N</text>
             </g>
           </svg>
 
@@ -304,7 +304,7 @@ export function Field() {
           <div className="absolute bottom-7 right-7 z-10 flex flex-col items-end gap-1.5">
             <div
               className="text-[10px] uppercase tracking-[0.32em] text-[var(--color-warm-base)]"
-              style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+              style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
             >
               Explorado · 18%
             </div>
@@ -329,15 +329,15 @@ export function Field() {
         <h2
           className="leading-[1.04] tracking-[-0.025em] text-[var(--color-ink-primary)]"
           style={{
-            fontSize: 'clamp(2.2rem, 4.5vw, 3.75rem)',
-            fontFamily: 'var(--font-family-display)',
+            fontSize: 'var(--text-h2)',
+            fontFamily: 'var(--font-display)',
           }}
         >
           {t.field.heading}
         </h2>
         <p
           className="mt-7 text-base leading-[1.7] text-[var(--color-ink-secondary)] sm:text-lg"
-          style={{ fontFamily: 'var(--font-family-sans)' }}
+          style={{ fontFamily: 'var(--font-sans)' }}
         >
           {t.field.paragraph}
         </p>
@@ -347,7 +347,7 @@ export function Field() {
             <div key={s.label} className="flex flex-col gap-2">
               <div
                 className="text-5xl leading-none tracking-[-0.02em] text-[var(--color-accent-action)]"
-                style={{ fontFamily: 'var(--font-family-display)' }}
+                style={{ fontFamily: 'var(--font-display)' }}
               >
                 {s.value}
               </div>
@@ -359,7 +359,7 @@ export function Field() {
         <div className="mt-10 flex flex-wrap items-center gap-3">
           <span
             className="inline-flex items-center gap-2 rounded-full bg-[var(--color-accent-soft)] px-3 py-1.5 text-[10px] uppercase tracking-[0.28em] text-[var(--color-accent-action)]"
-            style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 600 }}
+            style={{ fontFamily: 'var(--font-sans)', fontWeight: 600 }}
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-accent-action)]" />
             {t.field.now}
@@ -368,7 +368,7 @@ export function Field() {
             <span
               key={r}
               className="inline-flex items-center gap-2 rounded-full border border-[var(--color-border-default)] px-3 py-1.5 text-[10px] uppercase tracking-[0.28em] text-[var(--color-ink-secondary)]"
-              style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 500 }}
+              style={{ fontFamily: 'var(--font-sans)', fontWeight: 500 }}
             >
               <span aria-hidden>→</span>
               {r}

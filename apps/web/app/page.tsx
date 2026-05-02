@@ -1,4 +1,4 @@
-import { ChapterRail, SweepLine, ThemeProvider } from '@odasy/ui/web';
+﻿import { ChapterRail, SweepLine, ThemeProvider } from '@odasy/ui/web';
 import { Apparatus } from '@/components/landing/sections/apparatus';
 import { Artifact } from '@/components/landing/sections/artifact';
 import { Dossier } from '@/components/landing/sections/dossier';
@@ -29,8 +29,8 @@ export default function HomePage() {
     <LocaleProvider>
       <ThemeProvider defaultTheme="light">
         <main
-          className="ds-paper relative min-h-screen text-[var(--color-ink-primary)]"
-          style={{ fontFamily: 'var(--font-family-sans)' }}
+          className="ds-paper relative min-h-screen overflow-x-clip text-[var(--color-ink-primary)]"
+          style={{ fontFamily: 'var(--font-sans)' }}
         >
           <ChapterRail chapters={CHAPTERS} invertOn={['chapter-expedition']} />
           <SweepLine />

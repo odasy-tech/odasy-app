@@ -1,6 +1,6 @@
 /**
  * `@odasy/ui/native` components — React Native primitives wired to the
- * canonical theme tokens. Reanimated 3 + react-native-svg are used by
+ * canonical theme tokens. Reanimated 4 + react-native-svg are used by
  * the more complex components (Stamp, Compass) when needed.
  */
 

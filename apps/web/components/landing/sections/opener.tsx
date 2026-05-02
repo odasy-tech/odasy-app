@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { Compass, CompassBackdrop, Coordinates, MetaLabel, ThemeToggle, TopoBg } from '@odasy/ui/web';
 import { motion } from 'motion/react';
@@ -16,7 +16,7 @@ export function Opener() {
       <CompassBackdrop />
       <TopoBg />
 
-      <header className="relative z-10 flex items-start justify-between gap-4 px-6 pt-7 sm:px-12 sm:pt-9">
+      <header className="relative z-10 flex items-start justify-between gap-4 px-6 pt-3 sm:px-12 sm:pt-4">
         <motion.div
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ export function Opener() {
         </motion.div>
       </header>
 
-      <div className="relative z-10 flex flex-1 items-center justify-center px-6 sm:px-12">
+      <div className="relative z-10 flex flex-1 items-center justify-center px-6 pb-[10vh] sm:px-12">
         <motion.div
           initial="hidden"
           animate="show"
@@ -67,7 +67,7 @@ export function Opener() {
             className="mt-10 leading-[0.86] tracking-[-0.045em] text-[var(--color-ink-primary)]"
             style={{
               fontSize: 'clamp(4.5rem, 18vw, 15rem)',
-              fontFamily: 'var(--font-family-display)',
+              fontFamily: 'var(--font-display)',
             }}
           >
             <span className="relative inline-block">
@@ -75,7 +75,7 @@ export function Opener() {
               <span
                 aria-hidden
                 className="absolute -right-3 top-3 text-[0.18em] tracking-[0.4em] text-[var(--color-accent-action)]"
-                style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 600 }}
+                style={{ fontFamily: 'var(--font-sans)', fontWeight: 600 }}
               >
                 01
               </span>
@@ -89,7 +89,7 @@ export function Opener() {
             }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="mt-12 max-w-2xl text-lg leading-[1.55] text-[var(--color-ink-secondary)] sm:text-2xl"
-            style={{ fontFamily: 'var(--font-family-display)' }}
+            style={{ fontFamily: 'var(--font-display)' }}
           >
             {t.opener.subtitlePre}
             <span
@@ -112,7 +112,7 @@ export function Opener() {
             <a
               href="#beta"
               className="group inline-flex items-center gap-3 bg-[var(--color-accent-action)] px-7 py-3.5 text-[11px] uppercase tracking-[0.32em] text-white transition hover:bg-[var(--color-accent-deep)]"
-              style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 600 }}
+              style={{ fontFamily: 'var(--font-sans)', fontWeight: 600 }}
             >
               <span>{t.opener.cta}</span>
               <span aria-hidden className="block h-[1px] w-6 bg-white/70 transition-all group-hover:w-10" />
@@ -120,7 +120,7 @@ export function Opener() {
             <a
               href="#premise"
               className="group inline-flex items-center gap-3 border border-[var(--color-border-default)] bg-[var(--color-bg-surface)] px-6 py-3.5 text-[10px] uppercase tracking-[0.32em] text-[var(--color-ink-secondary)] transition hover:border-[var(--color-accent-action)] hover:text-[var(--color-accent-action)]"
-              style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 500 }}
+              style={{ fontFamily: 'var(--font-sans)', fontWeight: 500 }}
             >
               <ArrowDown size={14} strokeWidth={1.5} className="transition group-hover:translate-y-0.5" />
               <span>{t.premise.chapter}</span>

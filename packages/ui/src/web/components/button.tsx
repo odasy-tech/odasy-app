@@ -1,4 +1,4 @@
-import { forwardRef, type ButtonHTMLAttributes, type ReactNode } from 'react';
+﻿import { forwardRef, type ButtonHTMLAttributes, type ReactNode } from 'react';
 import { cn } from '../../shared/utils';
 
 export type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'danger';
@@ -80,7 +80,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         variantClasses[variant],
         className,
       )}
-      style={{ fontFamily: 'var(--font-family-sans)' }}
+      style={{ fontFamily: 'var(--font-sans)' }}
       {...rest}
     >
       {icon && !loading && <span aria-hidden>{icon}</span>}

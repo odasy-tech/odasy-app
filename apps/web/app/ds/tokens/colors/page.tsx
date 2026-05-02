@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { tokens, palette as rawPalette } from '@odasy/ui/theme';
 import { Card } from '@odasy/ui/web';
@@ -27,13 +27,13 @@ function Swatch({ token, value }: { token: string; value: string }) {
       <div className="min-w-0">
         <div
           className="text-[12px] font-semibold tracking-[0.02em] text-[var(--color-ink-primary)]"
-          style={{ fontFamily: 'var(--font-family-sans)' }}
+          style={{ fontFamily: 'var(--font-sans)' }}
         >
           {token}
         </div>
         <div
           className="text-[11px] tabular-nums text-[var(--color-ink-secondary)]"
-          style={{ fontFamily: 'var(--font-family-sans)' }}
+          style={{ fontFamily: 'var(--font-sans)' }}
         >
           {value}
         </div>
@@ -63,7 +63,7 @@ export default function ColorsPage() {
         <Card>
           <h3
             className="mb-4 text-[18px] uppercase tracking-[0.32em] text-[var(--color-ink-primary)]"
-            style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+            style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
           >
             Light tokens
           </h3>
@@ -77,7 +77,7 @@ export default function ColorsPage() {
         <Card>
           <h3
             className="mb-4 text-[18px] uppercase tracking-[0.32em] text-[var(--color-ink-primary)]"
-            style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+            style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
           >
             Dark tokens
           </h3>
@@ -92,7 +92,7 @@ export default function ColorsPage() {
       <Card>
         <h3
           className="mb-4 text-[18px] uppercase tracking-[0.32em] text-[var(--color-ink-primary)]"
-          style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+          style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
         >
           Raw palette
         </h3>

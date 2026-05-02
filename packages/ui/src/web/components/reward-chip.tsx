@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+﻿import type { ReactNode } from 'react';
 import { cn } from '../../shared/utils';
 
 export type RewardKind = 'xp' | 'badge' | 'stamp' | 'title';
@@ -55,7 +55,7 @@ export function RewardChip({ kind, label, hint, glyph, className }: RewardChipPr
         style.text,
         className,
       )}
-      style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 700 }}
+      style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
     >
       <span aria-hidden className="text-[12px] leading-none">
         {glyph ?? style.defaultGlyph}

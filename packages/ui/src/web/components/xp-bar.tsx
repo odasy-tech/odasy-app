@@ -1,4 +1,4 @@
-import { forwardRef, type HTMLAttributes } from 'react';
+﻿import { forwardRef, type HTMLAttributes } from 'react';
 import { cn } from '../../shared/utils';
 
 export interface XPBarProps extends HTMLAttributes<HTMLDivElement> {
@@ -45,7 +45,7 @@ export const XPBar = forwardRef<HTMLDivElement, XPBarProps>(
         </div>
         <span
           className="text-[10px] uppercase tracking-[0.28em] text-[var(--color-ink-secondary)] tabular-nums"
-          style={{ fontFamily: 'var(--font-family-sans)' }}
+          style={{ fontFamily: 'var(--font-sans)' }}
         >
           {text}
         </span>

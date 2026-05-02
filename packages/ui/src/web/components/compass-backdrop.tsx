@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Cinematic compass-rose backdrop — sits behind the hero wordmark,
  * slow-rotates, very low alpha. Suggests "you are about to set sail"
  * without competing with the title.
@@ -66,7 +66,7 @@ export function CompassBackdrop() {
         </g>
 
         <g
-          fontFamily="var(--font-family-display)"
+          fontFamily="var(--font-display)"
           fontSize="6"
           fontStyle="italic"
           fill="var(--color-accent-action)"

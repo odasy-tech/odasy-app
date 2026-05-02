@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { Divider, MetaLabel } from '@odasy/ui/web';
 import { motion, useInView } from 'motion/react';
@@ -32,8 +32,8 @@ export function Premise() {
           transition={{ duration: 1.1, delay: 0.2 }}
           className="max-w-4xl leading-[1.04] tracking-[-0.025em] text-[var(--color-ink-primary)] sm:leading-[0.98]"
           style={{
-            fontSize: 'clamp(2.5rem, 6.5vw, 5.5rem)',
-            fontFamily: 'var(--font-family-display)',
+            fontSize: 'var(--text-display)',
+            fontFamily: 'var(--font-display)',
           }}
         >
           <span>{t.premise.h1Part1}</span>
@@ -54,7 +54,7 @@ export function Premise() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.9, delay: 0.6 }}
           className="mt-16 max-w-2xl text-lg leading-[1.7] text-[var(--color-ink-secondary)] sm:text-xl"
-          style={{ fontFamily: 'var(--font-family-sans)' }}
+          style={{ fontFamily: 'var(--font-sans)' }}
         >
           {t.premise.paragraph}
         </motion.p>

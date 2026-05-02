@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, type ReactNode } from 'react';
 import { cn } from '../../shared/utils';
@@ -62,7 +62,7 @@ export function InterestSelector({
                 ? 'border-[var(--color-accent-action)] bg-[var(--color-accent-soft)] text-[var(--color-accent-action)]'
                 : 'border-[var(--color-border-default)] bg-[var(--color-bg-surface)] text-[var(--color-ink-secondary)] hover:border-[var(--color-accent-action)] hover:text-[var(--color-accent-action)]',
             )}
-            style={{ fontFamily: 'var(--font-family-sans)', fontWeight: 600 }}
+            style={{ fontFamily: 'var(--font-sans)', fontWeight: 600 }}
           >
             {opt.glyph ? <span aria-hidden>{opt.glyph}</span> : null}
             {opt.label}
