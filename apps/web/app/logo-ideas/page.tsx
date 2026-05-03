@@ -24,7 +24,7 @@ export default function LogoIdeasPage() {
       >
         <PageHeader />
 
-        <Container width="wide" className="relative z-10 flex flex-col gap-20 pb-24 pt-12">
+        <Container width="wide" className="relative z-10 flex flex-col gap-12 pb-16 pt-8 sm:gap-16 sm:pb-20 sm:pt-10 lg:gap-20 lg:pb-24 lg:pt-12">
           <FrontMatter />
 
           {DIRECTIONS.map((direction) => (
@@ -67,6 +67,14 @@ function PageHeader() {
           </div>
 
           <div className="flex items-center gap-5">
+            <Link
+              href="/logo-ideas/round-03"
+              className="hidden items-center gap-2 text-[10px] uppercase tracking-[0.32em] text-[var(--color-accent-action)] transition-colors hover:text-[var(--color-accent-deep)] sm:inline-flex"
+              style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
+            >
+              <span>R03 · Letterform</span>
+              <span aria-hidden>→</span>
+            </Link>
             <Link
               href="/ds/identity"
               className="hidden items-center gap-2 text-[10px] uppercase tracking-[0.32em] text-[var(--color-ink-secondary)] transition-colors hover:text-[var(--color-accent-action)] sm:inline-flex"
@@ -128,12 +136,12 @@ function FrontMatter() {
         className="absolute -right-2 top-0 h-4 w-4 border-r border-t border-[var(--color-accent-action)]"
       />
 
-      <div className="grid grid-cols-1 gap-12 pt-3 lg:grid-cols-[1.2fr_1fr]">
+      <div className="grid grid-cols-1 gap-8 pt-3 lg:grid-cols-[1.2fr_1fr] lg:gap-12">
         <div className="flex flex-col gap-5">
           <MetaLabel tone="accent">Brand · Logo brief · Round 02 · Refinement</MetaLabel>
 
           <h1
-            className="text-[56px] leading-[0.95] tracking-[-0.025em] text-[var(--color-ink-primary)] sm:text-[72px]"
+            className="text-[40px] leading-[0.95] tracking-[-0.025em] text-[var(--color-ink-primary)] sm:text-[56px] lg:text-[72px]"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             Refined:{' '}
@@ -173,7 +181,7 @@ function FrontMatter() {
           </div>
         </div>
 
-        <aside className="flex flex-col justify-between gap-7 border-l border-[var(--color-border-default)] pl-8">
+        <aside className="flex flex-col justify-between gap-7 border-t border-[var(--color-border-default)] pt-6 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
           <div>
             <span
               className="text-[10px] uppercase tracking-[0.18em] text-[var(--color-ink-secondary)]"
@@ -247,31 +255,31 @@ function DirectionSection({ direction }: { direction: Direction }) {
   if (!recommended) return null;
 
   return (
-    <section id={`d-${direction.id}`} className="flex flex-col gap-10">
+    <section id={`d-${direction.id}`} className="flex flex-col gap-7 sm:gap-10">
       <header className="flex flex-col gap-3.5">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 sm:gap-4">
           <span
-            className="text-[36px] italic leading-none text-[var(--color-accent-action)]"
+            className="text-[28px] italic leading-none text-[var(--color-accent-action)] sm:text-[36px]"
             style={{ fontFamily: 'var(--font-display)', fontWeight: 500 }}
           >
             {romanFor(direction.id)}
           </span>
           <h2
-            className="text-[28px] leading-none tracking-[-0.015em] text-[var(--color-ink-primary)] sm:text-[34px]"
+            className="text-[24px] leading-none tracking-[-0.015em] text-[var(--color-ink-primary)] sm:text-[28px] lg:text-[34px]"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             {direction.name}
           </h2>
           <div className="ds-rule flex-1" />
           <span
-            className="text-[10px] uppercase tracking-[0.32em] text-[var(--color-ink-tertiary)]"
+            className="hidden text-[10px] uppercase tracking-[0.32em] text-[var(--color-ink-tertiary)] sm:inline"
             style={{ fontFamily: 'var(--font-mono)' }}
           >
             {direction.variants.length} variants
           </span>
         </div>
         <p
-          className="max-w-2xl pl-12 text-[15px] italic leading-relaxed text-[var(--color-ink-secondary)]"
+          className="max-w-2xl pl-9 text-[14px] italic leading-relaxed text-[var(--color-ink-secondary)] sm:pl-12 sm:text-[15px]"
           style={{ fontFamily: 'var(--font-display)' }}
         >
           {direction.tagline}
@@ -320,20 +328,20 @@ function DirectionSection({ direction }: { direction: Direction }) {
 
 function DemoLabel({ num, label }: { num: string; label: string }) {
   return (
-    <div className="flex items-baseline gap-3">
+    <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
       <span
-        className="text-[10px] italic tabular-nums text-[var(--color-accent-action)]"
+        className="shrink-0 text-[10px] italic tabular-nums text-[var(--color-accent-action)]"
         style={{ fontFamily: 'var(--font-display)', fontWeight: 600 }}
       >
         Fig.&nbsp;{num}
       </span>
       <span
-        className="text-[12px] uppercase tracking-[0.36em] text-[var(--color-ink-primary)]"
+        className="text-[10px] uppercase tracking-[0.28em] text-[var(--color-ink-primary)] sm:text-[12px] sm:tracking-[0.36em]"
         style={{ fontFamily: 'var(--font-sans)', fontWeight: 700 }}
       >
         {label}
       </span>
-      <span aria-hidden className="ds-rule mt-px h-px flex-1 self-center" />
+      <span aria-hidden className="ds-rule mt-px h-px min-w-8 flex-1 self-center" />
     </div>
   );
 }

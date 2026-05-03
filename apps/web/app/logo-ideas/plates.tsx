@@ -110,20 +110,19 @@ function Plate({ surface = 'paper', num, label, footName, footCode, height, chil
   const { bg, ink, foot } = surfaceStyles[surface];
   return (
     <div
-      className="relative grid grid-rows-[auto_1fr_auto] overflow-hidden"
+      className="relative grid grid-rows-[auto_1fr_auto] overflow-hidden p-5 sm:p-7 lg:p-8"
       style={{
         background: bg,
         color: ink,
-        padding: '28px 32px',
         fontFamily: 'var(--font-mono)',
         height: height ?? 'auto',
-        minHeight: height ? undefined : 360,
+        minHeight: height ? undefined : 280,
       }}
     >
       <Ticks color={ink} />
       <PlateMeta num={num} label={label} />
-      <div className="grid place-items-center py-4">
-        <div style={{ color: markColor[surface] }}>{children}</div>
+      <div className="grid place-items-center py-3 sm:py-4">
+        <div style={{ color: markColor[surface], maxWidth: '100%' }}>{children}</div>
       </div>
       <PlateFoot name={footName} code={footCode} color={foot} />
     </div>
@@ -142,7 +141,7 @@ export function MarkPlate({ variant, surface = 'paper', size = 220 }: { variant:
       footName={variant.name}
       footCode={`odasy-logomark-${variant.id}.svg`}
     >
-      <Mark size={size} />
+      <ResponsiveMark Mark={Mark} mobile={140} desktop={size} />
     </Plate>
   );
 }
@@ -157,11 +156,7 @@ export function LockupPlate({ variant, surface = 'paper' }: { variant: Variant; 
       footName={variant.name}
       footCode={`odasy-lockup--${variant.id}--${surface}.svg`}
     >
-      <LockupRow>
-        <Mark size={120} />
-        <span style={{ width: 1, height: 56, background: 'currentColor', opacity: 0.25 }} />
-        <Wordmark size={104} />
-      </LockupRow>
+      <ResponsiveLockup Mark={Mark} />
     </Plate>
   );
 }
@@ -178,16 +173,76 @@ export function CompactLockup({ variant, surface = 'paper' }: { variant: Variant
       height={300}
     >
       <LockupRow gap={14}>
-        <Mark size={56} />
-        <Wordmark size={48} />
+        <Mark size={48} className="sm:hidden" />
+        <Mark size={56} className="hidden sm:block" />
+        <Wordmark size={40} />
       </LockupRow>
     </Plate>
   );
 }
 
+/* ── responsive helpers ──────────────────────────────────────── */
+
+function ResponsiveMark({
+  Mark,
+  mobile,
+  desktop,
+}: {
+  Mark: ComponentType<MarkProps>;
+  mobile: number;
+  desktop: number;
+}) {
+  return (
+    <>
+      <div className="sm:hidden" style={{ color: 'inherit' }}>
+        <Mark size={mobile} />
+      </div>
+      <div className="hidden sm:block" style={{ color: 'inherit' }}>
+        <Mark size={desktop} />
+      </div>
+    </>
+  );
+}
+
+function ResponsiveLockup({ Mark }: { Mark: ComponentType<MarkProps> }) {
+  return (
+    <>
+      {/* mobile lockup */}
+      <div className="flex items-center sm:hidden" style={{ gap: 14 }}>
+        <Mark size={72} />
+        <span style={{ width: 1, height: 36, background: 'currentColor', opacity: 0.25 }} />
+        <Wordmark size={56} />
+      </div>
+      {/* tablet */}
+      <div className="hidden items-center sm:flex lg:hidden" style={{ gap: 18 }}>
+        <Mark size={96} />
+        <span style={{ width: 1, height: 48, background: 'currentColor', opacity: 0.25 }} />
+        <Wordmark size={80} />
+      </div>
+      {/* desktop */}
+      <div className="hidden items-center lg:flex" style={{ gap: 22 }}>
+        <Mark size={120} />
+        <span style={{ width: 1, height: 56, background: 'currentColor', opacity: 0.25 }} />
+        <Wordmark size={104} />
+      </div>
+    </>
+  );
+}
+
 export function ScaleLadder({ variant }: { variant: Variant }) {
   const Mark = variant.component;
-  const sizes = [96, 64, 40, 28, 20, 16, 12];
+  // hide-class: largest sizes drop first as the viewport shrinks so the
+  // ladder always fits, while the legibility floor (16, 12) is always
+  // shown.
+  const sizes: { px: number; hide?: string }[] = [
+    { px: 96, hide: 'hidden lg:flex' },
+    { px: 64, hide: 'hidden md:flex' },
+    { px: 40, hide: 'hidden sm:flex' },
+    { px: 28 },
+    { px: 20, hide: 'hidden sm:flex' },
+    { px: 16 },
+    { px: 12 },
+  ];
   return (
     <Plate
       surface="paper"
@@ -197,15 +252,21 @@ export function ScaleLadder({ variant }: { variant: Variant }) {
       footCode="—"
       height={300}
     >
-      <div className="flex items-baseline gap-7" style={{ color: NAVY }}>
-        {sizes.map((s) => (
-          <div key={s} className="flex flex-col items-center gap-2">
-            <Mark size={s} />
+      <div
+        className="flex flex-wrap items-baseline justify-center gap-x-4 gap-y-3 sm:gap-x-5 sm:gap-y-4 lg:gap-7"
+        style={{ color: NAVY }}
+      >
+        {sizes.map(({ px, hide }) => (
+          <div
+            key={px}
+            className={['flex flex-col items-center gap-2', hide ?? 'flex'].join(' ')}
+          >
+            <Mark size={px} />
             <span
               className="text-[9px] tracking-[0.14em] tabular-nums"
               style={{ fontFamily: 'var(--font-mono)', color: 'rgba(10,9,24,0.55)' }}
             >
-              {s}px
+              {px}px
             </span>
           </div>
         ))}
@@ -229,11 +290,11 @@ function LockupRow({ children, gap = 22 }: { children: ReactNode; gap?: number }
 export function VariantsCompare({ variants, name, tagline, rationale }: { variants: Variant[]; name: string; tagline: string; rationale: string }) {
   return (
     <div
-      className="relative grid gap-6 p-10 sm:p-12"
+      className="relative grid gap-5 p-6 sm:gap-6 sm:p-10 lg:p-12"
       style={{ background: PAPER, color: NAVY }}
     >
       <Ticks color={NAVY} />
-      <div className="flex items-baseline gap-3.5 pb-1">
+      <div className="flex flex-col gap-1 pb-1 sm:flex-row sm:items-baseline sm:gap-3.5">
         <h3
           className="text-[11px] uppercase tracking-[0.24em]"
           style={{ fontFamily: 'var(--font-mono)', color: INK, margin: 0 }}
@@ -241,7 +302,7 @@ export function VariantsCompare({ variants, name, tagline, rationale }: { varian
           {name} · sub-variants
         </h3>
         <em
-          className="text-[16px]"
+          className="text-[14px] sm:text-[16px]"
           style={{ fontFamily: 'var(--font-display)', color: NAVY, fontStyle: 'italic' }}
         >
           {tagline}
@@ -306,7 +367,7 @@ export function VariantsCompare({ variants, name, tagline, rationale }: { varian
       </div>
 
       <div
-        className="mt-2 border-t pt-4 text-[14px] italic leading-relaxed"
+        className="mt-2 border-t pt-4 text-[13px] italic leading-relaxed sm:text-[14px]"
         style={{
           borderColor: 'rgba(10,9,24,0.18)',
           fontFamily: 'var(--font-display)',
@@ -315,7 +376,7 @@ export function VariantsCompare({ variants, name, tagline, rationale }: { varian
         }}
       >
         <strong
-          className="mr-3 text-[10px] uppercase tracking-[0.18em] not-italic"
+          className="mb-1.5 mr-3 block text-[10px] uppercase tracking-[0.18em] not-italic sm:mb-0 sm:inline"
           style={{ fontFamily: 'var(--font-mono)', color: INK }}
         >
           Rationale
@@ -332,7 +393,7 @@ export function Construction({ variant }: { variant: Variant }) {
   const Mark = variant.component;
   return (
     <div
-      className="relative grid grid-cols-1 gap-9 p-10 sm:p-12 lg:grid-cols-[1.1fr_1fr]"
+      className="relative grid grid-cols-1 gap-7 p-6 sm:gap-9 sm:p-10 lg:grid-cols-[1.1fr_1fr] lg:p-12"
       style={{ background: PAPER, color: NAVY }}
     >
       <Ticks color={NAVY} />
@@ -345,9 +406,13 @@ export function Construction({ variant }: { variant: Variant }) {
         </h3>
         <div
           className="relative grid place-items-center border p-4"
-          style={{ borderColor: 'rgba(10,9,24,0.10)', background: '#FBF8EF', minHeight: 360 }}
+          style={{ borderColor: 'rgba(10,9,24,0.10)', background: '#FBF8EF', minHeight: 280 }}
         >
-          <svg width="320" height="320" viewBox="0 0 256 256" className="absolute inset-0 m-auto">
+          <svg
+            viewBox="0 0 256 256"
+            preserveAspectRatio="xMidYMid meet"
+            className="absolute inset-0 m-auto h-full w-full max-h-[320px] max-w-[320px]"
+          >
             {Array.from({ length: 7 }).map((_, i) => (
               <g key={i}>
                 <line x1={(i + 1) * 32} y1="0" x2={(i + 1) * 32} y2="256" stroke={INK} strokeWidth="0.4" opacity="0.18" />
@@ -368,14 +433,14 @@ export function Construction({ variant }: { variant: Variant }) {
               SAFE 188
             </text>
           </svg>
-          <div style={{ color: INK, position: 'relative' }}>
-            <Mark size={280} />
+          <div className="relative" style={{ color: INK }}>
+            <ResponsiveMark Mark={Mark} mobile={200} desktop={280} />
           </div>
         </div>
       </div>
 
       <div
-        className="border-l py-1 pl-6 text-[16px] leading-relaxed"
+        className="border-l py-1 pl-6 text-[15px] leading-relaxed sm:text-[16px]"
         style={{ borderColor: 'rgba(10,9,24,0.18)', fontFamily: 'var(--font-display)', color: NAVY }}
       >
         <h3
@@ -431,9 +496,9 @@ export function Construction({ variant }: { variant: Variant }) {
 export function Applications({ variant }: { variant: Variant }) {
   const Mark = variant.component;
   return (
-    <div className="relative grid grid-rows-[auto_1fr] gap-6 p-10 sm:p-12" style={{ background: PAPER, color: NAVY }}>
+    <div className="relative grid grid-rows-[auto_1fr] gap-5 p-6 sm:gap-6 sm:p-10 lg:p-12" style={{ background: PAPER, color: NAVY }}>
       <Ticks color={NAVY} />
-      <div className="flex items-baseline justify-between">
+      <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
         <h3
           className="m-0 text-[11px] uppercase tracking-[0.24em]"
           style={{ fontFamily: 'var(--font-mono)', color: INK }}
@@ -441,7 +506,7 @@ export function Applications({ variant }: { variant: Variant }) {
           Applications · {variant.name}
         </h3>
         <span
-          className="text-[10px] uppercase tracking-[0.18em]"
+          className="text-[9px] uppercase tracking-[0.18em] sm:text-[10px]"
           style={{ fontFamily: 'var(--font-mono)', color: 'rgba(10,9,24,0.55)' }}
         >
           app · favicon · browser · stamp
@@ -483,13 +548,13 @@ export function Applications({ variant }: { variant: Variant }) {
 
         <AppCell label="Stamp imprint">
           <div
-            className="flex items-center justify-center border border-dashed"
-            style={{ background: PAPER_2, borderColor: 'rgba(10,9,24,0.18)', width: 220, height: 80 }}
+            className="flex w-full max-w-[220px] items-center justify-center border border-dashed"
+            style={{ background: PAPER_2, borderColor: 'rgba(10,9,24,0.18)', height: 80 }}
           >
-            <div className="flex items-center gap-3.5" style={{ color: 'rgba(10,9,24,0.55)' }}>
-              <Mark size={48} />
+            <div className="flex items-center gap-3" style={{ color: 'rgba(10,9,24,0.55)' }}>
+              <Mark size={42} />
               <div
-                className="text-left text-[9px] uppercase tracking-[0.14em] leading-tight"
+                className="text-left text-[8px] uppercase tracking-[0.14em] leading-tight sm:text-[9px]"
                 style={{ fontFamily: 'var(--font-mono)' }}
               >
                 ODASY
@@ -585,42 +650,48 @@ function BrowserBar({ Mark }: { Mark: ComponentType<MarkProps> }) {
 export function JournalCover({ variant }: { variant: Variant }) {
   const Mark = variant.component;
   return (
-    <div className="relative" style={{ background: PAPER, color: NAVY, height: 580 }}>
+    <div
+      className="relative min-h-[440px] sm:min-h-[520px] lg:min-h-[580px]"
+      style={{ background: PAPER, color: NAVY }}
+    >
       <Ticks color={NAVY} />
 
       <div
-        className="absolute left-3.5 right-3.5 top-3.5 flex items-center justify-between text-[10px] uppercase tracking-[0.18em]"
+        className="absolute left-3.5 right-3.5 top-3.5 flex items-center justify-between gap-3 text-[8px] uppercase tracking-[0.18em] sm:text-[10px]"
         style={{ fontFamily: 'var(--font-mono)', color: 'rgba(10,9,24,0.5)' }}
       >
         <span>EDITION · 01</span>
-        <span>IN CONTEXT — JOURNAL COVER</span>
+        <span className="hidden sm:inline">IN CONTEXT — JOURNAL COVER</span>
+        <span className="sm:hidden">JOURNAL</span>
       </div>
 
       <div
-        className="absolute grid gap-7 border p-6"
-        style={{ inset: 36, gridTemplateRows: 'auto 1fr auto', borderColor: 'rgba(10,9,24,0.18)' }}
+        className="absolute inset-4 grid gap-5 border p-4 sm:inset-7 sm:gap-7 sm:p-6 lg:inset-9"
+        style={{ gridTemplateRows: 'auto 1fr auto', borderColor: 'rgba(10,9,24,0.18)' }}
       >
-        <div className="flex items-center gap-4.5">
+        <div className="flex items-center gap-3 sm:gap-4">
           <div style={{ color: INK }}>
-            <Mark size={48} />
+            <Mark size={36} className="sm:hidden" />
+            <Mark size={48} className="hidden sm:block" />
           </div>
           <span
-            className="text-[10px] uppercase tracking-[0.18em]"
+            className="text-[9px] uppercase tracking-[0.18em] sm:text-[10px]"
             style={{ fontFamily: 'var(--font-mono)', color: 'rgba(10,9,24,0.6)' }}
           >
-            Odasy · A field instrument for the modern explorer
+            <span className="hidden sm:inline">Odasy · A field instrument for the modern explorer</span>
+            <span className="sm:hidden">Odasy · field instrument</span>
           </span>
         </div>
 
         <div className="flex flex-col justify-center gap-1.5">
           <span
-            className="text-[10px] uppercase tracking-[0.16em]"
+            className="text-[9px] uppercase tracking-[0.16em] sm:text-[10px]"
             style={{ fontFamily: 'var(--font-mono)', color: INK }}
           >
             Salento, Quindío · 2026·07·14
           </span>
           <h2
-            className="m-0 text-[56px] italic"
+            className="m-0 text-[36px] italic sm:text-[44px] lg:text-[56px]"
             style={{
               fontFamily: 'var(--font-display)',
               fontWeight: 400,
@@ -633,7 +704,7 @@ export function JournalCover({ variant }: { variant: Variant }) {
             Soul of Coffee.
           </h2>
           <span
-            className="mt-1.5 text-[18px]"
+            className="mt-1 text-[15px] sm:mt-1.5 sm:text-[18px]"
             style={{ fontFamily: 'var(--font-display)', color: 'rgba(10,9,24,0.7)', maxWidth: '38ch' }}
           >
             Tres sellos. Una historia. Reservado para quienes llegan al amanecer.
@@ -641,7 +712,7 @@ export function JournalCover({ variant }: { variant: Variant }) {
         </div>
 
         <div
-          className="flex items-baseline justify-between border-t pt-3 text-[10px] uppercase tracking-[0.16em]"
+          className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-t pt-3 text-[8px] uppercase tracking-[0.14em] sm:text-[10px] sm:tracking-[0.16em]"
           style={{ borderColor: 'rgba(10,9,24,0.18)', fontFamily: 'var(--font-mono)', color: 'rgba(10,9,24,0.6)' }}
         >
           <span>04°38′06″N · 75°34′12″W</span>
